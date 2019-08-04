@@ -24,6 +24,7 @@ questions.questionOne.answer = confirm(questions.questionOne.questionText);
 
 userPoints = questions.questionOne.answer ? userPoints + questions.questionOne.score : userPoints;
 
+//it's part of logic with abstract equality comparison (==)
 if (prompt(questions.questionTwo.questionText) == questions.questionTwo.answer) {
     userPoints += questions.questionTwo.score;
 }
