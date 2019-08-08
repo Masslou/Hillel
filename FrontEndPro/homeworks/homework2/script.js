@@ -3,47 +3,41 @@
 const questions = {
     questionOne: {
         questionText: 'JS круче Java?',
-        answer: false,
-        score: 10
+        score: 10,
+        answer: true
     },
     questionTwo: {
         questionText: 'Напишите фамилию лучшего футболиста мира',
-        answer: 'Месси',
-        score: 10
+        score: 10,
+        answer: 'Месси'
     },
     questionThree: {
         questionText: 'Эта программа гениальна?',
-        answer: false,
-        score: 10
-    },
+        score: 10,
+        answer: false
+    }
 };
 
 let userPoints = 0;
 
-questions.questionOne.answer = confirm(questions.questionOne.questionText);
+confirm(questions.questionOne.questionText) === questions.questionOne.answer ? userPoints += questions.questionOne.score : null;
+prompt(questions.questionTwo.questionText) === questions.questionTwo.answer ? userPoints += questions.questionTwo.score : null;
+confirm(questions.questionThree.questionText) === questions.questionThree.answer ? userPoints += questions.questionThree.score : null;
 
-userPoints = questions.questionOne.answer ? userPoints + questions.questionOne.score : userPoints;
-
-//it's part of logic with abstract equality comparison (==)
-if (prompt(questions.questionTwo.questionText) == questions.questionTwo.answer) {
-    userPoints += questions.questionTwo.score;
-}
-
-questions.questionThree.answer = confirm(questions.questionThree.questionText);
-
-userPoints = questions.questionThree.answer ? userPoints + questions.questionThree.score : userPoints;
+let message;
 
 switch (userPoints) {
     case 10 :
-        alert('У Вас 10 баллов. Слабо');
+        message = 'У Вас 10 баллов. Слабо';
         break;
     case 20 :
-        alert('У Вас 20 баллов. Не плохо!');
+        message = 'У Вас 20 баллов. Не плохо!';
         break;
     case 30 :
-        alert('У Вас 30 баллов. Супер!');
+        message = 'У Вас 30 баллов. Супер!';
         break;
     default :
-        alert('Ну, не знать про Месси это стыдно');
+        message = 'Ну, не знать про Месси это стыдно';
 }
 
+alert(message);
