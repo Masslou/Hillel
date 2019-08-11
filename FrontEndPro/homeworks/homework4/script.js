@@ -14,7 +14,8 @@ let successMessage;
 
 do {
     operationType = prompt(questions.questionOne);
-} while (operationType != 'add' &&
+} while (
+    operationType != 'add' &&
     operationType != 'div' &&
     operationType != 'mult' &&
     operationType != 'sub'
