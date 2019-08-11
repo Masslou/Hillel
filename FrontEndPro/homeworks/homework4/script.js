@@ -65,6 +65,5 @@ function sub(firstOperand, secondOperand) {
 }
 
 function showResult(result) {
-    alert(sucsessMessage + '' + operationType + ' operation is' + result);
+    alert(sucsessMessage + '' + operationType + ' operation is ' + result);
 }
-
