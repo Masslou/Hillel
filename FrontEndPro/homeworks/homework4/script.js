@@ -10,8 +10,7 @@ let operationType = null;
 let fistOperand = null;
 let secondOperand = null;
 let result = null;
-const sucsessMessage = 'Result of ';
-
+let successMessage;
 
 do {
     operationType = prompt(questions.questionOne);
@@ -45,7 +44,8 @@ switch (operationType) {
         break;
 }
 
-showResult(result);
+successMessage = 'Result of ' + operationType + ' operation is ' + result;
+showResult(successMessage);
 
 
 function add(firstOperand, secondOperand) {
@@ -64,6 +64,6 @@ function sub(firstOperand, secondOperand) {
     return firstOperand - secondOperand;
 }
 
-function showResult(result) {
-    alert(sucsessMessage + '' + operationType + ' operation is ' + result);
+function showResult(message) {
+    alert(message);
 }
