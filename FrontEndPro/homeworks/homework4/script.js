@@ -40,8 +40,8 @@ function askOperand() {
     let operand = null;
 
     do {
-        operand = +prompt(questions.questionTwo, 0);
-    } while (isNaN(operand));
+        operand = +prompt(questions.questionTwo);
+    } while (operand === null || operand === '' || !isFinite(operand));
 
     return operand;
 }
