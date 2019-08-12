@@ -2,13 +2,12 @@
 
 const questions = {
     questionOne: 'Choose action (add, sub, div, mult)',
-    questionTwo: 'Type the first operand',
-    questionThree: 'Type the second operand',
+    questionTwo: 'Type the operand',
 };
 
 let operationType = chooseOperationType();
-let fistOperand = askOperandOne();
-let secondOperand = askOperandTwo();
+let fistOperand = askOperand();
+let secondOperand = askOperand();
 let result = null;
 
 switch (operationType) {
@@ -37,21 +36,11 @@ function chooseOperationType() {
     return operation;
 }
 
-function askOperandOne() {
+function askOperand() {
     let operand = null;
 
     do {
         fistOperand = +prompt(questions.questionTwo);
-    } while (isNaN(fistOperand));
-
-    return operand;
-}
-
-function askOperandTwo() {
-    let operand = null;
-
-    do {
-        fistOperand = +prompt(questions.questionThree);
     } while (isNaN(fistOperand));
 
     return operand;
