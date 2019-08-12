@@ -12,21 +12,14 @@ let secondOperand = askOperandTwo();
 let result = null;
 
 switch (operationType) {
-    case 'add' :
-        result = add(fistOperand, secondOperand);
-        break;
-    case 'div' :
-        result = div(fistOperand, secondOperand);
-        break;
-    case 'mult':
-        result = mult(fistOperand, secondOperand);
-        break;
-    case 'sub' :
-        result = sub(fistOperand, secondOperand);
-        break;
+    case 'add' : result = add(fistOperand, secondOperand); break;
+    case 'div' : result = div(fistOperand, secondOperand); break;
+    case 'mult': result = mult(fistOperand, secondOperand); break;
+    case 'sub' : result = sub(fistOperand, secondOperand); break;
 }
 
 showResult(result);
+
 
 function chooseOperationType() {
     let operation = null;
@@ -58,7 +51,7 @@ function askOperandTwo() {
     do {
         fistOperand = +prompt(questions.questionThree);
     } while (isNaN(fistOperand));
-    
+
     return operand;
 }
 
