@@ -3,32 +3,13 @@
 const questions = {
     questionOne: 'Choose action (add, sub, div, mult)',
     questionTwo: 'Type the first operand',
-    questionThree: 'Type the second operand'
+    questionThree: 'Type the second operand',
 };
 
-let operationType = null;
-let fistOperand = null;
-let secondOperand = null;
+let operationType = chooseOperationType();
+let fistOperand = askOperandOne();
+let secondOperand = askOperandTwo();
 let result = null;
-let successMessage;
-
-do {
-    operationType = prompt(questions.questionOne);
-} while (
-    operationType != 'add' &&
-    operationType != 'div' &&
-    operationType != 'mult' &&
-    operationType != 'sub'
-    );
-
-do {
-    fistOperand = +prompt(questions.questionTwo);
-} while (isNaN(fistOperand));
-
-do {
-    secondOperand = +prompt(questions.questionThree);
-} while (isNaN(secondOperand));
-
 
 switch (operationType) {
     case 'add' :
@@ -45,9 +26,39 @@ switch (operationType) {
         break;
 }
 
-successMessage = 'Result of ' + operationType + ' operation is ' + result;
-showResult(successMessage);
+showResult(result);
 
+function chooseOperationType() {
+    let operation = null;
+    do {
+        operationType = prompt(questions.questionOne);
+    } while (
+        operationType != 'add' &&
+        operationType != 'div' &&
+        operationType != 'mult' &&
+        operationType != 'sub'
+        );
+
+    return operation;
+}
+
+function askOperandOne() {
+    let operand = null;
+
+    do {
+        fistOperand = +prompt(questions.questionTwo);
+    } while (isNaN(fistOperand));
+    return operand;
+}
+
+function askOperandTwo() {
+    let operand = null;
+
+    do {
+        fistOperand = +prompt(questions.questionThree);
+    } while (isNaN(fistOperand));
+    return operand;
+}
 
 function add(firstOperand, secondOperand) {
     return firstOperand + secondOperand;
@@ -66,5 +77,5 @@ function sub(firstOperand, secondOperand) {
 }
 
 function showResult(message) {
-    alert(message);
+    alert('The resul of the operation' + message);
 }
