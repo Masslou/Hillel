@@ -29,6 +29,7 @@ switch (operationType) {
 
 showResult(result);
 
+
 function chooseOperationType() {
     let operation = null;
 
@@ -53,7 +54,6 @@ function askOperand() {
 
     return operand;
 }
-
 
 function add(firstOperand, secondOperand) {
     return firstOperand + secondOperand;
