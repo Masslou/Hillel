@@ -11,20 +11,11 @@ let secondOperand = askOperand();
 let result = null;
 
 switch (operationType) {
-    case 'add' :
-        result = add(fistOperand, secondOperand);
-        break;
-    case 'div' :
-        result = div(fistOperand, secondOperand);
-        break;
-    case 'mult':
-        result = mult(fistOperand, secondOperand);
-        break;
-    case 'sub' :
-        result = sub(fistOperand, secondOperand);
-        break;
-    default:
-        alert('operation error');
+    case 'add' : result = add(fistOperand, secondOperand); break;
+    case 'div' : result = div(fistOperand, secondOperand); break;
+    case 'mult': result = mult(fistOperand, secondOperand); break;
+    case 'sub' : result = sub(fistOperand, secondOperand); break;
+    default : alert('operation error');
 }
 
 showResult(result);
