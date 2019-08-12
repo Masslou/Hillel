@@ -48,6 +48,7 @@ function askOperandOne() {
     do {
         fistOperand = +prompt(questions.questionTwo);
     } while (isNaN(fistOperand));
+
     return operand;
 }
 
@@ -57,6 +58,7 @@ function askOperandTwo() {
     do {
         fistOperand = +prompt(questions.questionThree);
     } while (isNaN(fistOperand));
+    
     return operand;
 }
 
