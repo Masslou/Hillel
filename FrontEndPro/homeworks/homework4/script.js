@@ -24,6 +24,7 @@ showResult(result);
 
 function chooseOperationType() {
     let operation = null;
+
     do {
         operationType = prompt(questions.questionOne);
     } while (
@@ -72,6 +73,6 @@ function sub(firstOperand, secondOperand) {
     return firstOperand - secondOperand;
 }
 
-function showResult(message) {
-    alert('The resul of the operation' + message);
+function showResult(result) {
+    alert('The resul of the operation' + result);
 }
