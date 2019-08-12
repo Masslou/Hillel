@@ -16,6 +16,7 @@ switch (operationType) {
     case 'div' : result = div(fistOperand, secondOperand); break;
     case 'mult': result = mult(fistOperand, secondOperand); break;
     case 'sub' : result = sub(fistOperand, secondOperand); break;
+    default: alert('operation error');
 }
 
 showResult(result);
