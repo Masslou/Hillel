@@ -2,46 +2,65 @@
 
 const questions = {
     questionOne: 'Choose action (add, sub, div, mult)',
-    questionTwo: 'Type the operand',
+    questionTwo: 'Type the first operand',
+    questionThree: 'Type the second operand',
 };
 
 let operationType = chooseOperationType();
-let fistOperand = askOperand();
-let secondOperand = askOperand();
+let fistOperand = askOperandOne();
+let secondOperand = askOperandTwo();
 let result = null;
 
 switch (operationType) {
-    case 'add' : result = add(fistOperand, secondOperand); break;
-    case 'div' : result = div(fistOperand, secondOperand); break;
-    case 'mult': result = mult(fistOperand, secondOperand); break;
-    case 'sub' : result = sub(fistOperand, secondOperand); break;
-    default: alert('operation error');
+    case 'add' :
+        result = add(fistOperand, secondOperand);
+        break;
+    case 'div' :
+        result = div(fistOperand, secondOperand);
+        break;
+    case 'mult':
+        result = mult(fistOperand, secondOperand);
+        break;
+    case 'sub' :
+        result = sub(fistOperand, secondOperand);
+        break;
+    default:
+        alert('operation error');
 }
 
 showResult(result);
-
 
 function chooseOperationType() {
     let operation = null;
 
     do {
-        operationType = prompt(questions.questionOne);
+        operation = prompt(questions.questionOne);
     } while (
-        operationType != 'add' &&
-        operationType != 'div' &&
-        operationType != 'mult' &&
-        operationType != 'sub'
+        operation != 'add' &&
+        operation != 'div' &&
+        operation != 'mult' &&
+        operation != 'sub'
         );
 
     return operation;
 }
 
-function askOperand() {
+function askOperandOne() {
     let operand = null;
 
     do {
-        fistOperand = +prompt(questions.questionTwo, '0');
-    } while (isNaN(fistOperand));
+        operand = +prompt(questions.questionTwo);
+    } while (isNaN(operand));
+
+    return operand;
+}
+
+function askOperandTwo() {
+    let operand = null;
+
+    do {
+        operand = +prompt(questions.questionThree);
+    } while (isNaN(operand));
 
     return operand;
 }
@@ -63,5 +82,5 @@ function sub(firstOperand, secondOperand) {
 }
 
 function showResult(result) {
-    alert('The resul of the operation' + result);
+    alert('The resul of the operation: ' + result);
 }
