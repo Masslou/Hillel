@@ -40,7 +40,7 @@ function askOperand() {
     let operand = null;
 
     do {
-        fistOperand = +prompt(questions.questionTwo);
+        fistOperand = +prompt(questions.questionTwo, '0');
     } while (isNaN(fistOperand));
 
     return operand;
