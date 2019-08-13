@@ -8,7 +8,7 @@ function startProgram() {
     console.clear();
     askFactor();
     doMultiplication(factor);
-    askRepeatProgram()
+    askRepeatProgram();
 }
 
 function askFactor() {
