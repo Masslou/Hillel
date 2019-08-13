@@ -33,8 +33,7 @@ function doMultiplication(factor) {
     for (let i = MIN_VALUE; i < MAX_VALUE; i++) {
         result = factor * i;
         message = factor + ' multiply with ' + i + ' will be ' + result;
-
-        printResult(message)
+        printResult(message);
     }
 }
 
