@@ -1,38 +1,39 @@
 'use strict';
 
-let factor = null;
+const MIN_VALUE = 1;
+const MAX_VALUE = 10;
 
 startProgram();
 
 function startProgram() {
     console.clear();
-    askFactor();
+    let factor = askFactor();
     doMultiplication(factor);
     askRepeatProgram();
 }
 
 function askFactor() {
-    const MIN_VALUE = 1;
-    const MAX_VALUE = 11;
+
+    let factor = null;
 
     do {
         factor = +prompt('Enter the factor');
     } while (isNaN(factor) &&
         factor >= MIN_VALUE &&
-        factor < MAX_VALUE
+        factor <= MAX_VALUE
         );
+
+    return factor;
 }
 
 function doMultiplication(factor) {
 
-    const MIN_VALUE = 1;
-    const MAX_VALUE = 11;
-
     let result = null;
     let message = '';
-    for (let i = MIN_VALUE; i < MAX_VALUE; i++) {
+
+    for (let i = MIN_VALUE; i <= MAX_VALUE; i++) {
         result = factor * i;
-        message = factor + ' multiply with ' + i + ' will be ' + result;
+        message = `${factor} multiply with ${i} will be ${result}`;
         printResult(message);
     }
 }
