@@ -1,19 +1,19 @@
 'use strict';
 
 const questions = {
-    questionOne: 'Choose char thar i have to find: ',
-    questionTwo: 'Choose char thar i have to replace: '
+    messageFirstChar: 'Choose char thar i have to find: ',
+    messageSecondChar: 'Choose char thar i have to replace: '
 };
 
-let text = checkUserText();
-let firstChar = checkUserChar(questions.questionOne);
-let secondChar = checkUserChar(questions.questionTwo);
+let text = askUserText();
+let firstChar = askUserChar(questions.messageFirstChar);
+let secondChar = askUserChar(questions.messageSecondChar);
 let result = replaceAll(text, firstChar, secondChar);
 showResult(result);
 
 
-function checkUserText() {
-    let userText;
+function askUserText() {
+    let userText = null;
 
     do {
         userText = String(prompt('Write your text', 'Hello world'));
@@ -26,7 +26,7 @@ function checkUserText() {
     return userText;
 }
 
-function checkUserChar(message) {
+function askUserChar(message) { 
 
     let userChar = null;
 

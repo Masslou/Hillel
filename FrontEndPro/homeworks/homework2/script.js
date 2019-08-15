@@ -1,12 +1,12 @@
 'use strict';
 
 const questions = {
-    questionOne: {
+    messageFirstChar: {
         questionText: 'JS круче Java?',
         score: 10,
         answer: true
     },
-    questionTwo: {
+    messageSecondChar: {
         questionText: 'Напишите фамилию лучшего футболиста мира',
         score: 10,
         answer: 'Месси'

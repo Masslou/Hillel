@@ -1,8 +1,8 @@
 'use strict';
 
 const questions = {
-    questionOne: 'Choose action (add, sub, div, mult)',
-    questionTwo: 'Type the operand',
+    messageFirstChar: 'Choose action (add, sub, div, mult)',
+    messageSecondChar: 'Type the operand',
 };
 
 let operationType = chooseOperationType();
