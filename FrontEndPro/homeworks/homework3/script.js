@@ -31,7 +31,7 @@ function doMultiplication(factor) {
     let result = null;
     let message = '';
 
-    for (let i = MIN_VALUE; i <= MAX_VALUE; i++) {
+    for (let i = 1; i <= 10; i++) {
         result = factor * i;
         message = `${factor} multiply with ${i} will be ${result}`;
         printResult(message);
