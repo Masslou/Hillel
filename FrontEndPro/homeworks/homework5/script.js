@@ -1,52 +1,55 @@
 'use strict';
 
-/*
-функция ReplaceAll
-Написать функцию replaceAll, чтобы ее можно было использовать следующим образом
+const questions = {
+    questionOne: 'Choose char thar i have to find: ',
+    questionTwo: 'Choose char thar i have to replace: '
+};
 
-
-
-replaceAll('Hello world', 'l', 'z'); // функция должна вернуть Hezzo worzd
-
-
-
-функция должна проверять что второй и третий аргументы имеют только один символ и если это не так, сообщать об этом
-*/
-let text = 'Hello world';
-let firstChar = 'l';
-let secondChar = 'z';
+let text = checkUserText();
+let firstChar = checkUserChar(questions.questionOne);
+let secondChar = checkUserChar(questions.questionTwo);
 let result = replaceAll(text, firstChar, secondChar);
-
-//
-// do{
-//
-// }
-// while(!(typeof (text) === 'string'
-//         && typeof (firstChar) === 'string'
-//         && typeof (secondChar) === 'string'
-//         && firstChar.length > 1
-//         && secondChar.length > 1));
+showResult(result);
 
 
-function replaceAll(str, firstChar, secondChar) {
-debugger;
-    str = str.toLowerCase();
-    let index = str.indexOf(firstChar);
-    let newString = str.replace(firstChar, secondChar);
+function checkUserText() {
+    let userText;
 
-
-    if (index >= 0) {
-
-        replaceAll(newString, firstChar, secondChar);
+    do {
+        userText = String(prompt('Write your text', 'Hello world'));
     }
+    while (
+        userText == null ||
+        userText.length === 0
+        );
 
-
-    return newString;
-
-
-
+    return userText;
 }
 
+function checkUserChar(message) {
 
+    let userChar = null;
 
+    do {
+        userChar = String(prompt(message));
+    }
+    while (
+        userChar == null ||
+        userChar.length > 1 ||
+        userChar.length === 0
+        );
 
+    return userChar;
+}
+
+function replaceAll(str, firstChar, secondChar) {
+
+    str = str.toLowerCase();
+    let newString = str.replace(firstChar, secondChar);
+
+    return newString.indexOf(firstChar) >= 0 ? replaceAll(newString, firstChar, secondChar) : newString;
+}
+
+function showResult(result) {
+    alert(`Result of replace: ${result}`);
+}
