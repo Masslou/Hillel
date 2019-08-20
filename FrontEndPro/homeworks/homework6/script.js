@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 const MIN_VALUE = 0;
 const MAX_VALUE = 10;
 const CORRECT_ANSWER_POINTS = 10;
@@ -14,14 +13,16 @@ function askNumber() {
     let number;
     do {
         number = +prompt(`Enter value between ${MIN_VALUE} and ${MAX_VALUE}: `);
-    } while (number < 0 && number > 10 && isNaN(number));
+    } while (number < MIN_VALUE
+        || number > MAX_VALUE
+        || isNaN(number)
+        );
 
     return number;
 }
 
-function generateRandomNumber(min, max) {
-    //return Math.floor(Math.random() * (max - min + 1) + min);
-    return 10;
+function generateRandomNumber(minValue, maxValue) {
+    return Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
 }
 
 function summaryPoints(number, randomNumber) {
@@ -33,7 +34,7 @@ function informationAlert(number, randomNumber, points) {
 }
 
 function askPlayAgain() {
-    confirm('Repeat again?') ? startGame(points) : alert('Have a nice day!');
+    confirm('Repeat again?') ? startGame() : alert('Have a nice day!');
 }
 
 function startGame() {
@@ -43,18 +44,6 @@ function startGame() {
     informationAlert(number, randomNumber, points);
     askPlayAgain();
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // const obj = {name: 'Alex', age: 33, address: {country: 'UA', city: 'Dnipro'}, hello: {a: 'a', b: 'b'}};
