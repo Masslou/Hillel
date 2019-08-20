@@ -11,6 +11,7 @@ startGame();
 
 function askNumber() {
     let number;
+
     do {
         number = +prompt(`Enter value between ${MIN_VALUE} and ${MAX_VALUE}: `);
     } while (number < MIN_VALUE
