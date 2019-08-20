@@ -1,5 +1,4 @@
 'use strict';
-
 const questions = {
     messageFirstChar: 'Choose char thar i have to find: ',
     messageSecondChar: 'Choose char thar i have to replace: '
@@ -26,7 +25,7 @@ function askUserText() {
     return userText;
 }
 
-function askUserChar(message) { 
+function askUserChar(message) {
 
     let userChar = null;
 
@@ -44,12 +43,20 @@ function askUserChar(message) {
 
 function replaceAll(str, firstChar, secondChar) {
 
-    str = str.toLowerCase();
-    let newString = str.replace(firstChar, secondChar);
+    str =  str.replace(firstChar, secondChar);
 
-    return newString.indexOf(firstChar) >= 0 ? replaceAll(newString, firstChar, secondChar) : newString;
+    if(str.indexOf(firstChar) >= 0){
+        return replaceAll(str, firstChar,secondChar);
+    }
+
+    return str;
+
+    // return newString.indexOf(firstChar) >= 0 ? replaceAll(newString, firstChar, secondChar) : newString;
 }
 
 function showResult(result) {
     alert(`Result of replace: ${result}`);
 }
+
+
+Math.random();
