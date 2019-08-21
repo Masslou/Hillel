@@ -1,7 +1,8 @@
 'use strict';
 
-let number = askNumber();
-let result = checkRealNums(number);
+let userNumber = askNumber();
+let result = findEvenNumbers(userNumber);
+printResultMessage(userNumber, result);
 
 function askNumber() {
     let number;
@@ -11,16 +12,22 @@ function askNumber() {
     } while (
         isNaN(number)
         );
-
     return number;
 }
 
-function checkRealNums(number) {
+function findEvenNumbers(number) {
+    let countRealNumbers = 0;
     number.split('');
-    console.log(number)
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] % 2 === 0) {
+            countRealNumbers++;
+        }
+    }
+
+    return countRealNumbers > 0 ? countRealNumbers : 0;
 }
 
-function printResultMessage(result) {
-    console.log(`In ${number} is ${result} real number`)
+function printResultMessage(userNumber, result) {
+    alert(`in ${userNumber} is ${result} even numbers`)
 }
 
