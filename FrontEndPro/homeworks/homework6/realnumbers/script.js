@@ -10,7 +10,8 @@ function askNumber() {
     do {
         number = prompt(`Enter number `);
     } while (
-        isNaN(number)
+        isNaN(number) ||
+        number === null
         );
     return number;
 }
