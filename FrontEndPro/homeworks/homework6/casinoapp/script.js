@@ -3,7 +3,6 @@
 const MIN_VALUE = 0;
 const MAX_VALUE = 10;
 const CORRECT_ANSWER_POINTS = 10;
-let points = 0;
 
 startGame();
 
@@ -25,22 +24,27 @@ function generateRandomNumber(minValue, maxValue) {
     return Math.floor(Math.random() * (maxValue - minValue + 1) + minValue);
 }
 
-function summaryPoints(number, randomNumber) {
-    return number === randomNumber ? CORRECT_ANSWER_POINTS : null;
+function calculatePoints(number, randomNumber, userScore) {
+    let points = number === randomNumber ? CORRECT_ANSWER_POINTS : null;
+
+    return points + userScore;
 }
 
 function informationAlert(number, randomNumber, points) {
     alert(`Your number is : ${number} , program number is: ${randomNumber} Overall result: ${points}`);
 }
 
-function askPlayAgain() {
-    confirm('Repeat again?') ? startGame() : alert('Have a nice day!');
-}
+function startGame(points) {
 
-function startGame() {
+    let userScore = points ? points : null;
     let randomNumber = generateRandomNumber(MIN_VALUE, MAX_VALUE);
     let number = askNumber();
-    points += summaryPoints(number, randomNumber);
-    informationAlert(number, randomNumber, points);
-    askPlayAgain();
+    let summaryPoints = calculatePoints(number, randomNumber, userScore);
+    informationAlert(number, randomNumber, summaryPoints);
+
+    if (confirm('Repeat again?')) {
+        return startGame(summaryPoints);
+    }
+
+    return alert('Have a nice day!');
 }

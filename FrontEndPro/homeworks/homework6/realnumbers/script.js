@@ -18,14 +18,13 @@ function askNumber() {
 
 function findEvenNumbers(number) {
     let countRealNumbers = 0;
-    number.split('');
-    for (let i = 0; i < number.length; i++) {
+    let splitNumbers = number.split('');
+    for (let i = 0; i < splitNumbers.length; i++) {
         if (number[i] % 2 === 0) {
             countRealNumbers++;
         }
     }
-
-    return countRealNumbers > 0 ? countRealNumbers : 0;
+    return countRealNumbers;
 }
 
 function printResultMessage(userNumber, result) {
