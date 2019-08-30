@@ -1,15 +1,18 @@
 'use strict';
 
-const userName = askUserName();
-const userNumbers = askUserNumbers();
-const numbersArray = userNumbers.split(',').map(Number);
-const greetingsElm = document.getElementById('greeting');
-const maxElm = document.getElementById('max');
-const minElm = document.getElementById('min');
 
+numeratorRunner();
 
-checkUserAnswer(numbersArray) ? pasteResult(userName, userNumbers, numbersArray) : pasteErrorMessage();
-
+function numeratorRunner() {
+    const userName = askUserName();
+    const userNumbers = askUserNumbers();
+    const numbersArray = userNumbers.split(',').map(Number);
+    const greetingsElm = document.getElementById('greeting');
+    const maxElm = document.getElementById('max');
+    const minElm = document.getElementById('min');
+    checkUserAnswer(numbersArray) ?
+        pasteResult(userName, userNumbers, numbersArray, maxElm, minElm, greetingsElm) : pasteErrorMessage(maxElm, minElm);
+}
 
 function askUserName() {
     let userText = null;
@@ -41,7 +44,7 @@ function checkUserAnswer(numbersArray) {
     return result;
 }
 
-function pasteResult(userName, userNumbers, numbersArray) {
+function pasteResult(userName, userNumbers, numbersArray, maxElm, minElm, greetingsElm) {
     const sortedNumbersArray = numbersArray.sort(compareNumeric);
     const firstItemNumsArray = sortedNumbersArray[0];
     const lastItemNumsArray = sortedNumbersArray[sortedNumbersArray.length - 1];
@@ -51,9 +54,9 @@ function pasteResult(userName, userNumbers, numbersArray) {
     minElm.innerHTML = `<p>Min value in list: ${firstItemNumsArray} </p>`;
 }
 
-function pasteErrorMessage() {
-    maxElm.innerHTML = "<div style='height:100px;background-color:red;font-size:46px;width:200px'>NUMBERS ERROR</div>";
-    minElm.innerHTML = "<div style='height:100px;background-color:red;font-size:46px;width:200px'>NUMBERS ERROR</div>";
+function pasteErrorMessage(maxElm, minElm) {
+    maxElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>NUMBERS</div>";
+    minElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>ERROR</div>";
 }
 
 function compareNumeric(firstValue, secondValue) {
@@ -61,5 +64,8 @@ function compareNumeric(firstValue, secondValue) {
     if (firstValue === secondValue) return 0;
     if (firstValue < secondValue) return -1;
 }
+
+
+
 
 
