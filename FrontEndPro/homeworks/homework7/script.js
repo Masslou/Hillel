@@ -46,7 +46,7 @@ function pasteResult(userName, userNumbers, numbersArray) {
     const firstItemNumsArray = sortedNumbersArray[0];
     const lastItemNumsArray = sortedNumbersArray[sortedNumbersArray.length - 1];
 
-    greetingsElm.innerHTML = `<p>Привет, ${userName} </p>`;
+    greetingsElm.innerHTML = `<p>Hello, ${userName} </p>`;
     maxElm.innerHTML = `<p>Max value in list: ${lastItemNumsArray} </p>`;
     minElm.innerHTML = `<p>Min value in list: ${firstItemNumsArray} </p>`;
 }
