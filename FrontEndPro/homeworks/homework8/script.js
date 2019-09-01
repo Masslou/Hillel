@@ -13,10 +13,17 @@ function changeElm() {
     const fragment = document.createDocumentFragment();
 
     for (let i = 1; i <= count.value; i++) {
-        const newElem = document.createElement('li');
-        newElem.innerText = i;
+        const newElem = createElm('li', i);
         fragment.appendChild(newElem);
     }
 
     elementsList.append(fragment)
 }
+
+
+function createElm(tagName, text) {
+    let newElm = document.createElement(tagName);
+    newElm.innerText = text;
+    return newElm;
+}
+
