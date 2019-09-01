@@ -10,10 +10,9 @@ btn.addEventListener("click", changeElm);
 function changeElm() {
 
     elementsList.innerHTML = '';
-    const elmCount = count.value;
     const fragment = document.createDocumentFragment();
 
-    for (let i = 1; i <= elmCount; i++) {
+    for (let i = 1; i <= count.value; i++) {
         const newElem = document.createElement('li');
         newElem.innerText = i;
         fragment.appendChild(newElem);
