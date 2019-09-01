@@ -11,10 +11,14 @@ function changeElm() {
 
     elementsList.innerHTML = '';
     const elmCount = count.value;
+    const fragment = document.createDocumentFragment();
+
 
     for (let i = 1; i <= elmCount; i++) {
         const newElem = document.createElement('li');
         newElem.innerText = i;
-        elementsList.appendChild(newElem);
+        fragment.appendChild(newElem);
     }
+
+    elementsList.append(fragment)
 }
