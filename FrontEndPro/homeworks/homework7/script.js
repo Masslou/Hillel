@@ -3,6 +3,22 @@
 
 numeratorRunner();
 
+
+function pasteResult(userName, userNumbers, numbersArray, maxElm, minElm, greetingsElm) {
+    const sortedNumbersArray = numbersArray.sort((a, b) => a - b);
+    const firstItemNumsArray = sortedNumbersArray[0];
+    const lastItemNumsArray = sortedNumbersArray[sortedNumbersArray.length - 1];
+
+    greetingsElm.innerHTML = `<p>Hello, ${userName} </p>`;
+    maxElm.innerHTML = `<p>Max value in list: ${lastItemNumsArray} </p>`;
+    minElm.innerHTML = `<p>Min value in list: ${firstItemNumsArray} </p>`;
+}
+
+function pasteErrorMessage(maxElm, minElm) {
+    maxElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>NUMBERS</div>";
+    minElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>ERROR</div>";
+}
+
 function numeratorRunner() {
     const userName = askUserName();
     const userNumbers = askUserNumbers();
@@ -42,27 +58,6 @@ function checkUserAnswer(numbersArray) {
         }
     });
     return result;
-}
-
-function pasteResult(userName, userNumbers, numbersArray, maxElm, minElm, greetingsElm) {
-    const sortedNumbersArray = numbersArray.sort(compareNumeric);
-    const firstItemNumsArray = sortedNumbersArray[0];
-    const lastItemNumsArray = sortedNumbersArray[sortedNumbersArray.length - 1];
-
-    greetingsElm.innerHTML = `<p>Hello, ${userName} </p>`;
-    maxElm.innerHTML = `<p>Max value in list: ${lastItemNumsArray} </p>`;
-    minElm.innerHTML = `<p>Min value in list: ${firstItemNumsArray} </p>`;
-}
-
-function pasteErrorMessage(maxElm, minElm) {
-    maxElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>NUMBERS</div>";
-    minElm.innerHTML = "<div style='height:100px;background-color:red;font-size:30px;width:200px;text-align:center;'>ERROR</div>";
-}
-
-function compareNumeric(firstValue, secondValue) {
-    if (firstValue > secondValue) return 1;
-    if (firstValue === secondValue) return 0;
-    if (firstValue < secondValue) return -1;
 }
 
 
