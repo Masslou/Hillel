@@ -13,7 +13,6 @@ function changeElm() {
     const elmCount = count.value;
     const fragment = document.createDocumentFragment();
 
-
     for (let i = 1; i <= elmCount; i++) {
         const newElem = document.createElement('li');
         newElem.innerText = i;
