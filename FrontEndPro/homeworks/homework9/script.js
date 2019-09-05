@@ -1,33 +1,36 @@
 'use strict';
 
 const form = document.getElementById('submit_form');
-const fieldValue = document.getElementById('task_description_field');
 const tasksList = document.getElementById('task_list');
-const taskTemplate = document.getElementById('task_template').innerHTML;
 
 
 form.addEventListener("submit", onAddButtonClick);
 tasksList.addEventListener('click', eventHandler);
 
 function onAddButtonClick(event) {
+
+    const taskDescriptionField = document.getElementById('task_description_field');
+    const taskTemplate = document.getElementById('task_template').innerHTML;
     event.preventDefault();
-    if (!checkInputValue()) {
-        addErrorColor(fieldValue);
+
+    if (!checkInputOnEmpty(taskDescriptionField)) {
+        addErrorColor(taskDescriptionField);
         return;
     }
-    let taskText = addText(fieldValue.value);
-    generateNewList(taskText);
-    resetInput(fieldValue);
+    let taskDescription = addText(taskTemplate, taskDescriptionField.value);
+    generateNewList(taskDescription);
+    resetInput(taskDescriptionField);
+    moveCursorToInput(taskDescriptionField);
 
 }
 
 
-function checkInputValue() {
-    return fieldValue.value.trim() !== '';
+function checkInputOnEmpty(element) {
+    return element.value.trim() !== '';
 }
 
-function addText(text) {
-    return taskTemplate.replace('{{value}}', `${text}`);
+function addText(element, addedText) {
+    return element.replace('{{value}}', `${addedText}`);
 }
 
 function generateNewList(elem) {
@@ -39,9 +42,9 @@ function resetInput(elm) {
     removeErrorColor(elm);
 }
 
-function clearInput() {
-    fieldValue.placeholder = '';
-    fieldValue.value = '';
+function clearInput(element) {
+    element.placeholder = '';
+    element.value = '';
 }
 
 function removeErrorColor(elm) {
@@ -64,7 +67,11 @@ function markTask(event) {
 }
 
 function removeTaskElm(event) {
-   event.parentElement.remove();
+    event.parentElement.remove();
+}
+
+function moveCursorToInput(element) {
+    element.focus();
 }
 
 function addErrorColor(elm) {
