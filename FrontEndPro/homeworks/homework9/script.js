@@ -1,27 +1,24 @@
 'use strict';
 
-const form = document.getElementById('submit_form');
 const tasksList = document.getElementById('task_list');
+const btn = document.getElementById('add_task_button');
+const taskDescriptionField = document.getElementById('task_description_field');
+const taskTemplate = document.getElementById('task_template').innerHTML;
 
+btn.addEventListener("click", onAddButtonClick);
+tasksList.addEventListener('click', actionHandler);
 
-form.addEventListener("submit", onAddButtonClick);
-tasksList.addEventListener('click', eventHandler);
-
-function onAddButtonClick(event) {
-
-    const taskDescriptionField = document.getElementById('task_description_field');
-    const taskTemplate = document.getElementById('task_template').innerHTML;
-    event.preventDefault();
+function onAddButtonClick() {
 
     if (!checkInputOnEmpty(taskDescriptionField)) {
         addErrorColor(taskDescriptionField);
         return;
     }
-    let taskDescription = addText(taskTemplate, taskDescriptionField.value);
-    generateNewList(taskDescription);
+
+    let taskDescription = addText(taskDescriptionField.value);
+    addElementToList(taskDescription);
     resetInput(taskDescriptionField);
     moveCursorToInput(taskDescriptionField);
-
 }
 
 
@@ -29,11 +26,11 @@ function checkInputOnEmpty(element) {
     return element.value.trim() !== '';
 }
 
-function addText(element, addedText) {
-    return element.replace('{{value}}', `${addedText}`);
+function addText(addedText) {
+    return taskTemplate.replace('{{value}}', `${addedText}`);
 }
 
-function generateNewList(elem) {
+function addElementToList(elem) {
     tasksList.innerHTML += elem;
 }
 
@@ -43,7 +40,6 @@ function resetInput(elm) {
 }
 
 function clearInput(element) {
-    element.placeholder = '';
     element.value = '';
 }
 
@@ -51,18 +47,18 @@ function removeErrorColor(elm) {
     elm.classList.remove('error');
 }
 
-function eventHandler(event) {
-    let target = event.target;
+function actionHandler(event) {
+    let targetElm = event.target;
 
-    if (target.classList.contains('task_item')) {
-        markTask(target);
+    if (targetElm.classList.contains('task_item')) {
+        switchTaskColor(targetElm);
     }
-    if (target.classList.contains('remove_elm')) {
-        removeTaskElm(target);
+    if (targetElm.classList.contains('remove_elm')) {
+        removeTaskElm(targetElm);
     }
 }
 
-function markTask(event) {
+function switchTaskColor(event) {
     event.classList.toggle('colored');
 }
 
@@ -77,4 +73,3 @@ function moveCursorToInput(element) {
 function addErrorColor(elm) {
     elm.classList.add('error');
 }
-
