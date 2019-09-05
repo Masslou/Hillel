@@ -2,7 +2,7 @@
 
 const form = document.getElementById('submit_form');
 const tasksList = document.getElementById('task_list');
-const taskDescriptionField = document.getElementById('task_description_field');
+const taskDescriptionInput = document.getElementById('task_description_field');
 const taskTemplate = document.getElementById('task_template').innerHTML;
 
 form.addEventListener("submit", onFormSubmit);
@@ -14,14 +14,14 @@ function onFormSubmit(event) {
 }
 
 function addTask() {
-    if (!checkInputOnEmpty(taskDescriptionField)) {
-        addErrorColor(taskDescriptionField);
+    if (!checkInputOnEmpty(taskDescriptionInput)) {
+        addErrorColor(taskDescriptionInput);
         return;
     }
-    let taskDescription = addText(taskTemplate, taskDescriptionField.value);
+    let taskDescription = addText(taskTemplate, taskDescriptionInput.value);
     generateNewList(taskDescription);
-    resetInput(taskDescriptionField);
-    moveCursorToInput(taskDescriptionField);
+    resetInput(taskDescriptionInput);
+    moveCursorToInput(taskDescriptionInput);
 }
 
 
