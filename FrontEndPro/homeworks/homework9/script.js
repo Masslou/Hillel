@@ -25,12 +25,12 @@ function addTask() {
 }
 
 
-function checkInputOnEmpty(element) {
-    return element.value.trim() !== '';
+function checkInputOnEmpty(elm) {
+    return elm.value.trim() !== '';
 }
 
-function addText(element, addedText) {
-    return element.replace('{{value}}', `${addedText}`);
+function addText(elm, addedText) {
+    return elm.replace('{{value}}', `${addedText}`);
 }
 
 function generateNewList(elm) {
@@ -43,8 +43,8 @@ function resetInput(elm) {
 }
 
 function clearInput(elm) {
-    element.placeholder = '';
-    element.value = '';
+    elm.placeholder = '';
+    elm.value = '';
 }
 
 function removeErrorColor(elm) {
@@ -71,7 +71,7 @@ function removeTaskElm(elm) {
 }
 
 function moveCursorToInput(elm) {
-    element.focus();
+    elm.focus();
 }
 
 function addErrorColor(elm) {
