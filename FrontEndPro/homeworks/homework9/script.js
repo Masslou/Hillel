@@ -62,12 +62,12 @@ function eventHandler(event) {
     }
 }
 
-function markTask(event) {
-    event.classList.toggle('colored');
+function markTask(elm) {
+    elm.classList.toggle('colored');
 }
 
-function removeTaskElm(event) {
-    event.parentElement.remove();
+function removeTaskElm(elm) {
+    elm.parentElement.remove();
 }
 
 function moveCursorToInput(element) {
