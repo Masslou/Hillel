@@ -33,8 +33,8 @@ function addText(element, addedText) {
     return element.replace('{{value}}', `${addedText}`);
 }
 
-function generateNewList(elem) {
-    tasksList.innerHTML += elem;
+function generateNewList(elm) {
+    tasksList.innerHTML += elm;
 }
 
 function resetInput(elm) {
@@ -42,7 +42,7 @@ function resetInput(elm) {
     removeErrorColor(elm);
 }
 
-function clearInput(element) {
+function clearInput(elm) {
     element.placeholder = '';
     element.value = '';
 }
@@ -70,7 +70,7 @@ function removeTaskElm(elm) {
     elm.parentElement.remove();
 }
 
-function moveCursorToInput(element) {
+function moveCursorToInput(elm) {
     element.focus();
 }
 
