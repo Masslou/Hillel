@@ -1,11 +1,11 @@
 'use strict';
 
 const tasksList = document.getElementById('task_list');
-const btn = document.getElementById('add_task_button');
+const addTaskButton = document.getElementById('add_task_button');
 const taskDescriptionField = document.getElementById('task_description_field');
 const taskTemplate = document.getElementById('task_template').innerHTML;
 
-btn.addEventListener("click", onAddButtonClick);
+addTaskButton.addEventListener("click", onAddButtonClick);
 tasksList.addEventListener('click', actionHandler);
 
 function onAddButtonClick() {
