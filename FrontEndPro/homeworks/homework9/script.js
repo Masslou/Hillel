@@ -1,71 +1,73 @@
 'use strict';
 
-const form = document.getElementById('formSubmit');
-const btn = document.getElementById('addTask');
-const fieldValue = document.getElementById('taskField');
-const tasksList = document.getElementById('list');
-const taskTemplate = document.getElementById('taskTemplate').innerHTML;
+const form = document.getElementById('submit_form');
+const fieldValue = document.getElementById('task_description_field');
+const tasksList = document.getElementById('task_list');
+const taskTemplate = document.getElementById('task_template').innerHTML;
 
 
 form.addEventListener("submit", onAddButtonClick);
 tasksList.addEventListener('click', eventHandler);
 
 function onAddButtonClick(event) {
-    console.log();
     event.preventDefault();
     if (!checkInputValue()) {
-       error(fieldValue);
-       return;
+        addErrorColor(fieldValue);
+        return;
     }
+    let taskText = addText(fieldValue.value);
+    generateNewList(taskText);
+    resetInput(fieldValue);
 
-    const messageElm = addText(fieldValue.value);
-    generateNewList(messageElm);
-
-}
-
-
-
-function generateNewList(elem) {
-    tasksList.innerHTML += elem;
 }
 
 
 function checkInputValue() {
-    if (fieldValue.value.trim() === '') {
-
-        return false;
-    } else {
-
-        return true;
-
-    }
-}
-
-
-function eventHandler(event) {
-    console.log(event);
-    if (event.target.tagName === 'LI') {
-        markTask(event);
-    }
-    if (event.target.tagName === 'SPAN') {
-        removeTask(event);
-    }
-}
-
-function markTask(event) {
-    event.target.classList.toggle('colored');
+    return fieldValue.value.trim() !== '';
 }
 
 function addText(text) {
     return taskTemplate.replace('{{value}}', `${text}`);
 }
 
-
-function removeTask(event) {
-    event.target.parentElement.remove();
+function generateNewList(elem) {
+    tasksList.innerHTML += elem;
 }
 
-function error(elm) {
+function resetInput(elm) {
+    clearInput(elm);
+    removeErrorColor(elm);
+}
+
+function clearInput() {
+    fieldValue.placeholder = '';
+    fieldValue.value = '';
+}
+
+function removeErrorColor(elm) {
+    elm.classList.remove('error');
+}
+
+function eventHandler(event) {
+    let target = event.target;
+
+    if (target.classList.contains('task_item')) {
+        markTask(target);
+    }
+    if (target.classList.contains('remove_elm')) {
+        removeTaskElm(target);
+    }
+}
+
+function markTask(event) {
+    event.classList.toggle('colored');
+}
+
+function removeTaskElm(event) {
+   event.parentElement.remove();
+}
+
+function addErrorColor(elm) {
     elm.classList.add('error');
 }
 

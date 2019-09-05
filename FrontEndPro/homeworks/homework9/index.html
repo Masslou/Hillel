@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<ol id="list"></ol>
+<div class="task_manager_wrapper">
+    <div class='list_wrapper'>
+        <ol id="task_list"></ol>
+    </div>
+    <div class="form_wrapper">
+        <form id="submit_form">
+            <input id="task_description_field" type="text" maxlength="20">
+            <button type="submit" id="add_task_button"><span class="add_task_button__description">ADD TASK</span></button>
+        </form>
 
 
-<script type="text/template" id="taskTemplate">
-    <li>{{value}} <span class="removeElement">x</span></li>
-</script>
-
-<form id = 'formSubmit'>
-    <input id="taskField" type='text'>
-    <button type="submit" id="addTask">Add task to list</button>
-</form>
-
+        <script type="text/template" id="task_template">
+            <li class="task_item">{{value}} <span class="remove_elm">x</span></li>
+        </script>
+    </div>
+</div>
 </body>
 </html>
