@@ -5,16 +5,15 @@ const tasksList = document.getElementById('task_list');
 const taskDescriptionField = document.getElementById('task_description_field');
 const taskTemplate = document.getElementById('task_template').innerHTML;
 
-form.addEventListener("submit", onAddButtonClick);
+form.addEventListener("submit", onFormSubmit);
 tasksList.addEventListener('click', eventHandler);
 
-function onAddButtonClick(event) {
+function onFormSubmit(event) {
     event.preventDefault();
-    let data = new FormData(form);
-    console.log(data.get('listData'));
+    addTask();
+}
 
-
-
+function addTask() {
     if (!checkInputOnEmpty(taskDescriptionField)) {
         addErrorColor(taskDescriptionField);
         return;
@@ -23,7 +22,6 @@ function onAddButtonClick(event) {
     generateNewList(taskDescription);
     resetInput(taskDescriptionField);
     moveCursorToInput(taskDescriptionField);
-
 }
 
 
