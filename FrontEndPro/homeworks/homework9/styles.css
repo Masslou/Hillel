@@ -1,0 +1,12 @@
+.colored {
+    background-color: red;
+}
+
+.ul {
+    position: relative;
+}
+
+
+.error {
+    border-color: red;
+}
