@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<ol id="list"></ol>
+
+
+<script type="text/template" id="taskTemplate">
+    <li>{{value}} <span class="removeElement">x</span></li>
+</script>
+
+<form id = 'formSubmit'>
+    <input id="taskField" type='text'>
+    <button type="submit" id="addTask">Add task to list</button>
+</form>
+
+</body>
+</html>
