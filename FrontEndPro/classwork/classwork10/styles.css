@@ -1,0 +1,67 @@
+#add_task_button {
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    width: 75px;
+    background-color: grey;
+    color: white;
+    size: 63px;
+    outline: black;
+    cursor: pointer;
+
+}
+
+#add_task_button:hover {
+    background: #8bcd27;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+#task_description_field:focus {
+    outline: 0;
+}
+.form_wrapper{
+    position: absolute;
+    left: 315px;
+    top: 50px;
+}
+
+#task_description_field {
+    padding: 0 3px;
+    height: 20px;
+}
+
+.list_wrapper {
+    width: 300px;
+}
+
+.task_manager_wrapper {
+    display: flex;
+}
+
+.task_item {
+    position: relative;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.remove_elm {
+    position: absolute;
+    top: -3px;
+    font-size: 13px;
+    color: red;
+    padding-left: 8px;
+}
+
+.colored {
+    background-color: #9ACD32;
+}
+
+.error {
+    border-color: red;
+}

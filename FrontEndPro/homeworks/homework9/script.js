@@ -5,7 +5,7 @@ const tasksList = document.getElementById('task_list');
 const taskDescriptionInput = document.getElementById('task_description_field');
 const taskTemplate = document.getElementById('task_template').innerHTML;
 
-form.addEventListener("submit", onFormSubmit);
+form.addEventListener('submit', onFormSubmit);
 tasksList.addEventListener('click', eventHandler);
 
 function onFormSubmit(event) {
@@ -30,7 +30,7 @@ function checkInputOnEmpty(elm) {
 }
 
 function addText(elm, addedText) {
-    return elm.replace('{{value}}', `${addedText}`);
+    return elm.replace('{{value}}', addedText);
 }
 
 function generateNewList(elm) {
@@ -58,7 +58,7 @@ function eventHandler(event) {
         markTask(target);
     }
     if (target.classList.contains('remove_elm')) {
-        removeTaskElm(target);
+        removeTaskElm(target.parentElement);
     }
 }
 
@@ -67,7 +67,7 @@ function markTask(elm) {
 }
 
 function removeTaskElm(elm) {
-    elm.parentElement.remove();
+    elm.remove();
 }
 
 function moveCursorToInput(elm) {
