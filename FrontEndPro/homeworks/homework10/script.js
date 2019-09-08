@@ -19,7 +19,8 @@ console.log(calculator.add(100)); //110
 console.log(calculator.multiply(2)); // 20
 console.log(calculator.divide(2)); // 5
 console.log(calculator.subtract(10)); // 0
-console.log(calculator.set(10)); // 10
+console.log(calculator.set(70)); // 10
+console.log(calculator.add(10)); // 80
 
 
 
