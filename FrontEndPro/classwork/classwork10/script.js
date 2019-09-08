@@ -5,7 +5,7 @@ const counter = calculator(10);
 
 
 function calculator(value) {
-    let generalValue = value;
+    let generalValue = value || 0;
 
     return {
         add: (argument) => argument + generalValue,
