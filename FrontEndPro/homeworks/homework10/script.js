@@ -8,7 +8,7 @@ function calculation(value) {
     let mainValue = value || 0;
     return {
         add: (argument) => mainValue + argument,
-        multiply: (argument) => mainValue *  argument,
+        multiply: (argument) => mainValue * argument,
         divide: (argument) => mainValue / argument,
         subtract: (argument) => mainValue - argument,
         set: (argument) => mainValue = argument
