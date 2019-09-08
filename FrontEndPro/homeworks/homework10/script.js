@@ -1,10 +1,10 @@
 'use strict';
 
 
-const calculator = calculation(10);
+const calculator = createCalculator(10);
 
 
-function calculation(value) {
+function createCalculator(value) {
     let mainValue = value || 0;
     return {
         add: (argument) => mainValue + argument,
