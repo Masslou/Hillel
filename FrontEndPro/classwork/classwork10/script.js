@@ -1,26 +1,26 @@
 'use strict';
 
 
-const counter = calculator(10);
+const calculator = calculation(10);
 
 
-function calculator(value) {
-    let generalValue = value || 0;
+function calculation(value) {
+    let mainValue = value || 0;
 
     return {
-        add: (argument) => argument + generalValue,
-        multiple: (argument) => argument * generalValue,
-        divide: (argument) => argument / generalValue,
-        sub: (argument) => argument - generalValue,
-        set: (argument) => generalValue = argument
+        add: (argument) => argument + mainValue,
+        mult: (argument) => argument *  mainValue,
+        divide: (argument) => argument / mainValue,
+        sub: (argument) => argument - mainValue,
+        set: (argument) => mainValue = argument
     }
 }
 
-console.log(counter.add(100)); //110
-console.log(counter.multiple(2));
-console.log(counter.divide(2));
-console.log(counter.sub(10));
-console.log(counter.set(10));
+console.log(calculator.add(100));
+console.log(calculator.mult(2));
+console.log(calculator.divide(2));
+console.log(calculator.sub(10));
+console.log(calculator.set(10));
 
 
 
