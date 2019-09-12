@@ -1,7 +1,7 @@
 'use strict';
 
 
-const calculator = createCalculator(10);
+const calculator = createCalculator();
 
 
 function createCalculator(value = 0) {
