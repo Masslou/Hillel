@@ -2,7 +2,7 @@
 
 const students = [
     new Student('Petya', [10, 9, 8, 0, 10]),
-    new Student('Васян', [10, 9, 8, 1, 10]),
+    new Student('Vasyan', [10, 9, 8, 1, 10]),
 ];
 
 function Student(name, mark) {
@@ -11,8 +11,8 @@ function Student(name, mark) {
 }
 
 Student.prototype.averageMark = function () {
-    const sum = this.mark.reduce((a, b) => a + b);
-    return sum / this.mark.length;
+    const overallSum = this.mark.reduce((a, b) => a + b);
+    return overallSum / this.mark.length;
 };
 
 
@@ -22,5 +22,5 @@ function averageGroupMark(students) {
     }, 0) / students.length;
 }
 
-console.log('Average group mark is : ' + averageGroupMark(students));
+console.log(`Average group mark is :  ${averageGroupMark(students)}`);
 
