@@ -24,3 +24,6 @@ function averageGroupMark(students) {
 
 console.log(`Average group mark is :  ${averageGroupMark(students)}`);
 
+
+
+
