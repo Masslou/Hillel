@@ -1,78 +1,80 @@
-function Animal(name) {
+// function Animal(name) {
+//
+//     Animal.prototype.setName = function (name) {
+//         newName && (name = newName);
+//     }
+//     Animal.prototype.getName = function () {
+//         return name;
+//     }
+// }
+//
+//
+// Animal.prototype.run = function () {
+//     console.log(`${this.name} is running`)
+// }
+//
+//
+// const dino = new Animal('Dinozaur');
+// const raptor = new Animal('Raptor');
 
-    Animal.prototype.setName = function (name) {
-        newName && (name = newName);
-    }
-    Animal.prototype.getName = function () {
-        return name;
-    }
-}
 
+'use strict';
 
-Animal.prototype.run = function () {
-    console.log(`${this.name} is running`)
-}
-
-
-const dino = new Animal('Dinozaur');
-const raptor = new Animal('Raptor');
-
-
-'use strict'
-
-function Hamburger(size, stuffing){
+function Hamburger(size, stuffing) {
     this.size = size;
     this.stuffing = stuffing;
     this.generalTopping = [];
 }
 
 Hamburger.SIZE_SMALL = {
-    price : 50,
-    calories : 20
+    price: 50,
+    calories: 20
 }
 Hamburger.SIZE_BIG = {
-    price : 100,
-    calories : 40
+    price: 100,
+    calories: 40
 }
 
 Hamburger.STUFFING_CHEESE = {
-    price : 10,
-    calories : 20
+    price: 10,
+    calories: 20
 }
 Hamburger.STUFFING_SALAD = {
-    price : 20,
-    calories : 5
+    price: 20,
+    calories: 5
 }
 Hamburger.STUFFING_POTATO = {
-    price : 15,
-    calories : 10
+    price: 15,
+    calories: 10
 }
 
 Hamburger.TOPPING_MAYO = {
-    price : 10,
-    calories : 20
+    price: 10,
+    calories: 20
 }
 Hamburger.TOPPING_SAUCE = {
-    price : 20,
-    calories : 5
+    price: 20,
+    calories: 5
 }
 
-Hamburger.prototype.addTopping = function(topping){
+Hamburger.prototype.addTopping = function (topping) {
     this.generalTopping.push(topping);
 }
 
-Hamburger.prototype.calculateCalories = function(){
-    let generalCalories = this.size.calories + this.stuffing.calories;
-    this.generalTopping.forEach(elem => generalCalories += elem.calories);
-    return generalCalories;
+Hamburger.prototype.calculateCalories = function () {
+    console.log(`sum = ${sum}, topping = ${topping}`);
+    let generalCalories = this.generalTopping.reduce((sum, topping) => {
+        return generalCalories += topping
+    }, 0)
+
+    return this.size.price + this.stuffing.price
 }
 
-Hamburger.prototype.calculatePrice = function(){
+Hamburger.prototype.calculatePrice = function () {
     let generalPrice = this.size.price + this.stuffing.price;
-    this.generalTopping.forEach(elem => generalPrice += elem.price )
+    this.generalTopping.forEach(generalPrice += elem.price)
     return generalPrice;
 }
-
 
 
 // маленький гамбургер с начинкой из сыра
