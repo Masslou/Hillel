@@ -20,23 +20,21 @@ class Gallery {
     }
 
     showNext() {
-        this.photos[this.currentPhoto].classList.add('hide');
+        this.photos[this.currentPhoto].classList.add("hide");
         this.currentPhoto += 1;
         if (this.currentPhoto === this.length) {
             this.currentPhoto = 0;
         }
-        this.photos[this.currentPhoto].classList.remove('hide');
+        this.photos[this.currentPhoto].classList.remove("hide");
     }
 
     showPrev() {
-        this.photos[this.currentPhoto].classList.add('hide');
+        this.photos[this.currentPhoto].classList.add("hide");
         this.currentPhoto -= 1;
         if (this.currentPhoto < 0) {
             this.currentPhoto = this.length - 1;
         }
-        this.photos[this.currentPhoto].classList.remove('hide');
-        clearTimeout();
-        this.circle();
+        this.photos[this.currentPhoto].classList.remove("hide");
     }
 
     circle() {
@@ -48,9 +46,9 @@ class Gallery {
 
     startGalleryShow() {
         this.photos.forEach(photo => {
-            photo.classList.add('hide');
+            photo.classList.add("hide");
         });
-        this.photos[this.currentPhoto].classList.remove('hide');
+        this.photos[this.currentPhoto].classList.remove("hide");
         this.circle();
     }
 }
