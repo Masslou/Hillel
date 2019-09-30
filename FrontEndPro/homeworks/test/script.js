@@ -1,7 +1,7 @@
 class Gallery {
     constructor(container) {
         this.container = container;
-        this.container.innerHTML += `<div class="prev">Prev</div><div class="next">Next</div>`;
+        this.container.innerHTML += `<div class="previous_picture--btn">Prev</div><div class="next_picture--btn">Next</div>`;
         this.photos = container.querySelectorAll("ul li");
         this.length = this.photos.length;
         this.currentPhoto = 0;
@@ -11,10 +11,10 @@ class Gallery {
     }
 
     eventHandler(e) {
-        if (e.target.classList.contains('prev')) {
+        if (e.target.classList.contains('previous_picture--btn')) {
             this.showPrev();
         }
-        if (e.target.classList.contains('next')) {
+        if (e.target.classList.contains('next_picture--btn')) {
             this.showNext();
         }
     }
