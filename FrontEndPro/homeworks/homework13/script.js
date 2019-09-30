@@ -16,7 +16,7 @@ class Gallery {
         console.log(document.body);
         container.insertAdjacentHTML('beforebegin', `<div id="container_wrapper">`);
         console.log(document.body);
-       return container;
+        return container;
     }
 
     addButtonsToContainer(container) {
@@ -55,10 +55,13 @@ class Gallery {
             this.counter = this.length - 1;
         }
         this.photos[this.counter].classList.remove('hide_elm');
+        clearTimeout();
+        this.circle();
     }
 
 
     showNextImage() {
+
 
         if (this.counter < this.length) {
             this.counter += 1;
@@ -80,12 +83,17 @@ class Gallery {
         this.photos.forEach((element) => {
             element.classList.add('hide_elm');
         });
+        this.photos[this.counter].classList.remove('hide_elem');
+        this.circle();
+    }
+
+    circle() {
         this.showNextImage();
 
-        // setTimeout(() => {
-        //     this.startGallery();
-        // }, 30000);
-
+        setTimeout(() => {
+            this.showNextImage()
+            this.circle();
+        }, 3000);
     }
 
 
