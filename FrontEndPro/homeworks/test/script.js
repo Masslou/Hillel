@@ -1,7 +1,8 @@
 class Gallery {
+    
     constructor(container) {
         this.container = container;
-        this.container.innerHTML += `<div class="previous_picture--btn">Prev</div><div class="next_picture--btn">Next</div>`;
+        this.container.innerHTML += `<div class="previous_picture--btn">< previous image</div><div class="next_picture--btn">next image ></div>`;
         this.photos = container.querySelectorAll("ul li");
         this.length = this.photos.length;
         this.currentPhoto = 0;
