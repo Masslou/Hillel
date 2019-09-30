@@ -1,91 +1,60 @@
-// function Animal(name) {
-//
-//     Animal.prototype.setName = function (name) {
-//         newName && (name = newName);
-//     }
-//     Animal.prototype.getName = function () {
-//         return name;
-//     }
-// }
-//
-//
-// Animal.prototype.run = function () {
-//     console.log(`${this.name} is running`)
-// }
-//
-//
-// const dino = new Animal('Dinozaur');
-// const raptor = new Animal('Raptor');
+class Gallery {
+    constructor(container) {
+        this.container = container;
+        this.container.innerHTML += `<div class='prev'>Prev</div><div class='next'>Next</div>`;
+        this.photos = container.querySelectorAll("ul li");
+        this.length = this.photos.length;
+        this.currentPhoto = 0;
+        this.container.addEventListener('click',(e)=>{
+            this.eventHandler(e);
+        }, false)
+    }
+    eventHandler(e){
+        if(e.target.classList.contains('prev')){
+            this.showPrev();
+        }
+        if(e.target.classList.contains('next')){
+            this.showNext();
+        }
+    }
+    showNext() {
+        this.photos[this.currentPhoto].classList.add("hide");
+        this.currentPhoto += 1;
+        if(this.currentPhoto === this.length){
+            this.currentPhoto = 0;
+        }
+        this.photos[this.currentPhoto].classList.remove("hide");
+    }
 
+    showPrev() {
+        this.photos[this.currentPhoto].classList.add("hide");
+        this.currentPhoto -= 1;
+        if(this.currentPhoto < 0){
+            this.currentPhoto = this.length-1;
+        }
+        this.photos[this.currentPhoto].classList.remove("hide");
+    }
 
-'use strict';
-
-function Hamburger(size, stuffing) {
-    this.size = size;
-    this.stuffing = stuffing;
-    this.generalTopping = [];
+    circle() {
+        setTimeout(() => {
+            this.showNext();
+            this.circle();
+        }, 3000);
+    }
+    startGalleryShow() {
+        this.photos.forEach(photo => {
+            photo.classList.add("hide");
+        });
+        this.photos[this.currentPhoto].classList.remove("hide");
+        this.circle();
+    }
 }
 
-Hamburger.SIZE_SMALL = {
-    price: 50,
-    calories: 20
-}
-Hamburger.SIZE_BIG = {
-    price: 100,
-    calories: 40
-}
+const myGallery = new Gallery(document.getElementById("container"));
+myGallery.startGalleryShow();
 
-Hamburger.STUFFING_CHEESE = {
-    price: 10,
-    calories: 20
-}
-Hamburger.STUFFING_SALAD = {
-    price: 20,
-    calories: 5
-}
-Hamburger.STUFFING_POTATO = {
-    price: 15,
-    calories: 10
-}
+/* Опциональное задание - реализовать такие методы */
 
-Hamburger.TOPPING_MAYO = {
-    price: 10,
-    calories: 20
-}
-Hamburger.TOPPING_SAUCE = {
-    price: 20,
-    calories: 5
-}
-
-Hamburger.prototype.addTopping = function (topping) {
-    this.generalTopping.push(topping);
-}
-
-Hamburger.prototype.calculateCalories = function () {
-    console.log(`sum = ${sum}, topping = ${topping}`);
-    let generalCalories = this.generalTopping.reduce((sum, topping) => {
-        return generalCalories += topping
-    }, 0)
-
-    return this.size.price + this.stuffing.price
-}
-
-Hamburger.prototype.calculatePrice = function () {
-    let generalPrice = this.size.price + this.stuffing.price;
-    this.generalTopping.forEach(generalPrice += elem.price)
-    return generalPrice;
-}
-
-
-// маленький гамбургер с начинкой из сыра
-const hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
-// добавка из майонеза
-hamburger.addTopping(Hamburger.TOPPING_MAYO);
-// спросим сколько там калорий
-console.log("Calories:" + hamburger.calculateCalories());
-// сколько стоит
-console.log("Price:" + hamburger.calculatePrice());
-// я тут передумал и решил добавить еще приправу
-hamburger.addTopping(Hamburger.TOPPING_SAUCE);
-// А сколько теперь стоит?
-console.log("Price with sauce:" + hamburger.calculatePrice(), hamburger.calculateCalories());
+// myGallery.show(2);
+// myGallery.next();
+// myGallery.prev();

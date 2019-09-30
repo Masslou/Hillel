@@ -1,7 +1,7 @@
 'use strict';
 
 const btn = document.getElementById('addBtn');
-const count = document.getElementById('count');
+const count = document.getElementById('counter');
 const elementsList = document.getElementById('list');
 
 btn.addEventListener("click", changeElm);
@@ -32,7 +32,7 @@ function createElm(tagName, text) {
 My second solution
 
 const btn = document.getElementById('addBtn');
-const count = document.getElementById('count');
+const counter = document.getElementById('counter');
 const tasksList = document.getElementById('list');
 
 btn.addEventListener("click", addElm);
@@ -42,7 +42,7 @@ function addElm() {
     tasksList.innerHTML = '';
     let fragment = ``;
 
-    for (let i = 1; i <= count.value; i++) {
+    for (let i = 1; i <= counter.value; i++) {
         const li = addElm('li', i);
         fragment += li;
     }
