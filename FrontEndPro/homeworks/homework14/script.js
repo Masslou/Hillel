@@ -8,6 +8,8 @@ const HIDE_CLASS = 'hide';
 class TabSet {
     constructor(el) {
         this.el = el;
+
+        //init()
         this.bindClass(this.el, TABSET_CONTAINER_CLASS);
         this.tabsContainer = el.querySelector('#tabs');
         this.tabs = el.querySelectorAll('.tabset-heading');
@@ -15,6 +17,7 @@ class TabSet {
         this.bindHideToAllTabsBody();
         this.removeClass(this.tabsBody[0], HIDE_CLASS);
         this.bindClass(this.tabs[0], ACTIVE_TAB_CLASS);
+        this.currentIndex = 0;
 
 
         // this.length = this.tabs.length;
@@ -24,6 +27,7 @@ class TabSet {
 
 
     }
+
 
     bindClass(element, className) {
         if (element && className) {
@@ -66,6 +70,8 @@ class TabSet {
     }
 
     onElementClick(e) {
+
+
         if (this.isActiveTab(e.target)) {
             return
         }
@@ -81,22 +87,31 @@ class TabSet {
     }
 
     showTab(index) {
-
+        this.currentIndex = index;
         this.removeClassToAllTabs();
         this.bindHideToAllTabsBody();
-        this.removeClass(this.tabsBody[index], HIDE_CLASS);
-        this.bindClass(this.tabs[index], ACTIVE_TAB_CLASS);
-        // this.counter = index;
+        this.removeClass(this.tabsBody[this.currentIndex], HIDE_CLASS);
+        this.bindClass(this.tabs[this.currentIndex], ACTIVE_TAB_CLASS);
     }
 
     preventTab() {
+        this.currentIndex -= 1;
+        if (this.currentIndex < 0) {
+            this.currentIndex = this.tabs.length - 1
+        }
 
+        this.showTab(this.currentIndex);
 
     }
 
 
     nextTab() {
+        this.currentIndex += 1;
+        if (this.currentIndex >= this.tabs.length) {
+            this.currentIndex = 0;
+        }
 
+        this.showTab(this.currentIndex);
     }
 
 }
