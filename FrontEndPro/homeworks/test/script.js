@@ -29,21 +29,21 @@ class Gallery {
     }
 
     showNext() {
-        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.addClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
         this.currentPhoto += 1;
         if (this.currentPhoto === this.length) {
             this.currentPhoto = 0;
         }
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS)
     }
 
     showPrev() {
-        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.addClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
         this.currentPhoto -= 1;
         if (this.currentPhoto < 0) {
             this.currentPhoto = this.length - 1;
         }
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS)
     }
 
     circle() {
@@ -55,15 +55,23 @@ class Gallery {
 
     startGalleryShow() {
         this.photos.forEach(photo => {
-            photo.classList.add(HIDE_CLASS);
+            this.addClass(photo.classList, HIDE_CLASS);
         });
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
         this.circle();
+    }
+
+    removeClass(elem, className) {
+        elem.remove(className);
+
+    }
+
+    addClass(elem, className) {
+        elem.add(className)
     }
 }
 
 const myGallery = new Gallery(document.getElementById('container'));
-window.gallery1 = myGallery;
 myGallery.startGalleryShow();
 
 /* Опциональное задание - реализовать такие методы */
