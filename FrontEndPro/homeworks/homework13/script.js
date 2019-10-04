@@ -1,106 +1,66 @@
 'use strict';
 
+const PREV_BUTTON_CLASS = 'previous_picture--btn';
+const NEXT_BUTTON_CLASS = 'next_picture--btn';
+const HIDE_CLASS = 'hide';
+
 class Gallery {
 
+
     constructor(container) {
-        this.container = this.addWrapperToContainer(container);
-        this.container = this.addButtonsToContainer(this.container)
-        this.photos = container.querySelectorAll('ul li');
-        this.counter = 0;
+        this.container = container;
+        this.container.innerHTML += `<div class="${PREV_BUTTON_CLASS}">< previous image</div><div class="${NEXT_BUTTON_CLASS}">next image ></div>`;
+        this.photos = container.querySelectorAll("ul li");
         this.length = this.photos.length;
-        this.container.addEventListener('click', this.actionHandler.bind(this));
-
+        this.currentPhoto = 0;
+        this.container.addEventListener('click', (e) => {
+            this.eventHandler(e);
+        }, false)
     }
 
-    addWrapperToContainer(container) {
-        console.log(document.body);
-        container.insertAdjacentHTML('beforebegin', `<div id="container_wrapper">`);
-        console.log(document.body);
-        return container;
-    }
-
-    addButtonsToContainer(container) {
-        container.insertAdjacentHTML('beforeEnd', `<div class="previous_picture--btn">prev</div> <div class="next_picture--btn">next</div>`);
-        return container;
-    }
-
-    showImage(imagePositionNumber) {
-        this.photos.forEach((element) => {
-            element.classList.add('hide_elm');
-        });
-        if (imagePositionNumber < this.length) {
-            this.photos[imagePositionNumber].classList.remove('hide_elm');
-            this.counter = imagePositionNumber;
+    eventHandler(e) {
+        if (e.target.classList.contains(PREV_BUTTON_CLASS)) {
+            this.showPrev();
         }
-
-
-    }
-
-    actionHandler(event) {
-        if (event.target.classList.contains('next_picture--btn')) {
-            this.showNextImage()
-        }
-        if (event.target.classList.contains('previous_picture--btn')) {
-            this.showPreviousImage()
+        if (e.target.classList.contains(NEXT_BUTTON_CLASS)) {
+            this.showNext();
         }
     }
 
-    showPreviousImage() {
-
-        if (this.counter > 0) {
-            this.photos[this.counter].classList.add('hide_elm');
+    showNext() {
+        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.currentPhoto += 1;
+        if (this.currentPhoto === this.length) {
+            this.currentPhoto = 0;
         }
-        this.counter -= 1;
-        if (this.counter === 0) {
-            this.counter = this.length - 1;
-        }
-        this.photos[this.counter].classList.remove('hide_elm');
-        clearTimeout();
-        this.circle();
+        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
     }
 
-
-    showNextImage() {
-
-
-        if (this.counter < this.length) {
-            this.counter += 1;
+    showPrev() {
+        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.currentPhoto -= 1;
+        if (this.currentPhoto < 0) {
+            this.currentPhoto = this.length - 1;
         }
-        if (this.counter > 0) {
-            this.photos[this.counter - 1].classList.add('hide_elm');
-        }
-        if (this.counter === this.length) {
-            this.counter = 0;
-        }
-        this.photos[this.counter].classList.remove('hide_elm');
-        // if (this.counter < this.length) {
-        //     this.counter += 1;
-        // }
-    }
-
-    startGallery() {
-
-        this.photos.forEach((element) => {
-            element.classList.add('hide_elm');
-        });
-        this.photos[this.counter].classList.remove('hide_elem');
-        this.circle();
+        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
     }
 
     circle() {
-        this.showNextImage();
-
         setTimeout(() => {
-            this.showNextImage()
+            this.showNext();
             this.circle();
         }, 3000);
     }
 
-
+    startGalleryShow() {
+        this.photos.forEach(photo => {
+            photo.classList.add(HIDE_CLASS);
+        });
+        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.circle();
+    }
 }
 
-const myGallery = new Gallery(
-    document.getElementById('container')
-);
+const myGallery = new Gallery(document.getElementById('container'));
 window.gallery1 = myGallery;
-myGallery.startGallery();
+myGallery.startGalleryShow();

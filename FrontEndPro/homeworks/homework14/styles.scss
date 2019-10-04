@@ -1,0 +1,21 @@
+.tabset_container .tabset-heading{
+font-weight: bold;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+
+.tabset_container #tabs{
+  display: flex;
+}
+
+.tabset_container .active_tab {
+  background-color: #8bcd27;
+  color: #fff;
+}
+
+
+.hide {
+  display: none;
+}
+
+

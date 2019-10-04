@@ -23,7 +23,7 @@ class Accordeon {
         console.log('clocked', e.target);
 
         if (e.target.classList.contains(ACCORDEON_TITLE_CLASS)) {
-            
+
         }
     }
 
