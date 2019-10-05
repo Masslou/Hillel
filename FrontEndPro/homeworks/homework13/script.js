@@ -12,14 +12,37 @@ class Gallery {
         this.photos = container.querySelectorAll("ul li");
         this.length = this.photos.length;
         this.currentPhoto = 0;
+        this.mainActions();
+
+    }
+
+    mainActions() {
+        this.addListeners();
+        this.createNavButtons();
+        this.startGalleryShow();
+    }
+
+    addListeners() {
         this.container.addEventListener('click', (e) => {
             this.eventHandler(e);
         }, false)
     }
 
+    createNavButtons() {
+        const previuosButton = document.createElement('div');
+        const nextButton = document.createElement('div');
+
+        previuosButton.classList.add(PREV_BUTTON_CLASS);
+        previuosButton.innerHTML = '< previous';
+
+        nextButton.classList.add(NEXT_BUTTON_CLASS);
+        nextButton.innerHTML = 'next >';
+
+        this.container.appendChild(previuosButton);
+        this.container.appendChild(nextButton);
+    }
 
     eventHandler(e) {
-
         if (e.target.classList.contains(PREV_BUTTON_CLASS)) {
             this.showPrev();
         }
@@ -28,22 +51,31 @@ class Gallery {
         }
     }
 
+    addHideClass(elem) {
+        elem.classList.add(HIDE_CLASS)
+    }
+
+    removeHideClass(elem) {
+        elem.classList.remove(HIDE_CLASS)
+    }
+
+
     showNext() {
-        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.addHideClass(this.photos[this.currentPhoto]);
         this.currentPhoto += 1;
         if (this.currentPhoto === this.length) {
             this.currentPhoto = 0;
         }
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeHideClass(this.photos[this.currentPhoto]);
     }
 
     showPrev() {
-        this.photos[this.currentPhoto].classList.add(HIDE_CLASS);
+        this.addHideClass(this.photos[this.currentPhoto]);
         this.currentPhoto -= 1;
         if (this.currentPhoto < 0) {
             this.currentPhoto = this.length - 1;
         }
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeHideClass(this.photos[this.currentPhoto]);
     }
 
     circle() {
@@ -55,12 +87,11 @@ class Gallery {
 
     startGalleryShow() {
         this.photos.forEach(photo => {
-            photo.classList.add(HIDE_CLASS);
+            this.addHideClass(photo);
         });
-        this.photos[this.currentPhoto].classList.remove(HIDE_CLASS);
+        this.removeHideClass(this.photos[this.currentPhoto]);
         this.circle();
     }
 }
 
 const myGallery = new Gallery(document.getElementById('container'));
-myGallery.startGalleryShow();
