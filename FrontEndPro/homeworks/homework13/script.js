@@ -95,3 +95,11 @@ class Gallery {
 }
 
 const myGallery = new Gallery(document.getElementById('container'));
+
+// Методы доступны в консоли
+/* Опциональное задание - реализовать такие методы */
+
+// myGallery.show(2);
+// myGallery.next();
+// myGallery.prev();
+
