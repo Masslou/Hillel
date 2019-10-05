@@ -8,21 +8,19 @@ const HIDE_CLASS = 'hide';
 class TabSet {
     constructor(el) {
         this.el = el;
-
-        //init()
-        this.bindClass(this.el, TABSET_CONTAINER_CLASS);
         this.tabsContainer = el.querySelector('#tabs');
         this.tabs = el.querySelectorAll('.tabset-heading');
         this.tabsBody = el.querySelectorAll('.tabset-body');
-        this.bindHideToAllTabsBody();
-        this.removeClass(this.tabsBody[0], HIDE_CLASS);
-        this.bindClass(this.tabs[0], ACTIVE_TAB_CLASS);
+
+        this.mainActions();
+
+
+    }
+
+    mainActions() {
         this.currentIndex = 0;
-
-
-        // this.length = this.tabs.length;
-        // this.counter = 0;
-
+        this.bindClass(this.el, TABSET_CONTAINER_CLASS);
+        this.showTab(this.currentIndex);
         this.bindEventListeners();
 
 
@@ -70,8 +68,7 @@ class TabSet {
     }
 
     onElementClick(e) {
-
-
+        
         if (this.isActiveTab(e.target)) {
             return
         }
@@ -79,9 +76,7 @@ class TabSet {
             this.removeClass(this.tabs[i], ACTIVE_TAB_CLASS);
 
             if (el === e.target) {
-                this.bindHideToAllTabsBody();
-                this.removeClass(this.tabsBody[i], HIDE_CLASS);
-                this.bindClass(e.target, ACTIVE_TAB_CLASS);
+                this.showTab(i)
             }
         });
     }

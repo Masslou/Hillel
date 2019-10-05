@@ -9,7 +9,6 @@ class Gallery {
 
     constructor(container) {
         this.container = container;
-        this.container.innerHTML += `<div class="${PREV_BUTTON_CLASS}">< previous image</div><div class="${NEXT_BUTTON_CLASS}">next image ></div>`;
         this.photos = container.querySelectorAll("ul li");
         this.length = this.photos.length;
         this.currentPhoto = 0;
@@ -18,7 +17,9 @@ class Gallery {
         }, false)
     }
 
+
     eventHandler(e) {
+
         if (e.target.classList.contains(PREV_BUTTON_CLASS)) {
             this.showPrev();
         }
@@ -62,5 +63,4 @@ class Gallery {
 }
 
 const myGallery = new Gallery(document.getElementById('container'));
-window.gallery1 = myGallery;
 myGallery.startGalleryShow();
