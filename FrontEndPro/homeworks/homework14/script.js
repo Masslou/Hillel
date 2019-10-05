@@ -51,12 +51,11 @@ class TabSet {
 
 
     bindEventListeners() {
-        
         this.tabsContainer.addEventListener('click', this.onElementClick.bind(this))
     }
+    
 
     isActiveTab(element) {
-
         return element.classList.contains(ACTIVE_TAB_CLASS);
     }
 
