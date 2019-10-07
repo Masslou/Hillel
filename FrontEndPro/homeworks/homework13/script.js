@@ -59,24 +59,56 @@ class Gallery {
         elem.classList.remove(HIDE_CLASS)
     }
 
+    hideAll() {
+        this.photos.forEach(photo => {
+            this.addHideClass(photo);
+        });
+    }
 
+    show(index) {
+        this.hideAll();
+        this.currentPhoto = index || 0;
+        this.removeHideClass(this.photos[this.currentPhoto]);
+    }
+
+    //
+    // showNext() {
+    //
+    //     this.show(this.currentPhoto + 1);
+    //     this.addHideClass(this.photos[this.currentPhoto]);
+    //     this.currentPhoto += 1;
+    //     if (this.currentPhoto === this.length) {
+    //         this.currentPhoto = 0;
+    //     }
+    //     this.removeHideClass(this.photos[this.currentPhoto]);
+    // }
     showNext() {
-        this.addHideClass(this.photos[this.currentPhoto]);
         this.currentPhoto += 1;
-        if (this.currentPhoto === this.length) {
+        if (this.currentPhoto > this.photos.length) {
             this.currentPhoto = 0;
         }
-        this.removeHideClass(this.photos[this.currentPhoto]);
+        this.show(this.currentPhoto);
     }
 
+
     showPrev() {
-        this.addHideClass(this.photos[this.currentPhoto]);
         this.currentPhoto -= 1;
         if (this.currentPhoto < 0) {
-            this.currentPhoto = this.length - 1;
+            this.currentPhoto = this.photos.length - 1;
         }
-        this.removeHideClass(this.photos[this.currentPhoto]);
+
+        this.show(this.currentPhoto);
+
     }
+
+    // showPrev() {
+    //     this.addHideClass(this.photos[this.currentPhoto]);
+    //     this.currentPhoto -= 1;
+    //     if (this.currentPhoto < 0) {
+    //         this.currentPhoto = this.length - 1;
+    //     }
+    //     this.removeHideClass(this.photos[this.currentPhoto]);
+    // }
 
     circle() {
         setTimeout(() => {
@@ -86,10 +118,7 @@ class Gallery {
     }
 
     startGalleryShow() {
-        this.photos.forEach(photo => {
-            this.addHideClass(photo);
-        });
-        this.removeHideClass(this.photos[this.currentPhoto]);
+        this.show(this.currentPhoto);
         this.circle();
     }
 }

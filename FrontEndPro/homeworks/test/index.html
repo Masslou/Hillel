@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" async></script>
-    <title>Photo Gallery</title>
+    <script src="script.js" defer></script>
+    <title>HW15</title>
 </head>
 <body>
-<div id="container">
-    <ul>
-        <li><img src="http://bygaga.com.ua/uploads/posts/2015-03/1425304690_krasivaya-podborka-siluetov-na-zakate-11.jpg" alt=""></li>
-        <li><img src="http://bygaga.com.ua/uploads/posts/2015-03/1425304773_krasivaya-podborka-siluetov-na-zakate-14.jpg" alt=""></li>
-        <li><img src="http://bygaga.com.ua/uploads/posts/2015-03/1425304734_krasivaya-podborka-siluetov-na-zakate-15.jpg" alt=""></li>
-        <li><img src="http://bygaga.com.ua/uploads/posts/2015-03/1425304682_krasivaya-podborka-siluetov-na-zakate-19.jpg" alt=""></li>
-        <li><img src="http://bygaga.com.ua/uploads/posts/2015-03/1425304703_krasivaya-podborka-siluetov-na-zakate-29.jpg" alt=""></li>
-    </ul>
-</div>
+<table id="UserList">
+
+</table>
+
+<form action="" method="post" id="newUser">
+    <table>
+        <tr>
+            <td> <input id="UserName" type="text" placeholder="Name" value="test"> </td>
+            <td> <input id="UserSurname" type="text" placeholder="Surname" value="test"> </td>
+            <td> <input id="UserAge" type="number" placeholder="Age" value="44"> </td>
+            <td> <button id="addTask">Add</button></td>
+        </tr>
+    </table>
+</form>
+
+<script type="text/template" id='userListTemplate'>
+    <tr class="userLine">
+        <td>{{name}}</td>
+        <td>{{surname}}</td>
+        <td>{{age}}</td>
+        <td> <button class="deleteUser">x</button> </td>
+    </tr>
+</script>
+
 </body>
 </html>

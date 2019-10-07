@@ -1,81 +1,62 @@
-'use strict';
+'use strict'
 
-const PREV_BUTTON_CLASS = 'previous_picture--btn';
-const NEXT_BUTTON_CLASS = 'next_picture--btn';
-const HIDE_CLASS = 'hide';
+const CLASS_USER_DELETE = 'deleteUser';
+const itemTemplate = document.getElementById('userListTemplate').innerHTML;
+const userList = document.getElementById('UserList');
 
+const userName = document.getElementById('UserName');
+const userSurname = document.getElementById('UserSurname');
+const userAge = document.getElementById('UserAge');
 
-class Gallery {
+document.getElementById('newUser').addEventListener('submit', onFormSubmit);
+userList.addEventListener('click', removeUser);
 
+function onFormSubmit(e) {
+    e.preventDefault();
+    addNewUser();
+}
 
-    constructor(container) {
-        this.container = container;
-        this.container.innerHTML += `<div class="${PREV_BUTTON_CLASS}">< previous image</div><div class="${NEXT_BUTTON_CLASS}">next image ></div>`;
-        this.photos = container.querySelectorAll("ul li");
-        this.length = this.photos.length;
-        this.currentPhoto = 0;
-        this.container.addEventListener('click', (e) => {
-            this.eventHandler(e);
-        }, false)
+function addNewUser() {
+    if (userName.value.trim() !== '' &&
+        userSurname.value.trim() !== '' &&
+        userAge.value.trim() !== '') {
+        userList.innerHTML += generateList(userName.value, userSurname.value, userAge.value);
+        clearInput();
+    } else {
+        showError();
     }
 
-    eventHandler(e) {
-        if (e.target.classList.contains(PREV_BUTTON_CLASS)) {
-            this.showPrev();
-        }
-        if (e.target.classList.contains(NEXT_BUTTON_CLASS)) {
-            this.showNext();
-        }
-    }
+}
 
-    showNext() {
-        this.addClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
-        this.currentPhoto += 1;
-        if (this.currentPhoto === this.length) {
-            this.currentPhoto = 0;
-        }
-        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS)
-    }
+function generateList(value1, value2, value3) {
+    return itemTemplate.replace('{{name}}', value1)
+        .replace('{{surname}}', value2)
+        .replace('{{age}}', value3)
+}
 
-    showPrev() {
-        this.addClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
-        this.currentPhoto -= 1;
-        if (this.currentPhoto < 0) {
-            this.currentPhoto = this.length - 1;
-        }
-        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS)
-    }
-
-    circle() {
-        setTimeout(() => {
-            this.showNext();
-            this.circle();
-        }, 3000);
-    }
-
-    startGalleryShow() {
-        this.photos.forEach(photo => {
-            this.addClass(photo.classList, HIDE_CLASS);
-        });
-        this.removeClass(this.photos[this.currentPhoto].classList, HIDE_CLASS);
-        this.circle();
-    }
-
-    removeClass(elem, className) {
-        elem.remove(className);
-
-    }
-
-    addClass(elem, className) {
-        elem.add(className)
+function removeUser(e) {
+    const btnDelete = e.target;
+    if (btnDelete.classList.contains(CLASS_USER_DELETE)) {
+        btnDelete.parentElement.parentElement.remove();
     }
 }
 
-const myGallery = new Gallery(document.getElementById('container'));
-myGallery.startGalleryShow();
+function clearInput(){
+    userName.placeholder = '';
+    userSurname.placeholder = '';
+    userAge.placeholder = '';
+    userName.value = '';
+    userSurname.value = '';
+    userAge.value = '';
+}
 
-/* Опциональное задание - реализовать такие методы */
+function showError(){
+    userName
 
-// myGallery.show(2);
-// myGallery.next();
-// myGallery.prev();
+    userName.placeholder = 'Fill the input';
+    userSurname.placeholder = 'Fill the input';
+    userAge.placeholder = 'Fill the input';
+    userName.value = '';
+    userSurname.value = '';
+    userAge.value = '';
+}
