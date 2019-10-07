@@ -63,16 +63,8 @@ class PhoneBook {
     }
 
     resetForm() {
-
-        this.clearInput();
+        PhoneBook.form.reset();
         this.moveCursorToInput(PhoneBook.contactName)
-    }
-
-
-    clearInput() {
-        PhoneBook.contactName.value = '';
-        PhoneBook.contactSurname.value = '';
-        PhoneBook.contactPhone.value = '';
     }
 
 
