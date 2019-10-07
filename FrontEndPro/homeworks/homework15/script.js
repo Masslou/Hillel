@@ -6,12 +6,12 @@ class PhoneBook {
     static VALID_CLASS = 'valid';
     static DELETE_BUTTON_CLASS = 'deleteContact';
 
+    static form = document.getElementById('newContact');
     static itemTemplate = document.getElementById('contactListTemplate').innerHTML;
     static contactList = document.getElementById('contactList');
     static contactName = document.getElementById('contactName');
     static contactSurname = document.getElementById('contactSurname');
     static contactPhone = document.getElementById('contactPhone');
-    static form = document.getElementById('newContact');
 
 
     constructor() {
@@ -48,7 +48,7 @@ class PhoneBook {
         const newContactElement = this.htmlToElement(html);
         PhoneBook.contactList.appendChild(newContactElement);
         this.resetForm();
-
+        this.removeClassesToAllInputs(PhoneBook.contactName, PhoneBook.contactSurname, PhoneBook.contactPhone);
     }
 
 
@@ -68,6 +68,7 @@ class PhoneBook {
     }
 
     resetForm() {
+
         this.clearInput();
         this.moveCursorToInput(PhoneBook.contactName)
     }
@@ -89,10 +90,11 @@ class PhoneBook {
 
 
     fieldsValidation() {
+        const contactName = this.initialsValidation(PhoneBook.contactName);
+        const contactSurname = this.initialsValidation(PhoneBook.contactSurname);
+        const contactPhone = this.phoneValidation(PhoneBook.contactPhone);
 
-        return this.initialsValidation(PhoneBook.contactName) &&
-            this.initialsValidation(PhoneBook.contactSurname) &&
-            this.phoneValidation(PhoneBook.contactPhone);
+        return contactName && contactSurname && contactPhone;
     }
 
     initialsValidation(user) {
@@ -114,6 +116,12 @@ class PhoneBook {
 
     addClass(element, className) {
         element.classList.add(className);
+    }
+
+    removeClassesToAllInputs(...inputs) {
+        inputs.forEach((el) => {
+            el.className = '';
+        });
     }
 
     moveCursorToInput(element) {
