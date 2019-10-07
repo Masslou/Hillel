@@ -14,11 +14,6 @@ class PhoneBook {
     static contactPhone = document.getElementById('contactPhone');
 
 
-    constructor() {
-        this.initApp();
-    }
-
-
     initApp() {
         this.bindEventListenerOnSubmit();
         this.bindEventListenerOnRemove();
@@ -129,4 +124,5 @@ class PhoneBook {
     }
 }
 
-const myPhoneBook = new PhoneBook(document.getElementById('container'));
+const myPhoneBook = new PhoneBook();
+myPhoneBook.initApp();
