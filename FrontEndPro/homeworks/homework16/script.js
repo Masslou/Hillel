@@ -16,8 +16,6 @@ class Gallery {
         this.initGallery();
         this.big_photo_item_elem = document.querySelector(`.${Gallery.BIG_PHOTO_ITEM_CLASS}`);
         this.big_photo_elem = document.querySelector(`.${Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS}`);
-
-
     }
 
     initGallery() {
@@ -29,11 +27,11 @@ class Gallery {
 
 
     bindListeners() {
-        this.element.addEventListener('click', this.eventHandler.bind(this));
+        this.element.addEventListener('click', this.onContainerClick.bind(this));
     }
 
 
-    eventHandler(event) {
+    onContainerClick(event) {
 
         if (event.target.classList.contains(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS)) {
             this.onClickBackground(event);
@@ -57,8 +55,7 @@ class Gallery {
     getPhotos() {
         fetch(Gallery.GALLERY_URL).then((resp) => {
             resp.json().then((data) => {
-                this.photos = data;
-                this.addPhotosToGallery();
+                this.addPhotosToGallery(data);
             })
         });
     }
@@ -90,15 +87,12 @@ class Gallery {
     }
 
 
-    addPhotosToGallery() {
-        if (this.photos) {
+    addPhotosToGallery(list) {
+            list.forEach((item, i) => {
 
-            this.photos.forEach((item, i) => {
-
-                const photo = this.photos[i];
+                const photo = list[i];
                 const li = document.createElement('li');
                 this.addClass(li, Gallery.CONTAINER_ITEM_NAME);
-
 
                 const img = document.createElement('img');
                 this.addClass(img, Gallery.PHOTO_ITEM_CLASS);
@@ -111,7 +105,6 @@ class Gallery {
 
             });
         }
-    }
 
 
     showFullSizePhoto(fullSizeSrc) {
