@@ -14,6 +14,10 @@ class Gallery {
     constructor(element) {
         this.element = element;
         this.initGallery();
+        this.big_photo_item_elem = document.querySelector(`.${Gallery.BIG_PHOTO_ITEM_CLASS}`);
+        this.big_photo_elem = document.querySelector(`.${Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS}`);
+
+
     }
 
     initGallery() {
@@ -25,11 +29,12 @@ class Gallery {
 
 
     bindListeners() {
-        this.element.addEventListener('click', this.eventHandler.bind(this));
+        this.element.addEventListener('click', this.onClickEventHandler.bind(this));
     }
 
 
-    eventHandler(event) {
+    onClickEventHandler(event) {
+
         if (event.target.classList.contains(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS)) {
             this.onClickRemoveBackground(event);
 
@@ -44,7 +49,7 @@ class Gallery {
     onClickMinImage(e) {
         const currentElement = e.target;
         if (currentElement.classList.contains(Gallery.PHOTO_ITEM_CLASS)) {
-            this.showFullSizeImage(currentElement.fullImg);
+            this.showFullSizePhoto(currentElement.fullImg);
         }
     }
 
@@ -74,8 +79,10 @@ class Gallery {
 
         const photoContainer = document.createElement('div');
         this.addClass(photoContainer, Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS);
+
         const img = document.createElement('img');
         this.addClass(img, Gallery.BIG_PHOTO_ITEM_CLASS);
+
         photoContainer.appendChild(img);
         container.appendChild(photoContainer);
 
@@ -86,7 +93,7 @@ class Gallery {
     addPhotosToGallery() {
         if (this.photos) {
 
-            for (let i = 0; i < this.photos.length; i++) {
+            this.photos.forEach((item, i) => {
 
                 const photo = this.photos[i];
                 const li = document.createElement('li');
@@ -102,14 +109,14 @@ class Gallery {
 
                 this.container.appendChild(li);
 
-            }
+            });
         }
     }
 
 
-    showFullSizeImage(fullSizeSrc) {
-        document.querySelector('.big_photo_item ').src = `${fullSizeSrc}`;
-        this.removeClass(document.querySelector('.full_size_photo_background'), Gallery.HIDE_CLASS);
+    showFullSizePhoto(fullSizeSrc) {
+        this.big_photo_item_elem.src = `${fullSizeSrc}`;
+        this.removeClass(this.big_photo_elem, Gallery.HIDE_CLASS);
     }
 
 
@@ -118,15 +125,14 @@ class Gallery {
     }
 
 
-    onClickRemoveBackground(e) {
-        this.addClass(document.querySelector('.full_size_photo_background'), Gallery.HIDE_CLASS);
+    onClickRemoveBackground() {
+        this.addClass(this.big_photo_elem, Gallery.HIDE_CLASS);
     }
 
 
     addClass(element, className) {
         element.classList.add(className);
     }
-
 
 }
 
