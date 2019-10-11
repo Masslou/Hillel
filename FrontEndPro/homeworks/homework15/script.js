@@ -46,6 +46,13 @@ class PhoneBook {
         this.removeClassesToAllInputs(PhoneBook.contactName, PhoneBook.contactSurname, PhoneBook.contactPhone);
     }
 
+    htmlToElement(html) {
+        const template = document.createElement('template');
+        html = html.trim();
+        template.innerHTML = html;
+        return template.content.firstChild;
+    }
+
 
     createContact(name, surname, phone) {
         return PhoneBook.itemTemplate

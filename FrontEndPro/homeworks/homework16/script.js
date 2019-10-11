@@ -5,18 +5,15 @@ class Gallery {
     static HIDE_CLASS = 'hide';
     static CONTAINER_CLASS = 'flex-container';
     static CONTAINER_ITEM_NAME = 'flex-item';
+    static PHOTO_ITEM_CLASS = 'photo_item';
+    static BIG_PHOTO_ITEM_CLASS = 'big_photo_item';
     static FULL_SIZE_PHOTO_BACKGROUND_CLASS = 'full_size_photo_background';
     static FULL_SIZE_PHOTO_CONTAINER_CLASS = 'full_size_photo_container';
-
-    static full_size_background_element = document.querySelector(Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS);
-    static full_size_photo_container = document.querySelector(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS);
 
 
     constructor(element) {
         this.element = element;
-
         this.initGallery();
-
     }
 
     initGallery() {
@@ -24,22 +21,33 @@ class Gallery {
         this.getPhotos();
         this.addFullSizePhotosContainer();
         this.bindListeners();
-
     }
 
 
     bindListeners() {
-        this.element.addEventListener('click', this.onClickMinImage.bind(this));
-        Gallery.full_size_background_element.addEventListener('click', this.onClickRemoveBackground.bind(this));
+        this.element.addEventListener('click', this.eventHandler.bind(this));
+    }
+
+
+    eventHandler(event) {
+        if (event.target.classList.contains(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS)) {
+            this.onClickRemoveBackground(event);
+
+        }
+
+        if (event.target.classList.contains(Gallery.PHOTO_ITEM_CLASS)) {
+            this.onClickMinImage(event);
+        }
     }
 
 
     onClickMinImage(e) {
         const currentElement = e.target;
-        if (currentElement.classList.contains(Gallery.CONTAINER_ITEM_NAME)) {
-            this.showFullSizeImage(currentElement.dataset.fullImg);
+        if (currentElement.classList.contains(Gallery.PHOTO_ITEM_CLASS)) {
+            this.showFullSizeImage(currentElement.fullImg);
         }
     }
+
 
     getPhotos() {
         fetch(Gallery.GALLERY_URL).then((resp) => {
@@ -58,12 +66,22 @@ class Gallery {
 
     }
 
+
     addFullSizePhotosContainer() {
         const container = document.createElement('div');
         this.addClass(container, Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS);
         this.addClass(container, Gallery.HIDE_CLASS);
+
+        const photoContainer = document.createElement('div');
+        this.addClass(photoContainer, Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS);
+        const img = document.createElement('img');
+        this.addClass(img, Gallery.BIG_PHOTO_ITEM_CLASS);
+        photoContainer.appendChild(img);
+        container.appendChild(photoContainer);
+
         this.element.appendChild(container);
     }
+
 
     addPhotosToGallery() {
         if (this.photos) {
@@ -76,7 +94,7 @@ class Gallery {
 
 
                 const img = document.createElement('img');
-                this.addClass(img, Gallery.CONTAINER_ITEM_NAME);
+                this.addClass(img, Gallery.PHOTO_ITEM_CLASS);
 
                 img.src = `${photo.thumbnailUrl}`;
                 img.fullImg = `${photo.url}`;
@@ -90,24 +108,26 @@ class Gallery {
 
 
     showFullSizeImage(fullSizeSrc) {
-        Gallery.full_size_photo_container.innerHTML = `<img src="${fullSizeSrc}"/>`;
-        this.removeClass(Gallery.full_size_background_element, Gallery.HIDE_CLASS);
-
-
+        document.querySelector('.big_photo_item ').src = `${fullSizeSrc}`;
+        this.removeClass(document.querySelector('.full_size_photo_background'), Gallery.HIDE_CLASS);
     }
+
 
     removeClass(element, className) {
         element.classList.remove(className);
     }
 
 
-    onClickRemoveBackground() {
-        this.addClass(Gallery.full_size_background_element, Gallery.HIDE_CLASS);
+    onClickRemoveBackground(e) {
+        this.addClass(document.querySelector('.full_size_photo_background'), Gallery.HIDE_CLASS);
     }
+
 
     addClass(element, className) {
         element.classList.add(className);
     }
+
+
 }
 
 const myGallery = new Gallery(document.getElementById('container'));
