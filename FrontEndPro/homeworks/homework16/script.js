@@ -29,11 +29,11 @@ class Gallery {
 
 
     bindListeners() {
-        this.element.addEventListener('click', this.onClickEventHandler.bind(this));
+        this.element.addEventListener('click', this.eventHandler.bind(this));
     }
 
 
-    onClickEventHandler(event) {
+    eventHandler(event) {
 
         if (event.target.classList.contains(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS)) {
             this.onClickBackground(event);
