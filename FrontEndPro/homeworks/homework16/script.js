@@ -36,7 +36,7 @@ class Gallery {
     onClickEventHandler(event) {
 
         if (event.target.classList.contains(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS)) {
-            this.onClickRemoveBackground(event);
+            this.onClickBackground(event);
 
         }
 
@@ -125,7 +125,7 @@ class Gallery {
     }
 
 
-    onClickRemoveBackground() {
+    onClickBackground() {
         this.addClass(this.big_photo_elem, Gallery.HIDE_CLASS);
     }
 
