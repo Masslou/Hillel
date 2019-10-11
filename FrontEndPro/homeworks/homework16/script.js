@@ -41,12 +41,12 @@ class Gallery {
         }
 
         if (event.target.classList.contains(Gallery.PHOTO_ITEM_CLASS)) {
-            this.onClickMinImage(event);
+            this.onClickMinPhoto(event);
         }
     }
 
 
-    onClickMinImage(e) {
+    onClickMinPhoto(e) {
         const currentElement = e.target;
         if (currentElement.classList.contains(Gallery.PHOTO_ITEM_CLASS)) {
             this.showFullSizePhoto(currentElement.fullImg);
