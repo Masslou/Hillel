@@ -6,9 +6,10 @@ class Gallery {
     static CONTAINER_CLASS = 'flex-container';
     static CONTAINER_ITEM_NAME = 'flex-item';
     static FULL_SIZE_PHOTO_BACKGROUND_CLASS = 'full_size_photo_background';
-    static PHOTO_CLASS = 'image';
+    static FULL_SIZE_PHOTO_CONTAINER_CLASS = 'full_size_photo_container';
 
-    static backgroundElem = document.getElementsByClassName(Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS);
+    static full_size_background_element = document.querySelector(Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS);
+    static full_size_photo_container = document.querySelector(Gallery.FULL_SIZE_PHOTO_CONTAINER_CLASS);
 
 
     constructor(element) {
@@ -28,20 +29,15 @@ class Gallery {
 
 
     bindListeners() {
-        this.element.addEventListener('click', this.eventHandler.bind(this));
+        this.element.addEventListener('click', this.onClickMinImage.bind(this));
+        Gallery.full_size_background_element.addEventListener('click', this.onClickRemoveBackground.bind(this));
     }
 
-    eventHandler(e) {
-        let element = e.target;
 
-        if (element.classList.contains(Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS)) {
-            this.removeBackground(e);
-        }
-
-        if (element.classList.contains(Gallery.PHOTO_CLASS)) {
-            console.log(element.dataset);
-            console.log(element.fullImg);
-            this.showFullSizeImage(element, element.fullImg);
+    onClickMinImage(e) {
+        const currentElement = e.target;
+        if (currentElement.classList.contains(Gallery.CONTAINER_ITEM_NAME)) {
+            this.showFullSizeImage(currentElement.dataset.fullImg);
         }
     }
 
@@ -80,7 +76,7 @@ class Gallery {
 
 
                 const img = document.createElement('img');
-                this.addClass(img, Gallery.PHOTO_CLASS);
+                this.addClass(img, Gallery.CONTAINER_ITEM_NAME);
 
                 img.src = `${photo.thumbnailUrl}`;
                 img.fullImg = `${photo.url}`;
@@ -93,14 +89,9 @@ class Gallery {
     }
 
 
-    showFullSizeImage(element, fullSizeSrc) {
-
-        const img = document.createElement('img');
-        console.log(Gallery.backgroundElem);
-        Gallery.backgroundElem.item(0).appendChild(img);
-        img.src = fullSizeSrc;
-
-        this.removeClass(Gallery.backgroundElem.item(0), Gallery.HIDE_CLASS);
+    showFullSizeImage(fullSizeSrc) {
+        Gallery.full_size_photo_container.innerHTML = `<img src="${fullSizeSrc}"/>`;
+        this.removeClass(Gallery.full_size_background_element, Gallery.HIDE_CLASS);
 
 
     }
@@ -110,8 +101,8 @@ class Gallery {
     }
 
 
-    removeBackground(e) {
-        this.addClass(document.querySelector('.full_size_photo_background'), Gallery.HIDE_CLASS);
+    onClickRemoveBackground() {
+        this.addClass(Gallery.full_size_background_element, Gallery.HIDE_CLASS);
     }
 
     addClass(element, className) {
