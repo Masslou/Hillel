@@ -79,8 +79,8 @@ function toggleClass(element) {
 
 
 function removeActiveClass() {
-    const usersList = document.querySelector(`.${ACTIVE_CLASS}`);
-    usersList.classList.remove(ACTIVE_CLASS);
+    const taggedUser = document.querySelector(`.${ACTIVE_CLASS}`);
+    taggedUser.classList.remove(ACTIVE_CLASS);
 }
 
 function addActiveClass(element) {
