@@ -18,7 +18,7 @@ fetch
     }).then((data) => {
         getUserInformation(data[0].id);
         addActiveClass(usersList.firstElementChild);
-    })
+    }).catch(error => console.log(error))
 });
 
 
@@ -55,7 +55,7 @@ function getUserInformation(id) {
     (`${USERS_URL}/${id}`).then((resp) => {
         resp.json().then((data) => {
             renderUserInformation(data)
-        })
+        }).catch(error => console.log(error))
     });
 }
 
