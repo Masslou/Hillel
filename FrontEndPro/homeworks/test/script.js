@@ -1,62 +1,78 @@
 'use strict'
 
-const CLASS_USER_DELETE = 'deleteUser';
-const itemTemplate = document.getElementById('userListTemplate').innerHTML;
-const userList = document.getElementById('UserList');
+const ITEM_USER_CLASS = 'userItem';
 
-const userName = document.getElementById('UserName');
-const userSurname = document.getElementById('UserSurname');
-const userAge = document.getElementById('UserAge');
+const requestUsersList = fetch('https://jsonplaceholder.typicode.com/users');
 
-document.getElementById('newUser').addEventListener('submit', onFormSubmit);
-userList.addEventListener('click', removeUser);
+const usersList = document.getElementById('usersList');
+const userInfoTemplate = document.getElementById('userInfoTemplate').innerHTML;
+const userInfo = document.getElementById('userInfo');
+const usersListItems = document.createElement('ul');
+usersList.addEventListener('click', onUserClick)
 
-function onFormSubmit(e) {
-    e.preventDefault();
-    addNewUser();
+requestUsersList
+    .then((resp) => {
+        return resp.json()
+    })
+    .then((data) => {
+        return showUsersList(data);
+    })
+    .then((firstUser) => {
+        fetch('https://jsonplaceholder.typicode.com/users/' + firstUser)
+            .then((resp) => {
+                return resp.json()
+            })
+            .then((data) => {
+                showUserInfo(data);
+                addActiveClass(usersListItems.firstChild);
+            })
+    })
+    .catch(() => console.log('Error'))
+
+function showUsersList(data){
+    data.forEach(el => addUserInList(el.name, el.id));
+    usersList.appendChild(usersListItems);
+    return data[0].id
 }
 
-function addNewUser() {
-    if (userName.value.trim() !== '' &&
-        userSurname.value.trim() !== '' &&
-        userAge.value.trim() !== '') {
-        userList.innerHTML += generateList(userName.value, userSurname.value, userAge.value);
-        clearInput();
-    } else {
-        showError();
+function addUserInList(name, id){
+    const userItem = document.createElement('li');
+    userItem.innerText = name;
+    userItem.setAttribute('data-userid', id);
+    userItem.classList.add(ITEM_USER_CLASS);
+    usersListItems.appendChild(userItem);
+}
+
+function showUserInfo(data){
+    userInfo.innerHTML = userInfoTemplate.replace('{{username}}', data.username)
+        .replace('{{name}}', data.name)
+        .replace('{{email}}', data.email)
+        .replace('{{street}}', data.address.street)
+        .replace('{{suite}}', data.address.suite)
+        .replace('{{city}}', data.address.city)
+        .replace('{{zipcode}}', data.address.zipcode)
+        .replace('{{phone}}', data.phone)
+        .replace('{{website}}', data.website)
+        .replace('{{name}}', data.company.name)
+        .replace('{{catchPhrase}}', data.company.catchPhrase)
+        .replace('{{bs}}', data.company.bs);
+
+}
+
+function onUserClick(e){
+    if(e.target.classList.contains(ITEM_USER_CLASS)){
+        fetch('https://jsonplaceholder.typicode.com/users/' + e.target.dataset.userid).then((resp) => {
+            resp.json().then(showUserInfo);
+        });
+        deleteActiveClass();
+        addActiveClass(e.target);
     }
-
 }
 
-function generateList(value1, value2, value3) {
-    return itemTemplate.replace('{{name}}', value1)
-        .replace('{{surname}}', value2)
-        .replace('{{age}}', value3)
+function deleteActiveClass(){
+    usersList.querySelectorAll('li').forEach(el => el.classList.remove('active'));
 }
 
-function removeUser(e) {
-    const btnDelete = e.target;
-    if (btnDelete.classList.contains(CLASS_USER_DELETE)) {
-        btnDelete.parentElement.parentElement.remove();
-    }
-}
-
-function clearInput(){
-    userName.placeholder = '';
-    userSurname.placeholder = '';
-    userAge.placeholder = '';
-    userName.value = '';
-    userSurname.value = '';
-    userAge.value = '';
-}
-
-function showError(){
-    userName
-
-    userName.placeholder = 'Fill the input';
-    userSurname.placeholder = 'Fill the input';
-    userAge.placeholder = 'Fill the input';
-    userName.value = '';
-    userSurname.value = '';
-    userAge.value = '';
+function addActiveClass(tag){
+    tag.classList.add('active');
 }
