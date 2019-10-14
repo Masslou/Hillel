@@ -1,0 +1,35 @@
+.chat_container {
+  background-color: bisque;
+}
+
+.container_header {
+  display: flex;
+  justify-content: center;
+}
+
+.chat_container {
+  display: flex;
+}
+
+.users-smile {
+  font-size: 30px;
+  color: #8bcd27;
+}
+
+
+.user-item-name {
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}
+
+.chat-wrapper {
+  display: flex;
+}
+
+.user-list-container {
+  padding-right: 250px;
+  padding-left: 50px;
+}
