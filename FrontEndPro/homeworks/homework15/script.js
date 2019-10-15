@@ -3,7 +3,6 @@
 class PhoneBook {
 
     static ERROR_CLASS = 'error';
-    static VALID_CLASS = 'valid';
     static DELETE_BUTTON_CLASS = 'deleteContact';
 
     static form = document.getElementById('newContact');

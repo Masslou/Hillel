@@ -7,11 +7,12 @@
   font-size: 15px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background: red;
   }
-  &:focus{
-    outline:none;
+
+  &:focus {
+    outline: none;
 
   }
 }
