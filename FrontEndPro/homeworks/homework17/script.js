@@ -27,7 +27,6 @@ function renderUsersList(list) {
         return usersListTemplate.replace('{{username}}', element.username).replace('{{id}}', element.id)
     });
     usersList.innerHTML = usersHTML.join('\n');
-
 }
 
 

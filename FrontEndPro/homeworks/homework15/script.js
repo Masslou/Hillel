@@ -42,7 +42,7 @@ class PhoneBook {
         const newContactElement = this.htmlToElement(html);
         PhoneBook.contactList.appendChild(newContactElement);
         this.resetForm();
-        this.removeClassesToAllInputs(PhoneBook.contactName, PhoneBook.contactSurname, PhoneBook.contactPhone);
+        this.removeErrorClass(PhoneBook.contactName, PhoneBook.contactSurname, PhoneBook.contactPhone);
     }
 
     htmlToElement(html) {
@@ -115,7 +115,7 @@ class PhoneBook {
         element.classList.add(className);
     }
 
-    removeClassesToAllInputs() {
+    removeErrorClass() {
         const errorFields = document.querySelectorAll(`.${PhoneBook.ERROR_CLASS}`);
         errorFields.forEach((item) => item.classList.remove(PhoneBook.ERROR_CLASS))
     }
