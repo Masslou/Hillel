@@ -84,38 +84,41 @@ class PhoneBook {
 
 
     fieldsValidation() {
-        const contactName = this.initialsValidation(PhoneBook.contactName);
-        const contactSurname = this.initialsValidation(PhoneBook.contactSurname);
-        const contactPhone = this.phoneValidation(PhoneBook.contactPhone);
+        const nameValidationResult = this.initialsValidation(PhoneBook.contactName);
+        const surnameValidationResult = this.initialsValidation(PhoneBook.contactSurname);
+        const phoneValidationResult = this.phoneValidation(PhoneBook.contactPhone);
 
-        return contactName && contactSurname && contactPhone;
+        return nameValidationResult &&
+            surnameValidationResult &&
+            phoneValidationResult;
     }
 
     initialsValidation(user) {
         const nameRegExp = /^[a-zA-Z ]+$/;
-        const nameValid = nameRegExp.test(user.value);
-        nameValid ? this.addClass(user, PhoneBook.VALID_CLASS) : this.addClass(user, PhoneBook.ERROR_CLASS);
+        const isNameValid = nameRegExp.test(user.value);
 
-        return nameValid;
+        !isNameValid ? this.addClass(user, PhoneBook.ERROR_CLASS) : null;
+
+        return isNameValid;
     }
 
 
     phoneValidation(user) {
-        const phoneRegExp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-        const phoneValid = phoneRegExp.test(PhoneBook.contactPhone.value);
-        phoneValid ? this.addClass(user, PhoneBook.VALID_CLASS) : this.addClass(user, PhoneBook.ERROR_CLASS);
+        const phoneRegExp = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+        const isPhoneValid = phoneRegExp.test(PhoneBook.contactPhone.value);
 
-        return phoneValid;
+        !isPhoneValid ? this.addClass(user, PhoneBook.ERROR_CLASS) : null;
+
+        return isPhoneValid;
     }
 
     addClass(element, className) {
         element.classList.add(className);
     }
 
-    removeClassesToAllInputs(...inputs) {
-        inputs.forEach((el) => {
-            el.className = '';
-        });
+    removeClassesToAllInputs() {
+        const errorFields = document.querySelectorAll(`.${PhoneBook.ERROR_CLASS}`);
+        errorFields.forEach((item) => item.classList.remove(PhoneBook.ERROR_CLASS))
     }
 
     moveCursorToInput(element) {
