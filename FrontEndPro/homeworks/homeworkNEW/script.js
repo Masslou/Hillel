@@ -61,13 +61,9 @@ function getUserInformation(id) {
 }
 
 
-function onUsersInfoClick(event) {
-    const element = event.target;
-    const userID = element.dataset.userId;
-
-    if (element.classList.contains(DELETE_BUTTON_CLASS)) {
-        deleteUser(userID);
-    }
+function onUsersInfoClick() {
+    const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
+    deleteUser(userId);
 }
 
 function onUsersListClick(event) {
@@ -103,6 +99,7 @@ function deleteUser(userId) {
         method: 'DELETE',
     });
 
+    document.querySelector(`[data-user-id='${userId}']`).parentElement;
     let getUserFromList = usersList.querySelector(`[data-user-id='${userId}']`);
     getUserFromList.parentNode.removeChild(getUserFromList);
 

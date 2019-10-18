@@ -44,7 +44,7 @@ function userDetailsEvent(e) {
 function deleteUser(userId) {
     fetch(usersURL + userId, {
         method: 'DELETE',
-    })
+    });
 
     let getUserFromList = userList.querySelector(`[data-id='${userId}']`);
     getUserFromList.parentNode.removeChild(getUserFromList);
