@@ -103,6 +103,7 @@ function deleteUser(userId) {
     let getUserFromList = usersList.querySelector(`[data-user-id='${userId}']`);
     getUserFromList.parentNode.removeChild(getUserFromList);
     addActiveClass(usersList.firstElementChild);
+    getUserInformation(usersList.firstElementChild.dataset.userId);
 }
 
 
