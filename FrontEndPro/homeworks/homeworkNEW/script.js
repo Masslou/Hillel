@@ -143,8 +143,7 @@ function addNewUser() {
         body: JSON.stringify(newUserInformation)
     }).then(() => {
         addUserInList(newUserInformation.username, newUserInformation.id);
-        addActiveClass(usersList.firstElementChild);
-        getUserInformation(usersList.firstElementChild.dataset.userId);
+        tagFirstElement();
     });
 }
 
@@ -158,13 +157,18 @@ function addActiveClass(element) {
 }
 
 
+function tagFirstElement() {
+    addActiveClass(usersList.firstElementChild);
+    getUserInformation(usersList.firstElementChild.dataset.userId);
+}
+
+
 function deleteUser(userId) {
     fetch(`${USERS_URL}/${userId}`, {
         method: 'DELETE',
     });
     const getUserFromList = usersList.querySelector(`[data-user-id='${userId}']`);
     getUserFromList.parentNode.removeChild(getUserFromList);
-    addActiveClass(usersList.firstElementChild);
-    getUserInformation(usersList.firstElementChild.dataset.userId);
+    tagFirstElement();
 }
 
