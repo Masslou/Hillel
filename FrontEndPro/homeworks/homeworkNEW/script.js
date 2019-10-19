@@ -12,6 +12,7 @@ const usersList = document.getElementById('users-list-container');
 const userInformation = document.getElementById('user-information-container');
 const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
 const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
+const newUserForm = document.getElementById('userForm');
 
 
 intiApp();
@@ -28,6 +29,13 @@ function bindListeners() {
     usersList.addEventListener('click', onUsersListClick);
     // deleteButton.addEventListener('click', onDeleteButton);
     addButton.addEventListener('click', onAddUserClick);
+    newUserForm.addEventListener('submit',onSaveUserBtnClick);
+}
+
+
+function onSaveUserBtnClick(e){
+    e.preventDefault();
+    saveUser();
 }
 
 fetch(USERS_URL)
