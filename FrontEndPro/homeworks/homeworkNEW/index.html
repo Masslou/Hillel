@@ -52,6 +52,33 @@
 
     <button class="delete-user-btn">Delete</button>
 </script>
+
+<script type="text/template" id='new-user-template'>
+    <div class="general-user-information">
+        <h3>Profile information:</h3>
+        <div>Username: {{username}}</div>
+        <div>Name: {{name}}</div>
+        <div class="user-id">User ID: {{id}}</div>
+        <div>Email: {{email}}</div>
+    </div>
+    <div>
+        <h3>Adress:</h3>
+        <div>City: {{city}}</div>
+        <div>Street: {{street}}</div>
+        <div>Suite: {{suite}}</div>
+        <div>ZIP: {{zipcode}}</div>
+    </div>
+
+    <div>Phone: {{phone}}</div>
+    <div>Website: <a href="#">{{website}}</a></div>
+
+    <div class="user-details-company">
+        <h3>Company:</h3>
+        <div>Name: {{name}}</div>
+        <div>bs: {{bs}}</div>
+        <div>Catch Phrase: {{catchPhrase}}</div>
+    </div>
+</script>
 </body>
 </html>
 

@@ -84,7 +84,7 @@ function addNewUser() {
             catchPhrase: getInputValue('.user-details-company-catchPhrase-input'),
             bs: getInputValue('.user-details-company-bs-input')
         }
-    }
+    };
 
     fetch(usersURL, {
         method: 'POST',

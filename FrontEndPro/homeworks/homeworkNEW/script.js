@@ -3,15 +3,26 @@
 const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 const ACTIVE_CLASS = 'active';
 const DELETE_BUTTON_CLASS = 'delete-user-btn';
+const ADD_USER_BUTTON = 'form-btn';
 
 const usersListTemplate = document.getElementById('users-template').innerHTML;
 const userInformationTemplate = document.getElementById('user-information-template').innerHTML;
+const newUserFormTemplate = document.getElementById('new-user-template').innerHTML;
 const usersList = document.getElementById('users-list-container');
 const userInformation = document.getElementById('user-information-container');
+const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
+const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
+
 
 usersList.addEventListener('click', onUsersListClick);
-userInformation.addEventListener('click', onUsersInfoClick);
-// const displayAddUserFormBtn = document.querySelector('.form-btn');
+deleteButton ? deleteButton.addEventListener('click', onDeleteButton) : null;
+
+addButton.addEventListener('click', onAddUserClick);
+
+
+function onAddUserClick() {
+    renderAddNewUserForm();
+}
 
 
 fetch(USERS_URL).then((resp) => {
@@ -52,6 +63,11 @@ function renderUserInformation(data) {
 }
 
 
+function renderAddNewUserForm() {
+    userInformation.innerHTML = newUserFormTemplate;
+}
+
+
 function getUserInformation(id) {
     fetch(`${USERS_URL}/${id}`).then((resp) => {
         resp.json().then((data) => {
@@ -61,7 +77,7 @@ function getUserInformation(id) {
 }
 
 
-function onUsersInfoClick() {
+function onDeleteButton() {
     const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
     deleteUser(userId);
 }
