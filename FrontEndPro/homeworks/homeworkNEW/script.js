@@ -119,42 +119,43 @@ function toggleClass(element) {
     addActiveClass(element);
 }
 
-function getInputValue(className) {
-    return document.getElementsByClassName(`${className}`).value
+function getInputValue(id) {
+    console.log(document.getElementById(`${id}`).value);
+    return document.getElementById(`${id}`).value;
 }
 
 function addNewUser() {
     const getNewId = document.querySelectorAll('.user-item-name').length + 1;
 
 
-    let newUserData = [{
+    let newUserInformation = [{
         id: getNewId,
-        name: getInputValue('.name'),
-        username: getInputValue('.username'),
-        email: getInputValue('.email'),
+        name: getInputValue('name'),
+        username: getInputValue('username'),
+        email: getInputValue('email'),
 
         address: {
-            street: getInputValue('.address'),
-            suite: getInputValue('.suite'),
-            city: getInputValue('.city'),
-            zipcode: getInputValue('.zip'),
+            street: getInputValue('street'),
+            suite: getInputValue('suite'),
+            city: getInputValue('city'),
+            zipcode: getInputValue('zip'),
         },
 
-        phone: getInputValue('.phone'),
-        website: getInputValue('.website'),
+        phone: getInputValue('phone'),
+        website: getInputValue('website'),
 
         company: {
-            name: getInputValue('.company-name'),
-            catchPhrase: getInputValue('.catch-phrase'),
-            bs: getInputValue('.bs')
+            name: getInputValue('company-name'),
+            catchPhrase: getInputValue('catch-phrase'),
+            bs: getInputValue('bs')
         }
     }];
 
     fetch(USERS_URL, {
         method: 'POST',
-        body: JSON.stringify(newUserData)
+        body: JSON.stringify(newUserInformation)
     }).then(() => {
-        return usersList.innerHTML += renderUsersList(newUserData);
+        return usersList.innerHTML += renderUsersList(newUserInformation);
     });
 }
 
