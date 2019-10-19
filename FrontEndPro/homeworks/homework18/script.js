@@ -1,123 +1,156 @@
-'use strict';
 
-const usersURL = 'https://jsonplaceholder.typicode.com/users/';
+const RESOURCE_URL = 'https://jsonplaceholder.typicode.com/users/';
 
-const userList = document.querySelector('.user-list');
-const userDetails = document.querySelector('.user-details');
+const ITEM_USER_CLASS = 'userItem';
+const ITEM_ACTIVE_CLASS = 'active';
+const DELETE_USER_BUTTON_CLASS = 'deleteUser';
+const ADD_USER_BUTTON_CLASS = 'addNewUser';
 
-const userListItemTemplate = document.getElementById('user-list-item-template').innerHTML;
-const userDetailsTemplate = document.getElementById('user-details-template').innerHTML;
+const METHOD_POST = 'POST';
+const METHOD_DELETE = 'DELETE';
 
-const userDetailsFormTemplate = document.getElementById('user-details-form-template').innerHTML;
+const nameInput = document.getElementById('name');
+const usernameInput = document.getElementById('username');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const websiteInput = document.getElementById('website');
+const deleteUserBtn = document.getElementById(DELETE_USER_BUTTON_CLASS);
+const addUserBtn = document.getElementById(ADD_USER_BUTTON_CLASS);
 
+const userListTemplate = document.getElementById('userListTemplate').innerHTML;
+const usersListItems = document.createElement('ul');
 
-const displayAddUserFormBtn = document.querySelector('.display-form-btn');
+const createNewUser = document.createElement('li');
+createNewUser.classList.add('createNewUser');
+createNewUser.innerText = 'Create new user'
 
-displayAddUserFormBtn.addEventListener('click', displayForm);
-userList.addEventListener('click', userListEvent);
-userDetails.addEventListener('click', userDetailsEvent);
+const usersList = document.getElementById('usersList');
+const userInfo = document.getElementById('userInfo');
+usersList.addEventListener('click', onUserClick);
 
+const userForm = document.getElementById('userForm');
+userForm.addEventListener('click', onControlBtnClick)
 
-function userDetailsEvent(e) {
+const requestUsersList = fetch(RESOURCE_URL);
 
-    switch (true) {
-        case e.target.classList.contains('delete-user-btn'):
-            const targetUserID = e.target.parentNode.querySelector('.user-details-id-value').innerHTML;
-            deleteUser(targetUserID);
+requestUsersList.then((resp) => {
+    return resp.json()
+})
+    .then((data) => {
+        renderUsersList(data);
+        showControlBtn();
+    })
+    .catch(() => console.log('Error'))
 
-            if (userList.firstElementChild == null) {
-                userDetails.innerHTML = '';
-            } else {
-                const newFirstUserList = userList.firstElementChild.dataset.id;
-                fetchUserDetails(newFirstUserList);
-            }
+function renderUsersList(data){
+    data.forEach(el => addUserInList(el.name, el.id));
+    usersListItems.prepend(createNewUser);
+    usersList.appendChild(usersListItems);
+    addActiveClass(usersListItems.firstElementChild);
+    showControlBtn();
+}
 
-            break;
+function addUserInList(name, id){
+    usersListItems.innerHTML += userListTemplate.replace('{{name}}', name)
+        .replace('{{userid}}', id);
+}
 
-        case e.target.classList.contains('save-new-user-btn'):
-            addNewUser();
-            break;
+function renderUserInfo(data){
+    nameInput.value = data.name;
+    usernameInput.value = data.username;
+    emailInput.value = data.email;
+    phoneInput.value = data.phone;
+    websiteInput.value = data.website;
+    deleteUserBtn.setAttribute('data-userId', data.id);
+}
+
+function showControlBtn(){
+    if(usersList.firstElementChild.firstChild.classList.contains(ITEM_ACTIVE_CLASS)){
+        addUserBtn.classList.remove('d-none');
+        deleteUserBtn.classList.add('d-none');
+    }
+    else{
+        deleteUserBtn.classList.remove('d-none');
+        addUserBtn.classList.add('d-none');
     }
 }
 
-
-function deleteUser(userId) {
-    fetch(usersURL + userId, {
-        method: 'DELETE',
-    });
-
-    let getUserFromList = userList.querySelector(`[data-id='${userId}']`);
-    getUserFromList.parentNode.removeChild(getUserFromList);
-
+function onUserClick(e){
+    if(e.target.classList.contains(ITEM_USER_CLASS)){
+        showUserInfo(e.target.dataset.userid)
+        deleteActiveClass();
+        addActiveClass(e.target);
+        resetUserForm();
+        showControlBtn();
+    } else {
+        deleteActiveClass();
+        addActiveClass(e.target);
+        resetUserForm();
+        showControlBtn();
+    }
 }
 
-function displayForm() {
-    return userDetails.innerHTML = userDetailsFormTemplate;
-}
-
-
-
-
-fetch(usersURL)
-    .then(response => response.json())
-    .then(json => {
-        renderUserListItems(json);
-        fetchUserDetails(json[0].id);
-    })
-    .catch(error => {
-        console.error('Error loading');
-    });
-
-function addUserToList(elem) {
-    return userListItemTemplate.replace('{{id}}', elem.id)
-        .replace('{{name}}', elem.name)
-        .replace('{{username}}', elem.username);
-}
-
-
-function renderUserListItems(list) {
-    const usersHtml = list.map(elem => {
-        return addUserToList(elem);
-    })
-
-    return userList.innerHTML = usersHtml.join('');
-}
-
-function renderUserDetails(el) {
-    const userDetailsHtml = userDetailsTemplate.replace('{{id}}', el.id)
-        .replace('{{name}}', el.name)
-        .replace('{{username}}', el.username)
-        .replace('{{email}}', el.email)
-        .replace('{{street}}', el.address.street)
-        .replace('{{suite}}', el.address.suite)
-        .replace('{{city}}', el.address.city)
-        .replace('{{zipcode}}', el.address.zipcode)
-        .replace('{{phone}}', el.phone)
-        .replace('{{website}}', el.website)
-        .replace('{{name}}', el.company.name)
-        .replace('{{catchPhrase}}', el.company.catchPhrase)
-        .replace('{{bs}}', el.company.bs);
-
-    return userDetails.innerHTML = userDetailsHtml;
-}
-
-function fetchUserDetails(userID) {
-    fetch(usersURL + userID)
-        .then(response => response.json())
-        .then(json => {
-            renderUserDetails(json);
+function showUserInfo(user){
+    fetch(RESOURCE_URL + user)
+        .then((resp) => {
+            return resp.json()
         })
-        .catch(error =>{
-            userDetails.innerHTML =  '';
-        });
+        .then((data) => {
+            renderUserInfo(data);
+        })
 }
 
-function userListEvent(e) {
-    const targetUserID = e.target.dataset.id;
-
-    switch (true) {
-        case e.target.classList.contains('user-list-item'):
-            fetchUserDetails(targetUserID);
-            break;
+function onControlBtnClick(e){
+    e.preventDefault();
+    if(e.target.classList.contains(DELETE_USER_BUTTON_CLASS)){
+        deleteUser(METHOD_DELETE, e.target.dataset.userid)
     }
+    else if(e.target.classList.contains(ADD_USER_BUTTON_CLASS)){
+        addNewUser(METHOD_POST)
+    }
+}
+
+function deleteUser(method, userid){
+    fetch(RESOURCE_URL + userid, {
+        method: method
+    }).then(() => {
+        usersList.querySelector('.active').remove();
+        addActiveClass(usersListItems.firstElementChild);
+        resetUserForm();
+        showControlBtn();
+    });
+}
+
+function addNewUser(method){
+    let newUserInfo = {
+        name: nameInput.value,
+        username: usernameInput.value,
+        email: emailInput.value,
+        phone: phoneInput.value,
+        website: websiteInput.value
+    };
+
+    fetch(RESOURCE_URL, {
+        method: method,
+        body: JSON.stringify(newUserInfo)
+    })
+        .then((resp) => {
+            return resp.json()
+        })
+        .then((data) => {
+            resetUserForm();
+            addUserInList(newUserInfo.username, data.id)
+        })
+}
+
+function deleteActiveClass(){
+    usersList.querySelector('.active').classList.remove(ITEM_ACTIVE_CLASS)
+}
+
+function addActiveClass(el){
+    el.classList.add(ITEM_ACTIVE_CLASS);
+}
+
+function resetUserForm(){
+    userForm.reset();
 }

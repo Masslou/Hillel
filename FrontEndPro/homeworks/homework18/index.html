@@ -1,96 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Lesson 17</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" async></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>HW18</title>
 </head>
-
 <body>
-<div id="user-container">
-
-    <div class="user-list-aside">
-        <div class="user-list">
-        </div>
-        <div class="display-form-btn-wrapper">
-            <button class="display-form-btn">+</button>
-        </div>
+<div id="usersBook">
+    <div id="usersList">
     </div>
-
-    <div class="user-details">
+    <div id="userInfo">
+        <form id="userForm">
+            <input type="text" id="name">
+            <input type="text" id="username">
+            <input type="text" id="email">
+            <input type="text" id="phone">
+            <input type="text" id="website">
+            <button id="deleteUser" class="deleteUser">Delete</button>
+            <button id="addNewUser" class="addNewUser">Add</button>
+        </form>
     </div>
-
-
 </div>
 
-
-<script type="text/template" id='user-list-item-template'>
-    <div class="user-list-item" data-id="{{id}}">
-        <div class="user-list-item-name">{{name}}</div>
-        <div class="user-list-item-username">{{username}}</div>
-    </div>
+<script type="text/template" id='userListTemplate'>
+    <li class="userItem" data-userid="{{userid}}">{{name}}</li>
 </script>
-
-<script type="text/template" id='user-details-template'>
-    <h2>User Details:</h2>
-    <div class="user-details-id">ID: <span class="user-details-id-value">{{id}}</span></div>
-    <div class="user-details-name">Name: {{name}}</div>
-    <div class="user-details-username">Username: {{username}}</div>
-    <div class="user-details-email">Email: <a href="mailto:#">{{email}}</a></div>
-
-    <div class="user-details-address">
-        <h3>Adress:</h3>
-        <div class="user-details-address__street">Street: {{street}}</div>
-        <div class="user-details-address__suite">Suite: {{suite}}</div>
-        <div class="user-details-address__city">City: {{city}}</div>
-        <div class="user-details-address__zipcode">ZIP: {{zipcode}}</div>
-    </div>
-
-    <div class="user-details-phone">Phone: <a href="tel:#">{{phone}}</a></div>
-    <div class="user-details-website">Website: <a href="#">{{website}}</a></div>
-
-    <div class="user-details-company">
-        <h3>Company:</h3>
-        <div class="user-details-company-name">Name: {{name}}</div>
-        <div class="user-details-company-catchPhrase">Catch Phrase: {{catchPhrase}}</div>
-        <div class="user-details-company-bs">bs: {{bs}}</div>
-    </div>
-    <button class="delete-user-btn">Delete user</button>
-</script>
-
-<script type="text/template" id='user-details-form-template'>
-    <h2>User Details:</h2>
-    <div class="user-details-id">ID: <input type="text" class="user-details-id-input"></div>
-    <div class="user-details-name">Name: <input type="text" class="user-details-name-input"></div>
-    <div class="user-details-username">Username: <input type="text" class="user-details-username-input"></div>
-    <div class="user-details-email">Email: <input type="text" class="user-details-email-input"></div>
-
-    <div class="user-details-address">
-        <h3>Adress:</h3>
-        <div class="user-details-address__street">Street: <input type="text" class="user-details-address__street-input"></div>
-        <div class="user-details-address__suite">Suite: <input type="text" class="user-details-address__suite-input"></div>
-        <div class="user-details-address__city">City: <input type="text" class="user-details-address__city-input"></div>
-        <div class="user-details-address__zipcode">ZIP: <input type="text" class="user-details-address__zipcode-input"></div>
-    </div>
-
-    <div class="user-details-phone">Phone: <input type="text" class="user-details-phone-input"></div>
-    <div class="user-details-website">Website: <input type="text" class="user-details-website-input"></div>
-
-    <div class="user-details-company">
-        <h3>Company:</h3>
-        <div class="user-details-company-name">Name: <input type="text" class="user-details-company-name-input"></div>
-        <div class="user-details-company-catchPhrase">Catch Phrase: <input type="text" class="user-details-company-catchPhrase-input"></div>
-        <div class="user-details-company-bs">bs: <input type="text" class="user-details-company-bs-input"></div>
-    </div>
-
-    <button class="save-new-user-btn">x Delete</button>
-
-</script>
-
-
 </body>
-
 </html>

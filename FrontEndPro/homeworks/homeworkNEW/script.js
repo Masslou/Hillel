@@ -33,12 +33,6 @@ function bindListeners() {
     addButton.addEventListener('click', onAddUserClick);
 }
 
-
-function onSaveUserBtnClick(e) {
-    e.preventDefault();
-    addNewUser();
-}
-
 fetch(USERS_URL)
     .then((resp) => {
         resp.json()
@@ -50,11 +44,17 @@ fetch(USERS_URL)
     });
 
 function renderUsersList(list) {
-    console.log(list);
     const usersHTML = list.map(element => {
         return usersListTemplate.replace('{{username}}', element.username).replace('{{id}}', element.id)
     });
     usersList.innerHTML = usersHTML.join('\n');
+}
+
+function addUserInList(name, id) {
+    const userHTML = usersListTemplate.replace('{{username}}', name)
+        .replace('{{id}}', id);
+
+    usersList.innerHTMLL += userHTML;
 }
 
 
@@ -128,7 +128,7 @@ function addNewUser() {
     const getNewId = document.querySelectorAll('.user-item-name').length + 1;
 
 
-    let newUserInformation = [{
+    let newUserInformation = {
         id: getNewId,
         name: getInputValue('name'),
         username: getInputValue('username'),
@@ -149,13 +149,13 @@ function addNewUser() {
             catchPhrase: getInputValue('catch-phrase'),
             bs: getInputValue('bs')
         }
-    }];
+    };
 
     fetch(USERS_URL, {
         method: 'POST',
         body: JSON.stringify(newUserInformation)
     }).then(() => {
-        return usersList.innerHTML += renderUsersList(newUserInformation);
+        addUserInList(newUserInformation.username, newUserInformation.id);
     });
 }
 

@@ -1,80 +1,49 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#user-container {
+#usersBook {
   display: flex;
-  flex-wrap: nowrap;
-  margin:50px;
-
+  justify-content: center;
+  flex-wrap: wrap;
+  & #usersList{
+    flex: 1 1;
+    & ul{
+      list-style-type: none;
+      margin-right: 20px;
+    }
+    & li{
+      &.addNewUser{
+        background: rgba(red, .35);
+      }
+      font-size: 1.2rem;
+      padding: 10px;
+      cursor: pointer;
+      &:hover{
+        opacity: .75;
+        background: rgba(blue, .25);
+      }
+      &.active{
+        background: rgba(blue, .25);
+      }
+    }
+  }
+  & #userInfo{
+    flex: 3 1;
+    h2{
+      text-align: center;
+    }
+    & table{
+      margin: 0 auto;
+      & tr{
+        font-size: 1.2rem;
+        .titleInfo{
+          font-weight: bold;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
 }
 
-.user-list {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.43;
-  border: 1px solid black;
-  border-top-left-radius: 5px;
-  border-bottom: 1px solid #757575;
-  /* border-bottom-left-radius: 5px; */
-  background: #424242;
-
-}
-
-.display-form-btn-wrapper{
-  border: 1px solid black;
-  border-bottom-left-radius: 5px;
-  border-top: none;
-
-}
-
-.display-form-btn{
-  width: 100%;
-  padding: 20px;
-  border: none;
-  background: #424242;
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.user-list div:last-child{
-  border-bottom: none;
-}
-
-.user-list-item {
-  padding: 8px 16px;
-  border-bottom: 1px solid #757575;
-  background: #424242;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.user-list-item:hover{
-  background: #555555;
-}
-
-.user-list-item-username {
-  color: #b6b6b6;
-  pointer-events: none;
-}
-
-.user-list-item-name {
-  pointer-events: none;
-}
-
-.user-details {
-  padding: 20px;
-  background: #f1f1f1;
-  min-width: 400px;
-  border: 1px solid black;
-  border-left: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.addNewUser, .deleteUser {
+  &.d-none{
+    display: none;
+  }
 }
