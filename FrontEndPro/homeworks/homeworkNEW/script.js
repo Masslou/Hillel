@@ -74,7 +74,7 @@ function addUserInList(name, id) {
     const userHTML = usersListTemplate.replace('{{username}}', name)
         .replace('{{id}}', id);
 
-    usersList.innerHTMLL += userHTML;
+    usersList.innerHTML += userHTML;
 }
 
 
@@ -120,11 +120,11 @@ function getInputValue(id) {
 }
 
 function addNewUser() {
-    const getNewUserId = document.querySelectorAll(`.${user_list_item}`).length + 1;
+    // const getNewUserId = document.querySelectorAll(`.${user_list_item}`).length + 1;
 
 
     let newUserInformation = {
-        id: getNewUserId,
+        // id: getNewUserId,
         name: getInputValue('name'),
         username: getInputValue('username'),
         email: getInputValue('email'),
