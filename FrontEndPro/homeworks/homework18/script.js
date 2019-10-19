@@ -55,44 +55,7 @@ function displayForm() {
     return userDetails.innerHTML = userDetailsFormTemplate;
 }
 
-function getInputValue(className) {
-    return document.querySelector(`${className}`).value
-}
 
-function addNewUser() {
-    const getNewId = document.querySelectorAll('.user-list-item').length + 1;
-
-
-    let newUserData = {
-        id: getNewId,
-        name: getInputValue('.user-details-name-input'),
-        username: getInputValue('.user-details-username-input'),
-        email: getInputValue('.user-details-email-input'),
-
-        address: {
-            street: getInputValue('.user-details-address__street-input'),
-            suite: getInputValue('.user-details-address__suite-input'),
-            city: getInputValue('.user-details-address__city-input'),
-            zipcode: getInputValue('.user-details-address__zipcode-input'),
-        },
-
-        phone: getInputValue('.user-details-phone-input'),
-        website: getInputValue('.user-details-website-input'),
-
-        company: {
-            name: getInputValue('.user-details-company-name-input'),
-            catchPhrase: getInputValue('.user-details-company-catchPhrase-input'),
-            bs: getInputValue('.user-details-company-bs-input')
-        }
-    };
-
-    fetch(usersURL, {
-        method: 'POST',
-        body: JSON.stringify(newUserData)
-    }).then((data) => {
-        return userList.innerHTML += addUserToList(newUserData);
-    });
-}
 
 
 fetch(usersURL)

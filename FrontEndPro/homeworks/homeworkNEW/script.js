@@ -8,11 +8,13 @@ const ADD_USER_BUTTON = 'form-btn';
 const usersListTemplate = document.getElementById('users-template').innerHTML;
 const userInformationTemplate = document.getElementById('user-information-template').innerHTML;
 const newUserFormTemplate = document.getElementById('new-user-template').innerHTML;
-const usersList = document.getElementById('users-list-container');
 const userInformation = document.getElementById('user-information-container');
 const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
 const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
 const newUserForm = document.getElementById('userForm');
+const chatWrapper = document.getElementById('chat-wrapper');
+
+const usersList = document.getElementById('users-list-container');
 
 
 intiApp();
@@ -27,15 +29,14 @@ function onAddUserClick() {
 
 function bindListeners() {
     usersList.addEventListener('click', onUsersListClick);
-    // deleteButton.addEventListener('click', onDeleteButton);
+    userInformation.addEventListener('click', onUserInformation);
     addButton.addEventListener('click', onAddUserClick);
-    newUserForm.addEventListener('submit',onSaveUserBtnClick);
 }
 
 
-function onSaveUserBtnClick(e){
+function onSaveUserBtnClick(e) {
     e.preventDefault();
-    saveUser();
+    addNewUser();
 }
 
 fetch(USERS_URL)
@@ -49,6 +50,7 @@ fetch(USERS_URL)
     });
 
 function renderUsersList(list) {
+    console.log(list);
     const usersHTML = list.map(element => {
         return usersListTemplate.replace('{{username}}', element.username).replace('{{id}}', element.id)
     });
@@ -74,7 +76,6 @@ function renderUserInformation(data) {
     userInformation.innerHTML = userInformationHTML;
 }
 
-
 function renderAddNewUserForm() {
     userInformation.innerHTML = newUserFormTemplate;
 }
@@ -89,9 +90,16 @@ function getUserInformation(id) {
 }
 
 
-function onDeleteButton() {
-    const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
-    deleteUser(userId);
+function onUserInformation(event) {
+    if (event.target.classList.contains(DELETE_BUTTON_CLASS)) {
+        const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
+        deleteUser(userId);
+    }
+
+    if (event.target.classList.contains('new-user-submit')) {
+        event.preventDefault();
+        addNewUser();
+    }
 }
 
 function onUsersListClick(event) {
@@ -111,6 +119,44 @@ function toggleClass(element) {
     addActiveClass(element);
 }
 
+function getInputValue(className) {
+    return document.getElementsByClassName(`${className}`).value
+}
+
+function addNewUser() {
+    const getNewId = document.querySelectorAll('.user-item-name').length + 1;
+
+
+    let newUserData = [{
+        id: getNewId,
+        name: getInputValue('.name'),
+        username: getInputValue('.username'),
+        email: getInputValue('.email'),
+
+        address: {
+            street: getInputValue('.address'),
+            suite: getInputValue('.suite'),
+            city: getInputValue('.city'),
+            zipcode: getInputValue('.zip'),
+        },
+
+        phone: getInputValue('.phone'),
+        website: getInputValue('.website'),
+
+        company: {
+            name: getInputValue('.company-name'),
+            catchPhrase: getInputValue('.catch-phrase'),
+            bs: getInputValue('.bs')
+        }
+    }];
+
+    fetch(USERS_URL, {
+        method: 'POST',
+        body: JSON.stringify(newUserData)
+    }).then(() => {
+        return usersList.innerHTML += renderUsersList(newUserData);
+    });
+}
 
 function removeActiveClass() {
     const taggedUser = document.querySelector(`.${ACTIVE_CLASS}`);
