@@ -120,11 +120,11 @@ function getInputValue(id) {
 }
 
 function addNewUser() {
-    // const getNewUserId = document.querySelectorAll(`.${user_list_item}`).length + 1;
+    const getNewUserId = document.querySelectorAll(`.${user_list_item}`).length + 1;
 
 
     let newUserInformation = {
-        // id: getNewUserId,
+        id: getNewUserId,
         name: getInputValue('name'),
         username: getInputValue('username'),
         email: getInputValue('email'),
@@ -151,6 +151,8 @@ function addNewUser() {
         body: JSON.stringify(newUserInformation)
     }).then(() => {
         addUserInList(newUserInformation.username, newUserInformation.id);
+        addActiveClass(usersList.firstElementChild);
+        getUserInformation(usersList.firstElementChild.dataset.userId);
     });
 }
 
@@ -173,7 +175,4 @@ function deleteUser(userId) {
     addActiveClass(usersList.firstElementChild);
     getUserInformation(usersList.firstElementChild.dataset.userId);
 }
-
-
-
 
