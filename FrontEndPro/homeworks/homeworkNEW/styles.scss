@@ -44,7 +44,7 @@
   height: 20px;
 }
 
-.form-btn {
+.add-user-btn {
   display: flex;
   margin: 0;
   position: absolute;
@@ -58,5 +58,18 @@
   border: 1px solid black;
   user-select: none;
   outline: none;
+  cursor: pointer;
+}
+
+.new-user-submit{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background-color: aliceblue;
+  font-weight: bold;
+  color: black;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
   cursor: pointer;
 }

@@ -13,22 +13,6 @@ const addButton = document.querySelector('.add-user-btn');
 const usersList = document.getElementById('users-list-container');
 
 
-intiApp();
-
-function intiApp() {
-    bindListeners();
-}
-
-function onAddUserClick() {
-    renderAddNewUserForm();
-}
-
-function bindListeners() {
-    usersList.addEventListener('click', onUsersListClick);
-    userInformation.addEventListener('click', onUserInformation);
-    addButton.addEventListener('click', onAddUserClick);
-}
-
 fetch(USERS_URL)
     .then((resp) => {
         resp.json()
@@ -38,6 +22,46 @@ fetch(USERS_URL)
                 addActiveClass(usersList.firstElementChild);
             }).catch(error => console.log(error))
     });
+
+intiApp();
+
+function intiApp() {
+    bindListeners();
+}
+
+function bindListeners() {
+    usersList.addEventListener('click', onUsersListClick);
+    userInformation.addEventListener('click', onUserInformation);
+    addButton.addEventListener('click', onAddUserClick);
+}
+
+function onAddUserClick() {
+    renderAddNewUserForm();
+}
+
+function onUsersListClick(event) {
+    const element = event.target;
+    const userID = element.dataset.userId;
+
+
+    if (element.classList.contains(user_list_item)) {
+        toggleClass(element);
+        getUserInformation(userID);
+    }
+}
+
+function onUserInformation(event) {
+    if (event.target.classList.contains(delete_user_btn)) {
+        const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
+        deleteUser(userId);
+    }
+
+    if (event.target.classList.contains('new-user-submit')) {
+        event.preventDefault();
+        addNewUser();
+    }
+}
+
 
 function renderUsersList(list) {
     const usersHTML = list.map(element => {
@@ -83,30 +107,6 @@ function getUserInformation(id) {
             renderUserInformation(data)
         }).catch(error => console.log(error))
     });
-}
-
-
-function onUserInformation(event) {
-    if (event.target.classList.contains(delete_user_btn)) {
-        const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
-        deleteUser(userId);
-    }
-
-    if (event.target.classList.contains('new-user-submit')) {
-        event.preventDefault();
-        addNewUser();
-    }
-}
-
-function onUsersListClick(event) {
-    const element = event.target;
-    const userID = element.dataset.userId;
-
-
-    if (element.classList.contains(user_list_item)) {
-        toggleClass(element);
-        getUserInformation(userID);
-    }
 }
 
 
