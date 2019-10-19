@@ -10,9 +10,6 @@ const userInformationTemplate = document.getElementById('user-information-templa
 const newUserFormTemplate = document.getElementById('new-user-template').innerHTML;
 const userInformation = document.getElementById('user-information-container');
 const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
-const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
-const newUserForm = document.getElementById('userForm');
-const chatWrapper = document.getElementById('chat-wrapper');
 
 const usersList = document.getElementById('users-list-container');
 
@@ -120,16 +117,15 @@ function toggleClass(element) {
 }
 
 function getInputValue(id) {
-    console.log(document.getElementById(`${id}`).value);
     return document.getElementById(`${id}`).value;
 }
 
 function addNewUser() {
-    const getNewId = document.querySelectorAll('.user-item-name').length + 1;
+    const getNewUserId = document.querySelectorAll('.user-item-name').length + 1;
 
 
     let newUserInformation = {
-        id: getNewId,
+        id: getNewUserId,
         name: getInputValue('name'),
         username: getInputValue('username'),
         email: getInputValue('email'),
