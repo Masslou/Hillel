@@ -1,0 +1,49 @@
+#usersBook {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#usersBook #usersList {
+  flex: 1 1;
+}
+#usersBook #usersList ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+#usersBook #usersList li {
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+}
+#usersBook #usersList li.addNewUser {
+  background: rgba(255, 0, 0, 0.35);
+}
+#usersBook #usersList li:hover {
+  opacity: 0.75;
+  background: rgba(0, 0, 255, 0.25);
+}
+#usersBook #usersList li.active {
+  background: rgba(0, 0, 255, 0.25);
+}
+#usersBook #userInfo {
+  flex: 3 1;
+}
+#usersBook #userInfo h2 {
+  text-align: center;
+}
+#usersBook #userInfo table {
+  margin: 0 auto;
+}
+#usersBook #userInfo table tr {
+  font-size: 1.2rem;
+}
+#usersBook #userInfo table tr .titleInfo {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.addNewUser.d-none, .deleteUser.d-none {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

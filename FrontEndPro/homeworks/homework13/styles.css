@@ -1,0 +1,73 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d9d9d9;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+}
+
+img {
+  width: 1024px;
+  height: 768px;
+  object-fit: fill;
+}
+
+.lisContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 3px solid black;
+}
+
+header__title {
+  user-select: none;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+#container_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.previous_picture--btn {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  float: left;
+  user-select: none;
+}
+
+.previous_picture--btn:hover {
+  color: orange;
+}
+
+.next_picture--btn {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  user-select: none;
+}
+
+.next_picture--btn:hover {
+  color: orange;
+}
+
+/*# sourceMappingURL=styles.scss.map */

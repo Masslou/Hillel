@@ -1,0 +1,76 @@
+.chat_container {
+  background-color: bisque;
+}
+
+.container_header {
+  display: flex;
+  justify-content: center;
+}
+
+.chat_container {
+  display: flex;
+}
+
+.users-smile {
+  font-size: 30px;
+  color: #8bcd27;
+}
+
+.user-item-name {
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}
+
+.chat-wrapper {
+  display: flex;
+}
+
+.user-list-container {
+  padding-right: 250px;
+  padding-left: 50px;
+}
+
+.delete-user-btn {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 70px;
+  height: 20px;
+}
+
+.add-user-btn {
+  display: flex;
+  margin: 0;
+  position: absolute;
+  left: 55px;
+  top: 55px;
+  background-color: #8bcd28;
+  color: #FFF;
+  width: 72px;
+  height: 27px;
+  border-radius: 4px;
+  border: 1px solid black;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.new-user-submit {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  background-color: aliceblue;
+  font-weight: bold;
+  color: black;
+  width: 65px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */

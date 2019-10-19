@@ -1,0 +1,21 @@
+.deleteContact {
+  background: red;
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.deleteContact:hover {
+  background: red;
+}
+.deleteContact:focus {
+  outline: none;
+}
+
+.error {
+  border-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

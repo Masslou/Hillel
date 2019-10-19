@@ -1,0 +1,25 @@
+.tabset_container .tabset-heading {
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.tabset-body {
+  padding-left: 5px;
+}
+
+.tabset_container #tabs {
+  display: flex;
+}
+
+.tabset_container .active_tab {
+  background-color: #8bcd27;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.scss.map */
