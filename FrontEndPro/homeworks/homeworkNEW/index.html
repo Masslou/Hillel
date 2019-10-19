@@ -54,30 +54,33 @@
 </script>
 
 <script type="text/template" id='new-user-template'>
-    <div class="general-user-information">
-        <h3>Profile information:</h3>
-        <div>Username: {{username}}</div>
-        <div>Name: {{name}}</div>
-        <div class="user-id">User ID: {{id}}</div>
-        <div>Email: {{email}}</div>
-    </div>
-    <div>
-        <h3>Adress:</h3>
-        <div>City: {{city}}</div>
-        <div>Street: {{street}}</div>
-        <div>Suite: {{suite}}</div>
-        <div>ZIP: {{zipcode}}</div>
-    </div>
+    <form action="handler.php">
+        <div class="general-user-information">
+            <h3>Profile information:</h3>
+            <div>Username: <input type="text" id="username"></div>
+            <div>Name:<input type="text" id="name"></div>
+            <!--<div class="user-id">User ID: {{id}}</div>-->
+            <div>Email:<input type="text" id="email"></div>
+        </div>
+        <div>
+            <h3>Adress:</h3>
+            <div>City: <input type="text" id="city"></div>
+            <div>Street: <input type="text" id="street"></div>
+            <div>Suite: <input type="text" id="suite"></div>
+            <div>ZIP:  <input type="text" id="zip"></div>
+        </div>
 
-    <div>Phone: {{phone}}</div>
-    <div>Website: <a href="#">{{website}}</a></div>
+        <div>Phone:<input type="text" id="phone"></div>
+        <div>Website: <input type="text" id="website"></a></div>
 
-    <div class="user-details-company">
-        <h3>Company:</h3>
-        <div>Name: {{name}}</div>
-        <div>bs: {{bs}}</div>
-        <div>Catch Phrase: {{catchPhrase}}</div>
-    </div>
+        <div class="user-details-company">
+            <h3>Company:</h3>
+            <div>Name: <input type="text" id="company-name"></div>
+            <div>bs: <input type="text" id="bs"></div>
+            <div>Catch Phrase: <input type="text" id="catch-phrase"></div>
+        </div>
+        <button type="submit"></button>
+    </form>
 </script>
 </body>
 </html>

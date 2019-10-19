@@ -10,31 +10,35 @@ const userInformationTemplate = document.getElementById('user-information-templa
 const newUserFormTemplate = document.getElementById('new-user-template').innerHTML;
 const usersList = document.getElementById('users-list-container');
 const userInformation = document.getElementById('user-information-container');
-const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
 const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
+const deleteButton = document.querySelector(`.${DELETE_BUTTON_CLASS}`);
 
 
-usersList.addEventListener('click', onUsersListClick);
-deleteButton ? deleteButton.addEventListener('click', onDeleteButton) : null;
+intiApp();
 
-addButton.addEventListener('click', onAddUserClick);
-
+function intiApp() {
+    bindListeners();
+}
 
 function onAddUserClick() {
     renderAddNewUserForm();
 }
 
+function bindListeners() {
+    usersList.addEventListener('click', onUsersListClick);
+    // deleteButton.addEventListener('click', onDeleteButton);
+    addButton.addEventListener('click', onAddUserClick);
+}
 
-fetch(USERS_URL).then((resp) => {
-    resp.json().then((data) => {
-        renderUsersList(data);
-        return data;
-    }).then((data) => {
-        getUserInformation(data[0].id);
-        addActiveClass(usersList.firstElementChild);
-    }).catch(error => console.log(error))
-});
-
+fetch(USERS_URL)
+    .then((resp) => {
+        resp.json()
+            .then((data) => {
+                renderUsersList(data);
+                getUserInformation(data[0].id);
+                addActiveClass(usersList.firstElementChild);
+            }).catch(error => console.log(error))
+    });
 
 function renderUsersList(list) {
     const usersHTML = list.map(element => {
