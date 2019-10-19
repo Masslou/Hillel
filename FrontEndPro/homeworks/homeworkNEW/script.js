@@ -2,15 +2,14 @@
 
 const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 const ACTIVE_CLASS = 'active';
-const DELETE_BUTTON_CLASS = 'delete-user-btn';
-const ADD_USER_BUTTON = 'form-btn';
 
+const user_list_item = 'user-item-name';
+const delete_user_btn = 'delete-user-btn';
 const usersListTemplate = document.getElementById('users-template').innerHTML;
 const userInformationTemplate = document.getElementById('user-information-template').innerHTML;
 const newUserFormTemplate = document.getElementById('new-user-template').innerHTML;
 const userInformation = document.getElementById('user-information-container');
-const addButton = document.querySelector(`.${ADD_USER_BUTTON}`);
-
+const addButton = document.querySelector('.add-user-btn');
 const usersList = document.getElementById('users-list-container');
 
 
@@ -88,7 +87,7 @@ function getUserInformation(id) {
 
 
 function onUserInformation(event) {
-    if (event.target.classList.contains(DELETE_BUTTON_CLASS)) {
+    if (event.target.classList.contains(delete_user_btn)) {
         const userId = document.querySelector(`.${ACTIVE_CLASS}`).dataset.userId;
         deleteUser(userId);
     }
@@ -104,7 +103,7 @@ function onUsersListClick(event) {
     const userID = element.dataset.userId;
 
 
-    if (element.classList.contains('user-item-name')) {
+    if (element.classList.contains(user_list_item)) {
         toggleClass(element);
         getUserInformation(userID);
     }
@@ -121,7 +120,7 @@ function getInputValue(id) {
 }
 
 function addNewUser() {
-    const getNewUserId = document.querySelectorAll('.user-item-name').length + 1;
+    const getNewUserId = document.querySelectorAll(`.${user_list_item}`).length + 1;
 
 
     let newUserInformation = {
@@ -169,9 +168,7 @@ function deleteUser(userId) {
     fetch(`${USERS_URL}/${userId}`, {
         method: 'DELETE',
     });
-
-    document.querySelector(`[data-user-id='${userId}']`).parentElement;
-    let getUserFromList = usersList.querySelector(`[data-user-id='${userId}']`);
+    const getUserFromList = usersList.querySelector(`[data-user-id='${userId}']`);
     getUserFromList.parentNode.removeChild(getUserFromList);
     addActiveClass(usersList.firstElementChild);
     getUserInformation(usersList.firstElementChild.dataset.userId);
