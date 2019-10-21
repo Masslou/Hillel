@@ -79,10 +79,8 @@ class Gallery {
 
         const img = document.createElement('img');
         this.addClass(img, Gallery.BIG_PHOTO_ITEM_CLASS);
-
         photoContainer.appendChild(img);
         container.appendChild(photoContainer);
-
         this.element.appendChild(container);
     }
 
@@ -108,6 +106,7 @@ class Gallery {
 
 
     showFullSizePhoto(fullSizeSrc) {
+        console.log( this.big_photo_item_elem);
         this.big_photo_item_elem.src = `${fullSizeSrc}`;
         this.removeClass(this.big_photo_elem, Gallery.HIDE_CLASS);
     }

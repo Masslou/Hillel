@@ -75,15 +75,10 @@ class Gallery {
     }
 
     showCurrentPage() {
-        let currentPage = localStorage.getItem('currentPage');
-        let currentPageData;
+        let currentPage = localStorage.getItem('currentPage') || 0;
+        this.a = this.getImages(currentPage);
+        console.log(this.a)
 
-        if (currentPage === null) {
-            currentPageData = photosData.slice(currentPageNum - 1, currentPageNum + AMOUNT_PHOTOS_ON_PAGE - 1);
-        }
-
-        currentPageNum = (currentPageNum - 1) * AMOUNT_PHOTOS_ON_PAGE;
-        currentPageData = photosData.slice(currentPageNum, currentPageNum + AMOUNT_PHOTOS_ON_PAGE);
     }
 
 
@@ -143,8 +138,8 @@ class Gallery {
         let paginationContainer = document.createElement('ul');
         this.addClass(paginationContainer, Gallery.PAGINATION_CONTAINER_CLASS);
 
-        for (let i = 1; i <= countPaginationPage; i++) {
-            paginationContainer.innerHTML += Gallery.PAGINATION_TEMPLATE.replace('{{itemnumber}}', i).replace('{{num}}', i);
+        for (let i = 0; i <= countPaginationPage; i++) {
+            paginationContainer.innerHTML += Gallery.PAGINATION_TEMPLATE.replace('{{itemnumber}}', i + 1).replace('{{num}}', i);
         }
         Gallery.PAGINATION_WRAPPER.appendChild(paginationContainer);
     }
@@ -154,7 +149,13 @@ class Gallery {
     }
 
     getPhotosFromStorage() {
-        return localStorage.getItem('photosData');
+        let data = localStorage.getItem('photosData');
+        return JSON.parse(data);
+    }
+
+
+    getImages(page) {
+        return this.getPhotosFromStorage().slice(page * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE, (page + 1) * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
     }
 
     showFullSizePhoto(fullSizeSrc) {

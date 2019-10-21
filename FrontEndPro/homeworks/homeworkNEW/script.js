@@ -3,6 +3,7 @@
 const USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 const ACTIVE_CLASS = 'active';
 
+
 const user_list_item = 'user-item-name';
 const delete_user_btn = 'delete-user-btn';
 const usersListTemplate = document.getElementById('users-template').innerHTML;
