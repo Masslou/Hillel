@@ -5,6 +5,7 @@ class Gallery {
     static HIDE_CLASS = 'hide';
     static CONTAINER_CLASS = 'flex-container';
     static CONTAINER_ITEM_NAME = 'flex-item';
+    static CURRENT_PAGE_STORAGE_ITEM = 'currentPage';
     static PAGINATION_CONTAINER_CLASS = 'pagination_container';
     static PHOTO_ITEM_CLASS = 'photo_item';
     static PAGINATION_ITEM_CLASS = 'pagination_item';
@@ -69,13 +70,13 @@ class Gallery {
     onPaginationClick(event) {
         const element = event.target;
         if (element.classList.contains(Gallery.PAGINATION_ITEM_CLASS)) {
-            localStorage.setItem('currentPage', element.dataset.num);
+            localStorage.setItem(`${Gallery.CURRENT_PAGE_STORAGE_ITEM}`, element.dataset.num);
             this.showCurrentPage();
         }
     }
 
     showCurrentPage() {
-        let currentPage = localStorage.getItem('currentPage') || 0;
+        let currentPage = localStorage.getItem(`${Gallery.CURRENT_PAGE_STORAGE_ITEM}`) || 0;
         this.addPhotosToGallery(this.getImages(currentPage));
     }
 
