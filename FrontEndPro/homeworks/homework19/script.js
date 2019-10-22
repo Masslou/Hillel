@@ -76,8 +76,9 @@ class Gallery {
     }
 
     showCurrentPage() {
-        let currentPage = localStorage.getItem(`${Gallery.CURRENT_PAGE_STORAGE_ITEM}`) || 0;
-        this.addPhotosToGallery(this.getImages(currentPage));
+        const currentPage = localStorage.getItem(`${Gallery.CURRENT_PAGE_STORAGE_ITEM}`) || 0;
+        const content = this.getCurrentPageItems(+currentPage);
+        this.addPhotosToGallery(content);
     }
 
 
@@ -145,8 +146,8 @@ class Gallery {
     }
 
 
-    getImages(pageNumber) {
-        this.photosList.slice(pageNumber * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE, (pageNumber + 1) * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
+    getCurrentPageItems(pageNumber) {
+        return this.photosList.slice(pageNumber * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE, (pageNumber + 1) * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
     }
 
     showFullSizePhoto(fullSizeSrc) {
