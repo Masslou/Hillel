@@ -114,6 +114,7 @@ class Gallery {
 
 
     addPhotosToGallery(list) {
+        this.container.innerHTML = '';
 
         list.forEach((item, i) => {
 
