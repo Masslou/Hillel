@@ -1,7 +1,7 @@
 'use strict';
 
 class Gallery {
-    static GALLERY_URL = 'https://jsonplaceholder.typicode.com/photos?_limit=100';
+    static GALLERY_URL = 'https://jsonplaceholder.typicode.com/photos?_limit=1000';
     static HIDE_CLASS = 'hide';
     static CONTAINER_CLASS = 'flex-container';
     static CONTAINER_ITEM_NAME = 'flex-item';
@@ -17,6 +17,7 @@ class Gallery {
 
 
     constructor(element) {
+        this.photosList = [];
         this.element = element;
         this.getPhotos();
 
@@ -26,25 +27,24 @@ class Gallery {
         fetch(Gallery.GALLERY_URL).then((resp) => {
             resp.json()
                 .then((data) => {
-                    this.initGallery(data)
+                    this.photosList = data;
+                    this.initGallery();
                 });
         });
     }
 
-    initGallery(data) {
+    initGallery() {
         this.addPhotosContainer();
-        this.addPhotosToGallery(data);
+        this.showCurrentPage();
         this.addFullSizePhotosContainer();
         this.big_photo_item_elem = document.querySelector(`.${Gallery.BIG_PHOTO_ITEM_CLASS}`);
         this.big_photo_elem = document.querySelector(`.${Gallery.FULL_SIZE_PHOTO_BACKGROUND_CLASS}`);
-        this.initPagination(data);
+        this.initPagination(this.photosList);
 
     }
 
-    initPagination(data) {
-        this.setPhotosStorage(data);
-        this.showPaginationElem(data);
-        this.a = this.getPhotosFromStorage();
+    initPagination() {
+        this.showPaginationElem(this.photosList);
         this.bindListeners();
     }
 
@@ -76,9 +76,7 @@ class Gallery {
 
     showCurrentPage() {
         let currentPage = localStorage.getItem('currentPage') || 0;
-        this.a = this.getImages(currentPage);
-        console.log(this.a)
-
+        this.addPhotosToGallery(this.getImages(currentPage));
     }
 
 
@@ -114,6 +112,7 @@ class Gallery {
 
 
     addPhotosToGallery(list) {
+
         list.forEach((item, i) => {
 
             const photo = list[i];
@@ -132,30 +131,21 @@ class Gallery {
         });
     }
 
-    showPaginationElem(data) {
-        let countPaginationPage = data.length / Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE;
+    showPaginationElem() {
+        let countPaginationPage = Math.ceil(this.photosList.length / Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
 
         let paginationContainer = document.createElement('ul');
         this.addClass(paginationContainer, Gallery.PAGINATION_CONTAINER_CLASS);
 
-        for (let i = 0; i <= countPaginationPage; i++) {
+        for (let i = 0; i < countPaginationPage; i++) {
             paginationContainer.innerHTML += Gallery.PAGINATION_TEMPLATE.replace('{{itemnumber}}', i + 1).replace('{{num}}', i);
         }
         Gallery.PAGINATION_WRAPPER.appendChild(paginationContainer);
     }
 
-    setPhotosStorage(data) {
-        localStorage.setItem('photosData', JSON.stringify(data));
-    }
 
-    getPhotosFromStorage() {
-        let data = localStorage.getItem('photosData');
-        return JSON.parse(data);
-    }
-
-
-    getImages(page) {
-        return this.getPhotosFromStorage().slice(page * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE, (page + 1) * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
+    getImages(pageNumber) {
+        this.photosList.slice(pageNumber * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE, (pageNumber + 1) * Gallery.PHOTO_ITEMS_AMOUNT_ON_PAGE);
     }
 
     showFullSizePhoto(fullSizeSrc) {
