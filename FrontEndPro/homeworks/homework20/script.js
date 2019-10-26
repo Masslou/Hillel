@@ -42,7 +42,7 @@ function onCreateStickerBtnClick(e) {
 }
 
 function saveState() {
-    localStorage.setItem('stickerz', JSON.stringify(stickersList));
+    localStorage.setItem('stickers', JSON.stringify(stickersList));
 }
 
 
