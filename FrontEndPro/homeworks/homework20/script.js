@@ -1,17 +1,18 @@
 'use strict';
 
-const MAIN_CONTAINER = document.getElementById('stickers_container');
-const stickers_list_element = document.getElementById('stickers-container');
-const ADD_STICKER_BUTTON = document.getElementById('add-sticker-button');
-const STICKER_TEMPLATE = document.getElementById('stickersTemplate').innerHTML;
 const DELETE_STICKER_CLASS = 'delete-sticker-btn';
-const STCKER_DESCRIPTION = document.getElementById('const DELETE_STICKER_BUTTON = document.getElementById(\'delete-sticker-description-body-btn\');\n');
+const STICKER_DESCRIPTION_CLASS = 'sticker-item--description';
+const STICKER_TITLE_CLASS = 'sticker-item--title';
+
+const stickers_list_element = document.getElementById('stickers-container');
+const add_sticker_btn = document.getElementById('add-sticker-button');
+const sticker_template = document.getElementById('stickersTemplate').innerHTML;
 
 
 stickers_list_element.addEventListener('click', onStickersContainerClick);
-ADD_STICKER_BUTTON.addEventListener('mouseover', hover);
-ADD_STICKER_BUTTON.addEventListener('mouseout', unhover);
-ADD_STICKER_BUTTON.addEventListener('click', onCreateStickerBtnClick);
+add_sticker_btn.addEventListener('mouseover', hover);
+add_sticker_btn.addEventListener('mouseout', unhover);
+add_sticker_btn.addEventListener('click', onCreateStickerBtnClick);
 
 let stickersList;
 
@@ -37,7 +38,6 @@ function onCreateStickerBtnClick(e) {
 
     stickers_list_element.insertAdjacentHTML('beforeend', generateSticker(newSticker));
     stickersList.push(newSticker);
-
     saveState();
 }
 
@@ -52,12 +52,13 @@ function init() {
 }
 
 function getState() {
-    const data = localStorage.getItem('stickersList');
+    const data = localStorage.getItem('stickers');
     return data ? JSON.parse(data) : [];
 }
 
 function render() {
-    renderList(stickersList)
+    renderList(stickersList);
+    saveState();
 }
 
 
@@ -68,32 +69,66 @@ function renderList(list) {
 
 
 function generateSticker(sticker) {
-    return STICKER_TEMPLATE.replace('{{id}}', sticker.id)
+    return sticker_template.replace('{{id}}', sticker.id)
         .replace('{{title}}', sticker.title)
         .replace('{{description}}', sticker.description)
+}
+
+function saveNewStickerDescription(value, stickerID) {
+    const currentSticker = stickersList.find((el) => el.id == stickerID);
+    currentSticker.description = value;
+    render();
+}
+
+
+function saveNewStickerTitle(value, stickerID) {
+    const currentSticker = stickersList.find((el) => el.id == stickerID);
+    currentSticker.title = value;
+    render();
+}
+
+function onStickerDescriptionFocusOut(e) {
+    const element = e.target;
+    const stickerID = element.parentNode.dataset.stickerId;
+
+    saveNewStickerDescription(element.value, stickerID);
+}
+
+function onStickerTitleFocusOut(e) {
+    const element = e.target;
+    const stickerID = element.parentNode.dataset.stickerId;
+
+    saveNewStickerTitle(element.value, stickerID);
 }
 
 function onStickersContainerClick(e) {
     const element = e.target;
     const stickerID = element.parentNode.dataset.stickerId;
 
-if (element.classList.contains(DELETE_STICKER_CLASS)){
-    deleteSticker(stickerID)
-}
+    switch (true) {
+        case element.classList.contains(DELETE_STICKER_CLASS) :
+            deleteSticker(stickerID);
+            break;
 
+        case element.classList.contains(STICKER_DESCRIPTION_CLASS) :
+            element.addEventListener('focusout', onStickerDescriptionFocusOut);
+            break;
+
+        case element.classList.contains(STICKER_TITLE_CLASS) :
+            element.addEventListener('focusout', onStickerTitleFocusOut);
+            break;
+    }
 }
 
 
 function deleteSticker(stickerID) {
     stickersList = stickersList.filter(el => el.id != stickerID);
-
     deleteStickerItemElement(stickerID)
 }
 
 
 function deleteStickerItemElement(id) {
     const element = getStickerItemElement(id);
-
     element && element.remove();
 }
 
