@@ -13,8 +13,8 @@ const sticker_template = document.getElementById('stickersTemplate').innerHTML;
 
 
 stickers_list_element.addEventListener('click', onStickersContainerClick);
-add_sticker_btn.addEventListener('mouseover', onMouseOverHover);
-add_sticker_btn.addEventListener('mouseout', onMouseOutUnhover);
+add_sticker_btn.addEventListener('mouseover', onAddStickerBtnMouseOver);
+add_sticker_btn.addEventListener('mouseout', onAddStickerBtnMouseOut);
 add_sticker_btn.addEventListener('click', onCreateStickerBtnClick);
 
 let stickersList;
@@ -26,12 +26,12 @@ function init() {
     renderList(stickersList);
 }
 
-function onMouseOverHover(e) {
+function onAddStickerBtnMouseOver(e) {
     const element = e.target;
     element.setAttribute(SOURCE_ATTR_NAME, HOVER_IMAGE_URL);
 }
 
-function onMouseOutUnhover(e) {
+function onAddStickerBtnMouseOut(e) {
     const element = e.target;
     element.setAttribute(SOURCE_ATTR_NAME, UNHOVER_IMAGE_URL);
 }

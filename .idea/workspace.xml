@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3686f11-6470-4a88-9987-3a6ed15b19fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/assets/img/anime-emoji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/assets/img/fat-emoji.png" afterDir="false" />
+    <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="69" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="69" />
+            <state relative-caret-position="390">
+              <caret line="26" column="86" lean-forward="true" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -31,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="335">
+              <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -57,9 +50,15 @@
       <find>get</find>
       <find>add-sticker-button</find>
       <find>save</find>
-      <find>delete-sticker-btn</find>
       <find>stickers-container</find>
       <find>s</find>
+      <find>onStickersContainerFocusOut</find>
+      <find>onSticke</find>
+      <find>click</find>
+      <find>render</find>
+      <find>stickersList</find>
+      <find>getItem</find>
+      <find>delete-sticker-btn</find>
     </findStrings>
     <replaceStrings>
       <replace>stickers</replace>
@@ -71,32 +70,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework5/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/task3/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/casinoapp/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/deepcopy/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/casinoapp/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/deepcopy/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/realnumbers/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework6/realnumbers/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework8/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework8/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework10/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/test/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework12/script.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.css" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.scss" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="958" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -155,42 +132,12 @@
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="homework20" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
-              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="homework20" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
-              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="homework20" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
-              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="homework20" type="462c0819:PsiDirectoryNode" />
-              <item name="styles.scss" type="620a8d5e:NestingTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -231,21 +178,21 @@
       <workItem from="1571158659048" duration="320000" />
       <workItem from="1571177594417" duration="335000" />
       <workItem from="1571923957688" duration="2583000" />
-      <workItem from="1571926924824" duration="14586000" />
+      <workItem from="1571926924824" duration="19245000" />
     </task>
-    <task id="LOCAL-00001" summary="finished 2 of 3 tasks">
-      <created>1566312864503</created>
+    <task id="LOCAL-00001" summary="HW20">
+      <created>1572073672555</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1566312864504</updated>
+      <updated>1572073672555</updated>
     </task>
-    <task id="LOCAL-00002" summary="finished 2 of 3 tasks">
-      <created>1566314110509</created>
+    <task id="LOCAL-00002" summary="hw">
+      <created>1572222557732</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1566314110509</updated>
+      <updated>1572222557732</updated>
     </task>
     <task id="LOCAL-00003" summary="finished 2 of 3 tasks">
       <created>1566314174225</created>
@@ -324,11 +271,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572016835268</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="HW20">
+      <created>1572065851107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572065851107</updated>
+    </task>
+    <task id="LOCAL-00015" summary="HW20">
+      <created>1572065899775</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572065899775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53309000" />
+    <option name="totallyTimeSpent" value="57968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="958" extended-state="0" />
@@ -357,13 +318,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finished 2 of 3 tasks" />
-    <MESSAGE value="added 3 different modules with homework for better understanding" />
-    <MESSAGE value="finished third task" />
-    <MESSAGE value="finished 8 hw" />
-    <MESSAGE value="some changes" />
-    <MESSAGE value="HW20" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW20" />
+    <MESSAGE value="hw" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework5/styles.css">
@@ -514,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -579,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="686">
@@ -593,10 +535,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="86" lean-forward="true" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="335">
+          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
         </state>
       </provider>
     </entry>
