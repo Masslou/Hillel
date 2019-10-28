@@ -26,15 +26,18 @@ function init() {
     renderList(stickersList);
 }
 
+
 function onAddStickerBtnMouseOver(e) {
     const element = e.target;
     element.setAttribute(SOURCE_ATTR_NAME, HOVER_IMAGE_URL);
 }
 
+
 function onAddStickerBtnMouseOut(e) {
     const element = e.target;
     element.setAttribute(SOURCE_ATTR_NAME, UNHOVER_IMAGE_URL);
 }
+
 
 function onCreateStickerBtnClick(e) {
     const newSticker = {
@@ -48,6 +51,7 @@ function onCreateStickerBtnClick(e) {
     saveState();
 }
 
+
 function onStickerDescriptionFocusOut(e) {
     const element = e.target;
     const stickerID = element.parentNode.dataset.stickerId;
@@ -55,12 +59,14 @@ function onStickerDescriptionFocusOut(e) {
     saveNewStickerDescription(element.value, stickerID);
 }
 
+
 function onStickerTitleFocusOut(e) {
     const element = e.target;
     const stickerID = element.parentNode.dataset.stickerId;
 
     saveNewStickerTitle(element.value, stickerID);
 }
+
 
 function onStickersContainerClick(e) {
     const element = e.target;
@@ -81,6 +87,7 @@ function onStickersContainerClick(e) {
     }
 }
 
+
 function saveState() {
     localStorage.setItem('stickers', JSON.stringify(stickersList));
 }
@@ -90,6 +97,7 @@ function getState() {
     const data = localStorage.getItem('stickers');
     return data ? JSON.parse(data) : [];
 }
+
 
 function render() {
     renderList(stickersList);
@@ -108,6 +116,7 @@ function generateSticker(sticker) {
         .replace('{{title}}', sticker.title)
         .replace('{{description}}', sticker.description)
 }
+
 
 function saveNewStickerDescription(value, stickerID) {
     const currentSticker = stickersList.find((el) => el.id == stickerID);
