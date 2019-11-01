@@ -57,6 +57,7 @@ function onStickerDescriptionFocusOut(e) {
     const stickerID = element.parentNode.dataset.stickerId;
 
     saveNewStickerDescription(element.value, stickerID);
+
 }
 
 
@@ -78,11 +79,11 @@ function onStickersContainerClick(e) {
             break;
 
         case element.classList.contains(STICKER_DESCRIPTION_CLASS) :
-            element.addEventListener('focusout', onStickerDescriptionFocusOut);
+            element.addEventListener('focusout', onStickerDescriptionFocusOut, {once: true});
             break;
 
         case element.classList.contains(STICKER_TITLE_CLASS) :
-            element.addEventListener('focusout', onStickerTitleFocusOut);
+            element.addEventListener('focusout', onStickerTitleFocusOut, {once: true});
             break;
     }
 }
