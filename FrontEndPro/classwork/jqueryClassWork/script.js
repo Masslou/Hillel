@@ -16,6 +16,8 @@ $(function(){
 
     const modalWindowForCreatingSticker = $modalWindow.dialog({
         autoOpen: false,
+        height: 400,
+        width: 350,
         modal: true,
         buttons: {
             'Create sticker': function() {

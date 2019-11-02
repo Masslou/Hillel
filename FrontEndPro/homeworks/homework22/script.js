@@ -4,40 +4,38 @@ $(function () {
     const STICKER_DESCRIPTION_CLASS = 'sticker-item--description';
     const STICKER_TITLE_CLASS = 'sticker-item--title';
 
-    let stickersList;
+    let stickersList = [];
     const $stickerTemplate = $('#stickersTemplate').html();
+    const $modalWindow = $('#modal-window');
     const $stickersContainer = $('#stickers-container');
-    const $addStickerButton = $('');
-    const $dialog = $( "#dialog-form" ).dialog({
+    const $addStickerButton = $('#add-sticker-button');
+    const dialog = $modalWindow.dialog({
         autoOpen: false,
         height: 400,
         width: 350,
         modal: true,
         buttons: {
-            "Create an account": addUser,
-            Cancel: function() {
-                dialog.dialog( "close" );
+            'Create an sticker': addSticker,
+            Cancel: function () {
+                dialog.dialog('close');
             }
         },
-        close: function() {
-            form[ 0 ].reset();
-            // allFields.removeClass( "ui-state-error" );
+        close: function () {
+            form[0].reset();
         }
     });
 
-    const $form = $dialog.find( "form" ).on( "submit", function( event ) {
+    const form = dialog.find('form').on('submit', onFormSubmit);
+    $('#stickers-container').on('click', DELETE_STICKER_CLASS, onDeleteBtnClick);
+
+    function onFormSubmit(event) {
         event.preventDefault();
-        addUser();
+        addSticker();
+    }
+
+    $addStickerButton.on('click', function () {
+        dialog.dialog('open');
     });
-
-    $addStickerButton.button().on( "click", function() {
-        dialog.dialog( "open" );
-    });
-
-
-
-    // $('addNoteBtn').on('clock', ()=> )
-
 
     init();
 
@@ -47,16 +45,15 @@ $(function () {
     }
 
 
-    function onCreateStickerBtnClick(e) {
-        const newSticker = {
-            id: Date.now(),
-            title: '',
-            description: ''
-        };
-
-        stickers_list_element.insertAdjacentHTML('beforeend', generateSticker(newSticker));
+    function addSticker() {
+        let newSticker = {};
+        form.serializeArray().forEach(v => newSticker[v.name] = v.value);
+        newSticker.id = Date.now();
         stickersList.push(newSticker);
+        renderList(stickersList);
         saveState();
+
+        dialog.dialog('close');
     }
 
 
@@ -68,32 +65,12 @@ $(function () {
 
     }
 
+    function onDeleteBtnClick(event) {
+        const deletSticker = $(this).closest('.stickers-container-item');
+        const stickerID = $deletSticker.data('stickerId');
 
-    function onStickerTitleFocusOut(e) {
-        const element = e.target;
-        const stickerID = element.parentNode.dataset.stickerId;
-
-        saveNewStickerTitle(element.value, stickerID);
-    }
-
-
-    function onStickersContainerClick(e) {
-        const element = e.target;
-        const stickerID = element.parentNode.dataset.stickerId;
-
-        switch (true) {
-            case element.classList.contains(DELETE_STICKER_CLASS) :
-                deleteSticker(stickerID);
-                break;
-
-            case element.classList.contains(STICKER_DESCRIPTION_CLASS) :
-                element.addEventListener('focusout', onStickerDescriptionFocusOut, {once: true});
-                break;
-
-            case element.classList.contains(STICKER_TITLE_CLASS) :
-                element.addEventListener('focusout', onStickerTitleFocusOut, {once: true});
-                break;
-        }
+        deletSticker.remove();
+        deleteSticker(stickerID);
     }
 
 
@@ -113,17 +90,15 @@ $(function () {
         saveState();
     }
 
-
     function renderList(list) {
         const containerItemsHtml = list.map((sticker) => generateSticker(sticker));
         stickers_list_element.innerHTML = containerItemsHtml.join('');
     }
 
-
     function generateSticker(sticker) {
         const $sticker = $stickerTemplate.replace('{{id}}', sticker.id)
             .replace('{{title}}', sticker.title)
-            .replace('{{description}}', sticker.description);
+            .replace('{{text}}', sticker.description);
 
         $stickersContainer.append($sticker);
     }
@@ -134,7 +109,6 @@ $(function () {
         currentSticker.description = value;
         render();
     }
-
 
     function saveNewStickerTitle(value, stickerID) {
         const currentSticker = stickersList.find((el) => el.id == stickerID);
@@ -149,12 +123,10 @@ $(function () {
         saveState();
     }
 
-
     function deleteStickerItemElement(id) {
         const element = getStickerItemElement(id);
         element && element.remove();
     }
-
 
     function getStickerItemElement(id) {
         return stickers_list_element.querySelector(`[data-sticker-id="${id}"]`);
