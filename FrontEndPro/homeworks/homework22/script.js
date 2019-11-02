@@ -3,6 +3,7 @@ $(function () {
     const DELETE_STICKER_CLASS = 'delete-sticker-btn';
     const STICKER_DESCRIPTION_CLASS = 'sticker-item--description';
     const STICKER_TITLE_CLASS = 'sticker-item--title';
+    const STICKER_ITEM_CLASS = 'stickers-container-item';
 
     let stickersList = [];
     const stickerTemplate = $('#stickersTemplate').html();
@@ -47,7 +48,7 @@ $(function () {
 
     function addSticker() {
         let newSticker = {};
-        form.serializeArray().forEach(v => newSticker[v.name] = v.value);
+        form.serializeArray().forEach(el => newSticker[el.name] = el.value);
         newSticker.id = Date.now();
         stickersList.push(newSticker);
         renderList(stickersList);
@@ -58,7 +59,7 @@ $(function () {
 
 
     function onDeleteBtnClick() {
-        const deletSticker = $(this).closest('.stickers-container-item');
+        const deletSticker = $(this).closest(`.${STICKER_ITEM_CLASS}`);
         const stickerID = deletSticker.data('stickerId');
 
         deletSticker.remove();
@@ -90,7 +91,7 @@ $(function () {
     function generateSticker(sticker) {
         return stickerTemplate.replace('{{id}}', sticker.id)
             .replace('{{title}}', sticker.title)
-            .replace('{{text}}', sticker.description);
+            .replace('{{description}}', sticker.description);
     }
 
     function deleteSticker(stickerID) {
