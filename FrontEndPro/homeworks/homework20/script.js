@@ -3,9 +3,6 @@
 const DELETE_STICKER_CLASS = 'delete-sticker-btn';
 const STICKER_DESCRIPTION_CLASS = 'sticker-item--description';
 const STICKER_TITLE_CLASS = 'sticker-item--title';
-const HOVER_IMAGE_URL = 'https://img.icons8.com/plasticine/100/000000/fat-emoji.png';
-const UNHOVER_IMAGE_URL = 'https://img.icons8.com/plasticine/100/000000/anime-emoji.png';
-const SOURCE_ATTR_NAME = 'src';
 
 const stickers_list_element = document.getElementById('stickers-container');
 const add_sticker_btn = document.getElementById('add-sticker-button');
