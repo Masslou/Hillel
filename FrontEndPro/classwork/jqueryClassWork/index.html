@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="script.js" async></script>
-    <script src="https//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js" async></script>
+    <title>Stickers board</title>
 </head>
 <body>
-<div id="todo-list"></div>
-<form>
-    <button></button>
-</form>
+<div id="board">
+    <button type="button" id="add-sticker">+</button>
+    <div id="stickers-container"></div>
+</div>
+
+<div id="modal-window" title="Create new sticker">
+    <form id="modal-form" action="#">
+        <label for="input-title-sticker">Title</label>
+        <input name="title" id="input-title-sticker" placeholder="Input Title" autofocus>
+        <label for="textareal-text-sticker">Description</label>
+        <textarea name="description" id="textareal-text-sticker" placeholder="Input Text" cols="30" rows="10"></textarea>
+        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+    </form>
+</div>
+<script type="text/template" id="sticker-temp">
+    <div class="sticker-container" data-sticker-id="{{id-sticker}}" style="position:{{position}}; top:{{top}}px; left:{{left}}px">
+        <div class="title-sticker">
+            <p>{{title}}</p>
+            <span class="bttn-delete">&#10006</span>
+        </div>
+        <p class="description-sticker">{{text}}</p>
+    </div>
+</script>
 </body>
 </html>
-

@@ -1,3 +1,80 @@
+#board{
+  height: 100vh;
+  border: 8px solid rgb(165, 42, 42);
+  padding: 20px;
+  overflow: auto;
+}
+#add-sticker{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgba(31,59,8,1) 0%, rgba(31,59,8,1) 51%, rgba(52,71,36,1) 100%);
+  cursor: pointer;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  right: 20px;
+  box-shadow: inset 0 0 5px 5px rgb(0, 0, 0, 0.3);
+  font-size: 90px;
+  color:#ffffff;
+  font-weight: 900;
+  user-select: none;
+}
+#add-sticker:active{
+  box-shadow:inset 0 0 5px 10px rgb(0, 0, 0, 0.3), 0 0 2px 2px rgb(54, 94, 21);
+}
+.background{
+  background: rgba(0,0,0,0.1);
+}
 
+#modal-form{
+  display: flex;
+  flex-direction: column;
+}
+#input-title-sticker{
+  border: 1px solid rgba(54, 94, 21, 0.5);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+#modal-form label{
+  padding: 5px 0;
+}
+#textareal-text-sticker{
+  padding: 5px;
+  border: 1px solid rgba(54, 94, 21, 0.5);
+  resize: none;
+}
 
-/*# sourceMappingURL=styles.css.map */
+#stickers-container{
+  display: flex;
+}
+.sticker-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  width: 220px;
+  height: 222px;
+  background-color:  rgba(196, 54, 54, 0.8);
+  border-radius: 3px;
+  margin: 15px;
+}
+.title-sticker{
+  border: 1px solid rgba(31,59,8);
+  background-color: rgba(52,71,36,0.7);
+  padding: 5px;
+  color: rgba(255, 255, 255);
+  border-radius: 3px 3px 0 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.absolutePositon{
+  position: absolute;
+}
+.description-sticker{
+  margin: 10px 5px 5px;
+  overflow: auto;
+}
+.bttn-delete{
+  cursor: pointer;
+}

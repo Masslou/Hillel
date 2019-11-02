@@ -5,86 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="script.js" async></script>
+    <script src="jquery-ui-1.12.1/external/jquery/jquery.js" defer></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="container_header">
-    <h1>CHAT ROOM</h1>
-</header>
-<div class="chat-wrapper">
-    <div id="users-list-container" class="user-list-container">
-    </div>
 
-    <div class="form-btn-container">
-        <button class="add-user-btn">ADD USER</button>
-    </div>
 
-    <div id="user-information-container" class="user-information-container"></div>
+<div id="dialog-form" title="create new note">
+    <form id="addNoteForm"></form>
 </div>
-
-<script type="text/template" id="users-template">
-    <div data-user-id="{{id}}" class="user-item-name"><span class="users-smile">&#9787;</span>{{username}}</div>
-</script>
-<script type="text/template" id="user-information-template">
-    <div class="general-user-information">
-        <h3>Profile information:</h3>
-        <div>Username: {{username}}</div>
-        <div>Name: {{name}}</div>
-        <div>User ID: {{id}}</div>
-        <div>Email: {{email}}</div>
-    </div>
-    <div>
-        <h3>Adress:</h3>
-        <div>City: {{city}}</div>
-        <div>Street: {{street}}</div>
-        <div>Suite: {{suite}}</div>
-        <div>ZIP: {{zipcode}}</div>
-    </div>
-
-    <div>Phone: {{phone}}</div>
-    <div>Website: <a href="#">{{website}}</a></div>
-
-    <div class="user-details-company">
-        <h3>Company:</h3>
-        <div>Name: {{name}}</div>
-        <div>bs: {{bs}}</div>
-        <div>Catch Phrase: {{catchPhrase}}</div>
-    </div>
-
-    <button class="delete-user-btn">Delete</button>
-</script>
-
-<script type="text/template" id="new-user-template">
-    <form id="userForm">
-        <div class="general-user-information">
-            <h3>Profile information:</h3>
-            <div>Username: <input type="text" id="username"></div>
-            <div>Name:<input type="text" id="name"></div>
-            <div>Email:<input type="text" id="email"></div>
-        </div>
-        <div>
-            <h3>Adress:</h3>
-            <div>City: <input type="text" id="city"></div>
-            <div>Street: <input type="text" id="street"></div>
-            <div>Suite: <input type="text" id="suite"></div>
-            <div>ZIP:  <input type="text" id="zip"></div>
-        </div>
-
-        <div>Phone:<input type="text" id="phone"></div>
-        <div>Website: <input type="text" id="website"></a></div>
-
-        <div class="user-details-company">
-            <h3>Company:</h3>
-            <div>Name: <input type="text" id="company-name"></div>
-            <div>bs: <input type="text" id="bs"></div>
-            <div>Catch Phrase: <input type="text" id="catch-phrase"></div>
-        </div>
-        <button type="submit" class="new-user-submit">Submit</button>
-    </form>
+<div id="main_container" class="main_container">
+    <ul id="stickers-container" class="stickers-container">
+    </ul>
+</div>
+<script type="text/template" id="stickersTemplate">
+    <li class="stickers-container-item" data-sticker-id="{{id}}">
+        <input type="text" class="sticker-item--title" id="sticker-title" value="{{title}}">
+        <textarea class="sticker-item--description" id="sticker-description" cols="30"
+                  rows="10">{{description}}</textarea>
+        <button title="delete sticker?" class="delete-sticker-btn" id="delete-sticker-btn">x</button>
+    </li>
 </script>
 </body>
 </html>
-
-
-
