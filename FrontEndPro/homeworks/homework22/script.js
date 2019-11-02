@@ -1,8 +1,6 @@
 $(function () {
 
     const DELETE_STICKER_CLASS = 'delete-sticker-btn';
-    const STICKER_DESCRIPTION_CLASS = 'sticker-item--description';
-    const STICKER_TITLE_CLASS = 'sticker-item--title';
     const STICKER_ITEM_CLASS = 'stickers-container-item';
 
     let stickersList = [];
