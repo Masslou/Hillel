@@ -25,7 +25,7 @@ $(function () {
     });
 
     const form = dialog.find('form').on('submit', onFormSubmit);
-    $('#stickers-container').on('click', `.${DELETE_STICKER_CLASS}`, onDeleteBtnClick);
+    $stickersContainer.on('click', `.${DELETE_STICKER_CLASS}`, onDeleteBtnClick);
 
     function onFormSubmit(event) {
         event.preventDefault();

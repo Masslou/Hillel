@@ -70,7 +70,7 @@
 }
 
 .add-sticker-button--image:hover {
-  content: url("https://img.icons8.com/plasticine/100/000000/fat-emoji.png") !important;
+  content: url("https://img.icons8.com/plasticine/100/000000/fat-emoji.png");
 }
 
 /*# sourceMappingURL=styles.css.map */

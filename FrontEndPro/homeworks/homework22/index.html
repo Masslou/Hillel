@@ -28,7 +28,7 @@
 <div id="modal-window" title="Add new STICKERZ information">
     <form id="modal-form" action="#">
         <label for="input-title-sticker">Title</label>
-        <input name="title" id="input-title-sticker" placeholder="Input Title" autofocus>
+        <input name="title" id="input-title-sticker" placeholder="Input Title" autofocus><br>
         <label for="textareal-text-sticker">Description</label>
         <textarea name="description" id="textareal-text-sticker" placeholder="Input Text" cols="30"
                   rows="10"></textarea>
@@ -36,7 +36,7 @@
     </form>
 </div>
 <script type="text/template" id="stickersTemplate">
-    <li class="stickers-container-item" data-sticker-id="{{id}}">
+    <li id="stickers-container-item" class="stickers-container-item" data-sticker-id="{{id}}">
         <label for="sticker-title"></label><input type="text" class="sticker-item--title" id="sticker-title" value="{{title}}">
         <label for="sticker-description"></label><textarea class="sticker-item--description" id="sticker-description" cols="30"
                                                            rows="10">{{description}}</textarea>
