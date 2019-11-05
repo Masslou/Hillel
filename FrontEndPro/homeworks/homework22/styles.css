@@ -1,3 +1,23 @@
-.ui-helper-hidden-accessible {
-    display: none;
+.page-main-title {
+    display: flex;
+    justify-content: center;
 }
+
+.content-wrapper{
+    padding-left: 30px;
+}
+
+.search-user-input{
+    font-size: 14px;
+}
+
+.user-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+
+.user-name{
+    font-weight: bold;
+}
+
