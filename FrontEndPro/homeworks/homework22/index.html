@@ -14,38 +14,22 @@
 <body>
 <h1>Find GitHub's user</h1>
 <div id="content-wrapper">
-<div id="ui-widget">
-    <label for="users-select"> </label>
-    <input type="text" id="users-select" class="search-user-input" placeholder="Username" autofocus>
-</div>
+    <div id="ui-widget">
+        <label for="users-select"> </label>
+        <input type="text" id="users-select" class="search-user-input" placeholder="Username" autofocus>
+    </div>
     <div id="user-details-wrapper">
-
     </div>
 </div>
-<script type="text/template" id='user-information-template'>
+
+<script type="text/template" id="user-information-template">
     <div class="general-user-information">
-        <h3>Profile information:</h3>
-        <div>Username: {{username}}</div>
-        <div>Name: {{name}}</div>
-        <div>User ID: {{id}}</div>
-        <div>Email: {{email}}</div>
-    </div>
-    <div>
-        <h3>Adress:</h3>
-        <div>City: {{city}}</div>
-        <div>Street: {{street}}</div>
-        <div>Suite: {{suite}}</div>
-        <div>ZIP: {{zipcode}}</div>
-    </div>
-
-    <div>Phone: {{phone}}</div>
-    <div>Website: <a href="#">{{website}}</a></div>
-
-    <div class="user-details-company">
-        <h3>Company:</h3>
-        <div>Name: {{name}}</div>
-        <div>bs: {{bs}}</div>
-        <div>Catch Phrase: {{catchPhrase}}</div>
+        <div><img class="user-avatar" src="{{userPhoto}}"></div>
+        <div class="user-name">{{username}}</div>
+        <div><a href="{{userURL}}" target="_blank">({{userNickName}})</a></div>
+        <div class="user-repositories">Repositories: {{repositories}}</div>
+        <div class="user-registration-date">Registration: {{registrationDate}}</div>
+        <div class="user-followers">Followers: {{followers}}</div>
     </div>
 </script>
 </body>
