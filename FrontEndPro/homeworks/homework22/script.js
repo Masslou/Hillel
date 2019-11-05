@@ -54,8 +54,8 @@ $(function () {
     }
 
     function generateDate(date) {
-        date = new Date();
-        return date.toLocaleDateString();
+        date = new Date(date);
+        return `${date.getDay()}-${date.getMonth()}-${date.getFullYear()}`;
     }
 
 });
