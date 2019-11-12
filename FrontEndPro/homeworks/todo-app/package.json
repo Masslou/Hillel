@@ -1,0 +1,17 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "do home work using jQuery, ES6 and Webpack ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "homework"
+  ],
+  "author": "masslou",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
