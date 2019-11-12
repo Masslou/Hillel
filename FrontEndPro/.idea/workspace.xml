@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da4c9c9d-95e7-4268-8d53-af6db4bb601d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework19/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.css.map">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="sourcemapFileViewerProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework19/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="99" column="23" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/classwork20/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/classwork20/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classwork/classwork20/styles.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework16/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="79" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homeworks/homework16/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addFull</find>
+      <find>console.l</find>
+      <find>currentPageData</find>
+      <find>galler</find>
+      <find>set</find>
+      <find>paginationCo</find>
+      <find>create</find>
+      <find>AMOUNT</find>
+      <find>PAGINATION_TEMPLATE</find>
+      <find>pagination</find>
+      <find>big</find>
+      <find>paginationItem</find>
+      <find>for</find>
+      <find>getPhoto</find>
+      <find>inner</find>
+      <find>element.dataset.num</find>
+      <find>num</find>
+      <find>setPhotosStora</find>
+      <find>getI</find>
+      <find>addPhotos</find>
+      <find>getPho</find>
+      <find>current</find>
+      <find>setPhotos</find>
+      <find>data</find>
+      <find>setPhoto</find>
+      <find>addPhotosTo</find>
+      <find>getItem</find>
+      <find>this.eleme</find>
+      <find>this.element</find>
+      <find>container</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>Gallery.GALLERY_CONTAINER</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/classwork/classwork9/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework8/styles.css" />
+        <option value="$PROJECT_DIR$/homeworks/homework9/styles.css" />
+        <option value="$PROJECT_DIR$/classwork/classwork10/index.html" />
+        <option value="$PROJECT_DIR$/classwork/classwork10/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework10/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework10/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework11/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework11/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework12/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework9/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework8/script.js" />
+        <option value="$PROJECT_DIR$/classwork/classwork14/script.js" />
+        <option value="$PROJECT_DIR$/classwork/classwork14/styles.css" />
+        <option value="$PROJECT_DIR$/classwork/classwork14/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework14/styles.css" />
+        <option value="$PROJECT_DIR$/homeworks/homework14/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework13/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework13/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework14/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework14/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework13/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework9/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework16New/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework16New/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework16/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework16/index.html" />
+        <option value="$PROJECT_DIR$/classwork/classwork17/sript.js" />
+        <option value="$PROJECT_DIR$/homeworks/test/styles.css" />
+        <option value="$PROJECT_DIR$/homeworks/homework17/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework17/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework15/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework15/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework15/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework17/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework18/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework18/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework18/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homeworkNEW/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homeworkNEW/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/test/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/test/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/test/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homeworkNEW/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework16/script.js" />
+        <option value="$PROJECT_DIR$/homeworks/homework19/styles.scss" />
+        <option value="$PROJECT_DIR$/homeworks/homework19/index.html" />
+        <option value="$PROJECT_DIR$/classwork/classwork20/styles.scss" />
+        <option value="$PROJECT_DIR$/classwork/classwork20/script.js" />
+        <option value="$PROJECT_DIR$/classwork/classwork20/index.html" />
+        <option value="$PROJECT_DIR$/homeworks/homework19/script.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="960" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork" type="462c0819:PsiDirectoryNode" />
+              <item name="classwork20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework19" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FrontEndPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework19" type="462c0819:PsiDirectoryNode" />
+              <item name="styles.scss" type="620a8d5e:NestingTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classwork/classwork20" />
+      <recent name="$PROJECT_DIR$/homeworks/test" />
+      <recent name="$PROJECT_DIR$/homeworks/homework19" />
+      <recent name="$PROJECT_DIR$/classwork/classwork19" />
+      <recent name="$PROJECT_DIR$/homeworks/homeworkNEW" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/homeworks/homework9" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da4c9c9d-95e7-4268-8d53-af6db4bb601d" name="Default Changelist" comment="" />
+      <created>1566568514077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566568514077</updated>
+      <workItem from="1566568515185" duration="77095000" />
+      <workItem from="1567988195530" duration="42000" />
+      <workItem from="1567996141814" duration="79000" />
+      <workItem from="1568283238099" duration="15823000" />
+      <workItem from="1569582289358" duration="61454000" />
+      <workItem from="1570007993578" duration="6643000" />
+      <workItem from="1570109513947" duration="52198000" />
+      <workItem from="1570528542771" duration="91000" />
+      <workItem from="1570575016554" duration="209000" />
+      <workItem from="1570577293662" duration="726000" />
+      <workItem from="1570693807797" duration="43801000" />
+      <workItem from="1570986782142" duration="22009000" />
+      <workItem from="1571310786742" duration="1518000" />
+      <workItem from="1571391995661" duration="51079000" />
+      <workItem from="1571746741091" duration="149000" />
+    </task>
+    <task id="LOCAL-00041" summary="finished hw # 14">
+      <created>1570235855820</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1570235855820</updated>
+    </task>
+    <task id="LOCAL-00042" summary="finished hw # 14">
+      <created>1570236066152</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1570236066152</updated>
+    </task>
+    <task id="LOCAL-00043" summary="finished hw # 14">
+      <created>1570450019571</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1570450019571</updated>
+    </task>
+    <task id="LOCAL-00044" summary="finished hw # 14">
+      <created>1570452738163</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1570452738163</updated>
+    </task>
+    <task id="LOCAL-00045" summary="finished hw # 15">
+      <created>1570458666084</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1570458666084</updated>
+    </task>
+    <task id="LOCAL-00046" summary="finished hw # 15">
+      <created>1570459912424</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1570459912424</updated>
+    </task>
+    <task id="LOCAL-00047" summary="finished hw # 15">
+      <created>1570786465718</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1570786465718</updated>
+    </task>
+    <task id="LOCAL-00048" summary="finished hw # 15">
+      <created>1570787677876</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1570787677876</updated>
+    </task>
+    <task id="LOCAL-00049" summary="finished hw # 15">
+      <created>1570796959300</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1570796959300</updated>
+    </task>
+    <task id="LOCAL-00050" summary="finished hw # 16">
+      <created>1570801215302</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1570801215305</updated>
+    </task>
+    <task id="LOCAL-00051" summary="finished hw # 16">
+      <created>1570801285020</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1570801285020</updated>
+    </task>
+    <task id="LOCAL-00052" summary="finished hw # 16">
+      <created>1570801394250</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1570801394250</updated>
+    </task>
+    <task id="LOCAL-00053" summary="finished hw # 16">
+      <created>1570801582193</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1570801582193</updated>
+    </task>
+    <task id="LOCAL-00054" summary="finished hw # 16">
+      <created>1570801684579</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1570801684579</updated>
+    </task>
+    <task id="LOCAL-00055" summary="finished hw # 16">
+      <created>1570805231422</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1570805231422</updated>
+    </task>
+    <task id="LOCAL-00056" summary="finished hw # 17">
+      <created>1571055621132</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1571055621132</updated>
+    </task>
+    <task id="LOCAL-00057" summary="finished hw # 17">
+      <created>1571055650469</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1571055650469</updated>
+    </task>
+    <task id="LOCAL-00058" summary="finished hw # 17">
+      <created>1571056094383</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1571056094383</updated>
+    </task>
+    <task id="LOCAL-00059" summary="finished hw # 17">
+      <created>1571058649085</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1571058649085</updated>
+    </task>
+    <task id="LOCAL-00060" summary="finished hw # 17">
+      <created>1571062572686</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1571062572686</updated>
+    </task>
+    <task id="LOCAL-00061" summary="finished hw # 17">
+      <created>1571062845640</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1571062845640</updated>
+    </task>
+    <task id="LOCAL-00062" summary="finished hw # 17">
+      <created>1571135772166</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1571135772166</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fixed HW # 15">
+      <created>1571135820240</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1571135820240</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fixed HW # 15">
+      <created>1571135895689</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1571135895689</updated>
+    </task>
+    <task id="LOCAL-00065" summary="HW NEW">
+      <created>1571405868508</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1571405868509</updated>
+    </task>
+    <task id="LOCAL-00066" summary="HW NEW">
+      <created>1571405927930</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1571405927930</updated>
+    </task>
+    <task id="LOCAL-00067" summary="HW NEW">
+      <created>1571436803480</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1571436803480</updated>
+    </task>
+    <task id="LOCAL-00068" summary="HW NEW">
+      <created>1571437124591</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1571437124591</updated>
+    </task>
+    <task id="LOCAL-00069" summary="HW NEW">
+      <created>1571437529178</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1571437529178</updated>
+    </task>
+    <task id="LOCAL-00070" summary="HW NEW">
+      <created>1571443979704</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1571443979704</updated>
+    </task>
+    <task id="LOCAL-00071" summary="HW NEW">
+      <created>1571445691920</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1571445691920</updated>
+    </task>
+    <task id="LOCAL-00072" summary="HW NEW">
+      <created>1571449131180</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1571449131180</updated>
+    </task>
+    <task id="LOCAL-00073" summary="HW NEW">
+      <created>1571454323461</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1571454323462</updated>
+    </task>
+    <task id="LOCAL-00074" summary="HW NEW">
+      <created>1571456023985</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1571456023985</updated>
+    </task>
+    <task id="LOCAL-00075" summary="HW NEW">
+      <created>1571459522372</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1571459522372</updated>
+    </task>
+    <task id="LOCAL-00076" summary="HW NEW">
+      <created>1571459706794</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1571459706794</updated>
+    </task>
+    <task id="LOCAL-00077" summary="HW NEW">
+      <created>1571460659417</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1571460659417</updated>
+    </task>
+    <task id="LOCAL-00078" summary="HW NEW">
+      <created>1571461085019</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1571461085019</updated>
+    </task>
+    <task id="LOCAL-00079" summary="HW NEW">
+      <created>1571461174624</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1571461174624</updated>
+    </task>
+    <task id="LOCAL-00080" summary="HW NEW">
+      <created>1571477939003</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1571477939003</updated>
+    </task>
+    <task id="LOCAL-00081" summary="HW NEW">
+      <created>1571479116930</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1571479116930</updated>
+    </task>
+    <task id="LOCAL-00082" summary="HW NEW">
+      <created>1571479219926</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1571479219926</updated>
+    </task>
+    <task id="LOCAL-00083" summary="HW NEW">
+      <created>1571482133555</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1571482133555</updated>
+    </task>
+    <task id="LOCAL-00084" summary="HW19">
+      <created>1571665924246</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1571665924247</updated>
+    </task>
+    <task id="LOCAL-00085" summary="HW19">
+      <created>1571674831457</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1571674831457</updated>
+    </task>
+    <task id="LOCAL-00086" summary="HW19">
+      <created>1571702678062</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1571702678062</updated>
+    </task>
+    <task id="LOCAL-00087" summary="HW19">
+      <created>1571702835711</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1571702835711</updated>
+    </task>
+    <task id="LOCAL-00088" summary="HW19">
+      <created>1571703902431</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1571703902431</updated>
+    </task>
+    <task id="LOCAL-00089" summary="HW19">
+      <created>1571704578569</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1571704578569</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="332916000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21639542" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015069" side_tool="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.4996986" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49849308" weight="0.32959184" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32959184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16274865" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015069" side_tool="true" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.4996986" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49849308" weight="0.32959184" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32959184" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed bug. if user click on cancel button - it was exception." />
+    <MESSAGE value="fixed" />
+    <MESSAGE value="finished home work" />
+    <MESSAGE value="finished logic task 9" />
+    <MESSAGE value="finished hw9" />
+    <MESSAGE value="finished hw #10" />
+    <MESSAGE value="finished hw # 11" />
+    <MESSAGE value="finished hw # 12" />
+    <MESSAGE value="finished hw # 13" />
+    <MESSAGE value="finished hw # 14" />
+    <MESSAGE value="finished hw # 15" />
+    <MESSAGE value="finished hw # 16" />
+    <MESSAGE value="finished hw # 17" />
+    <MESSAGE value="fixed HW # 15" />
+    <MESSAGE value="HW NEW" />
+    <MESSAGE value="HW19" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW19" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/homeworks/homework13/script.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/homeworks/homework13/script.js</url>
+          <line>93</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/classwork/classwork14/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork14/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework8/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework8/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework14/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework14/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework14New/index.html" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework13/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework9/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" selection-start-line="64" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16New/styles.scss" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16New/script.js" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16New/index.html" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework9/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework12/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="45" selection-start-line="62" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework14/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="85" column="11" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework10/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework13/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework9/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork17/sript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework12/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework15/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="14" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework15/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework15/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework17/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="10359" column="4" selection-start-line="10359" selection-start-column="4" selection-end-line="10359" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework17/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork19/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework18/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="53" column="48" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework18/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework18/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework17/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homeworkNEW/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="73" column="17" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homeworkNEW/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/test/index.html" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homeworkNEW/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homeworkNEW/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="81" column="14" lean-forward="true" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/test/styles.scss" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework13/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="77" column="33" lean-forward="true" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/test/script.js" />
+    <entry file="file://$PROJECT_DIR$/homeworks/homework19/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework19/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork20/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork20/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classwork/classwork20/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="79" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework16/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homeworks/homework19/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
