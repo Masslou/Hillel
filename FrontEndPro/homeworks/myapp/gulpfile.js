@@ -43,5 +43,6 @@ function devTask() {
     watch('./src/assets/**/*.scss', concatStyles);
 }
 
-module.exports.build = series(cleanTask, concatJS, concatStyles, injectTask);
+module.exports.build = series(cleanTask, concatJS, concatStyles);
+module.exports.injectTask = injectTask;
 module.exports.dev = devTask;
