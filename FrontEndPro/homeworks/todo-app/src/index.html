@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="script.js" async></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="./script/app.js" async></script>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
 <div class="content-wrapper">
-    <div class="toDos-wrapper">
-        <ol id="toDo-list"></ol>
+    <div class="todo-list-wrapper">
+        <ol id="todoList"></ol>
     </div>
     <div class="form_wrapper">
         <form id="newToDoForm" action="">
@@ -22,7 +22,7 @@
 </div>
 
 <script type="text/template" id="toDoTemplate">
-    <li class="task_item" data-todo-id="{{id}}">{{value}} <span class="remove-btn">x</span></li>
+    <li class="todo-item {{isDoneClass}}" data-todo-id="{{id}}">{{description}} <span class="remove-btn">x</span></li>
 </script>
 </body>
 </html>
