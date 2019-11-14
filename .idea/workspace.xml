@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,83 +20,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#14#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/dist/index.html">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework19/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="1305">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/package.json">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state>
+              <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/.gitignore">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/script/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/script/scripti.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/js/fileOne.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="405">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -106,8 +65,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -134,7 +93,6 @@
       <find>ui0</find>
       <find>status</find>
       <find>&quot;</find>
-      <find>'</find>
       <find>webpack</find>
       <find>copyTask</find>
       <find>noth</find>
@@ -143,10 +101,12 @@
       <find>getNewContent</find>
       <find>injectedFilesCount</find>
       <find>willInject</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
       <replace>stickers</replace>
       <replace>'</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/FrontEndPro/homeworks/myapp/node_modules/gulp-inject</dir>
@@ -158,11 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork/styles.scss" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homeworkNEW/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.scss" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/script.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork/script.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/test/styles.scss" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework22/styles.scss" />
@@ -209,6 +164,11 @@
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/js/fileOne.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/package.json" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/.gitignore" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html" />
       </list>
     </option>
   </component>
@@ -281,6 +241,83 @@
               <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework15" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework19" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="myapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="todo-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -290,6 +327,32 @@
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="todo-app" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,11 +371,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app" />
       <recent name="$PROJECT_DIR$/FrontEndPro/test" />
       <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/homework22" />
       <recent name="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork" />
       <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/assets/img" />
-      <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/homework20" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -347,7 +410,7 @@
       <workItem from="1571923957688" duration="2583000" />
       <workItem from="1571926924824" duration="67578000" />
       <workItem from="1572970992139" duration="4720000" />
-      <workItem from="1573057740472" duration="23272000" />
+      <workItem from="1573057740472" duration="30152000" />
     </task>
     <task id="LOCAL-00001" summary="HW20">
       <created>1572073672555</created>
@@ -517,14 +580,29 @@
       <option name="project" value="LOCAL" />
       <updated>1573561128273</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="gulp hw">
+      <created>1573598892038</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573598892038</updated>
+    </task>
+    <task id="LOCAL-00026" summary="gulp hw">
+      <created>1573598917907</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573598917907</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134293000" />
+    <option name="totallyTimeSpent" value="141173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -538,13 +616,33 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.45918366" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43265307" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.43265307" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.45918366" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.43265307" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -558,110 +656,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="gulp hw" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/CalculatorApp/calculator/div.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/CalculatorApp/calculator/sub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/CalculatorApp/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/test/styles.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/test/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/node/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework1/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework1/students.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework2/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework2/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/assets/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/my-app/dist/assets/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/appgulp/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/my-app/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/my-app/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/styles.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -784,20 +778,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/js/fileOne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/dist/js/build.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/.gitignore">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="404">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -805,13 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -825,6 +805,78 @@
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/js/fileOne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework15/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework13/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework12/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework19/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework10/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -832,8 +884,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework10/script.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework19/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#14#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

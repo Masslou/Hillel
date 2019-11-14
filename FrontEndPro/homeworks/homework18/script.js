@@ -22,14 +22,14 @@ const usersListItems = document.createElement('ul');
 
 const createNewUser = document.createElement('li');
 createNewUser.classList.add('createNewUser');
-createNewUser.innerText = 'Create new user'
+createNewUser.innerText = 'Create new user';
 
 const usersList = document.getElementById('usersList');
 const userInfo = document.getElementById('userInfo');
 usersList.addEventListener('click', onUserClick);
 
 const userForm = document.getElementById('userForm');
-userForm.addEventListener('click', onControlBtnClick)
+userForm.addEventListener('click', onControlBtnClick);
 
 const requestUsersList = fetch(RESOURCE_URL);
 
