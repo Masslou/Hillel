@@ -1,17 +1,16 @@
 'use strict';
-import ocalStorageService from './LocalStorageService';
+import LocalStorageService from './LocalStorageService';
 import $ from 'jquery';
 
 $(function () {
     class Todo {
 
         constructor() {
-            this.localStorageService = new localStorageService();
+            this.localStorageService = new LocalStorageService();
             this.$newTodoForm = $('#newTodoForm');
             this.$todoItemTemplate = $('#toDoTemplate').html();
             this.REMOVE_BTN_CLASS = `remove-btn`;
             this.ADD_TODO_BTN_CLASS = 'add-todo-btn';
-            this.todoList = [];
             this.init();
         }
 
@@ -22,8 +21,10 @@ $(function () {
         }
 
         bindListners() {
-            $todoList.on('click', onTodoListClick);
-            this.ADD_TODO_BTN_CLASS.on('click', this.submitNewItem.bind(this));
+
+            $todoList.on('click', '.delete-bttn', this.onDeleteBtnClick.bind(this));
+            $todoList.on('click', '.todo-item', this.onTodoItemClick.bind(this));
+            $newTodoForm.on('submit', this.addNewItem.bind(this));
 
         }
 
@@ -36,7 +37,7 @@ $(function () {
             }
         }
 
-        submitNewItem(){
+        addNewItem(){
             const newTodoItem = {
                 id: Date.now(),
                 isDone: false
