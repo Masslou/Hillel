@@ -1,54 +1,72 @@
 'use strict';
-import localStorage from './LocalStorageService';
+import ocalStorageService from './LocalStorageService';
 import $ from 'jquery';
 
 $(function () {
-    class ToDoList {
-
-        static $todoList = $('#todoList');
-        static $newTodoForm = $('#newTodoForm');
-        static $todoItemTemplate = $('#toDoTemplate');
-
-        static REMOVE_BTN_CLASS = `remove-btn`;
-
+    class Todo {
 
         constructor() {
+            this.localStorageService = new localStorageService();
+            this.$newTodoForm = $('#newTodoForm');
+            this.$todoItemTemplate = $('#toDoTemplate').html();
+            this.REMOVE_BTN_CLASS = `remove-btn`;
+            this.ADD_TODO_BTN_CLASS = 'add-todo-btn';
+            this.todoList = [];
             this.init();
         }
 
         init() {
+            this.todoList = this.localStorageService.getState();
             this.renderTodoList();
             this.bindListners();
         }
 
         bindListners() {
-            $todoList.on('click', onToDoListClick);
+            $todoList.on('click', onTodoListClick);
+            this.ADD_TODO_BTN_CLASS.on('click', this.submitNewItem.bind(this));
+
         }
 
 
-        onToDoListClick(e) {
+        onTodoListClick(e) {
             const $targetElem = $(this);
             const todoItems = $targetElem.parent();
-            if ($targetElem.hasClass(ToDoList.REMOVE_BTN_CLASS)) {
+            if ($targetElem.hasClass(this.REMOVE_BTN_CLASS)) {
 
             }
         }
 
-        renderTodoList() {
-            const todoListItemHtml = ToDoList.$todoList.map((element) => {
-                return generateToDoItem(element)
+        submitNewItem(){
+            const newTodoItem = {
+                id: Date.now(),
+                isDone: false
+            };
+
+            this.$newTodoForm.serializeArray().forEach(({name, value}) => {
+                newTodoItem[name] = value;
             });
 
-            ToDoList.$todoList.html(todoListItemHtml).join('');
+            this.todoListItems.push(newTodoItem);
+            this.$todoList.append(ToDoList.getTodoItemHtml(newTodoItem))
+        }
+
+        renderTodoList() {
+            const todoListItemHtml = this.todoList.map((element) => {
+                return this.generateTodoItem(element)
+            });
+
+            this.$todoList.html(todoListItemHtml).join('');
         }
 
 
-        generateToDoItem(id, description, isDone) {
-            return ToDoList.$todoItemTemplate
+        generateTodoItem(id, description, isDone) {
+            return this.$todoItemTemplate
                 .replace('{{id}}', id)
                 .replace('{{description}}', description)
                 .replace('{{isDone}}', isDone ? 'done' : '');
         }
 
     }
+
+    const todoList = new Todo();
 });

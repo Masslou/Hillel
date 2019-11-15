@@ -5,8 +5,8 @@ class LocalStorageService {
         return data ? JSON.parse(data) : [];
     }
 
-    saveState() {
-        localStorage.setItem('todo', JSON.stringify(this.lisOfTodos));
+    saveState(...elements) {
+        localStorage.setItem('todo', JSON.stringify(elements));
     }
 }
 

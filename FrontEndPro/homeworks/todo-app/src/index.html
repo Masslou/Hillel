@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="./script/app.js" async></script>
-    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
 <div class="content-wrapper">
@@ -15,8 +13,8 @@
     </div>
     <div class="form_wrapper">
         <form id="newToDoForm" action="">
-            <label for="item-description-field"></label><input id="item-description-field" type="text" maxlength="20"/>
-            <input id="add_task_button" type="submit" value="ADD ITEM"/>
+            <label for="item-description-field"></label><input id="item-description-field" type="text" name="todoDescription" maxlength="20"/>
+            <button id="add-todo-btn" type="submit"><span class="add-todo-btn__text">ADD</span></button>
         </form>
     </div>
 </div>
