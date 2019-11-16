@@ -28,8 +28,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({filename: "./styles.css"}),
         new HtmlWebpackPlugin({template: './src/index.html'}),
+        new MiniCssExtractPlugin({filename: "./styles.css"}),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist/'),
