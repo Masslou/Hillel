@@ -5,12 +5,13 @@ import $ from 'jquery';
 import LocalStorageService from "./LocalStorageService";
 
 $(function () {
+    const $todoList = $('#todoList');
+    const $todoItem = $();
     const $newTodoForm = $('#newTodoForm');
     const $todoItemTemplate = $('#toDoTemplate').html();
 
     const REMOVE_BTN_CLASS = `remove-btn`;
-    const ADD_TODO_BTN_CLASS = 'add-todo-btn';
-    const DONE_TODO_ITEM_CLASS = 'done';
+    const ITEM_CLASS = 'todo-item';
 
     const localStorageService = new LocalStorageService();
 
@@ -26,8 +27,8 @@ $(function () {
         }
 
         bindEventListeners() {
-            $todoList.on('click', '.delete-bttn', this.onDeleteBtnClick.bind(this));
-            $todoList.on('click', '.todo-item', this.onTodoItemClick.bind(this));
+            $todoList.on('click', `.${REMOVE_BTN_CLASS}`, this.onDeleteBtnClick.bind(this));
+            $todoList.on('click', `.${ITEM_CLASS}`, this.onTodoItemClick.bind(this));
             $newTodoForm.on('submit', this.onNewTodoFormSubmit.bind(this));
         }
 
@@ -50,11 +51,11 @@ $(function () {
             e.target.reset();
         }
 
-        deleteTodoItem(idToDelete) {
-            this.todoListItems = this.todoListItems.filter(({id}) => id != idToDelete);
+        deleteTodoItem(deleteID) {
+            this.todoListItems = this.todoListItems.filter(({id}) => id != deleteID);
             localStorageService.setState('todo', this.todoListItems);
 
-            ToDoList.getTodoElementById(idToDelete).remove();
+            this.getTodoElementById(deleteID).remove();
 
         }
 
@@ -93,7 +94,7 @@ $(function () {
         toggleTodoElementState({id, isDone}) {
             const $todoItem = ToDoList.getTodoElementById(id);
 
-            $todoItem.removeClass(TODO_ITEM_DONE_CLASS)
+            $todoItem.removeClass(TODO_ITEM_DONE_CLASS);
             if (isDone) {
                 $todoItem.addClass(TODO_ITEM_DONE_CLASS);
             }
