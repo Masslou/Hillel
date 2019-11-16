@@ -7,7 +7,7 @@ module.exports = {
     mode: 'development',
     entry: './src/script/app.js',
     output: {
-        filename: 'main.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
@@ -28,16 +28,14 @@ module.exports = {
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin({filename: "./styles.css"}),
         new HtmlWebpackPlugin({template: './src/index.html'}),
-        new MiniCssExtractPlugin({filename: "./src/assets/style.css"}),
-
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist/'),
         compress: true,
-        port: 9000
+        port: 8080
     },
-
     devtool: "source-map"
 
 };
