@@ -6,18 +6,19 @@ import LocalStorageService from "./LocalStorageService";
 
 $(function () {
     const $todoList = $('#todoList');
-    const $todoItem = $();
-    const $newTodoForm = $('#newTodoForm');
+    const $newTodoForm = $('#newToDoForm');
     const $todoItemTemplate = $('#toDoTemplate').html();
 
     const REMOVE_BTN_CLASS = `remove-btn`;
     const ITEM_CLASS = 'todo-item';
+    const ITEM_DONE_CLASS = 'done';
 
     const localStorageService = new LocalStorageService();
 
     class Todo {
 
         constructor() {
+            this.toDosList = localStorageService.getState();
             this.init();
         }
 
@@ -33,9 +34,11 @@ $(function () {
         }
 
         onDeleteBtnClick(e) {
+            debugger
             e.stopPropagation();
             const $todoItem = $(e.target).parent();
             this.deleteTodoItem($todoItem.data('todoId'));
+            this.renderTodoList();
         }
 
         onTodoItemClick(e) {
@@ -46,24 +49,23 @@ $(function () {
             e.preventDefault();
             this.submitNewItem();
 
-            localStorageService.setState('todo', this.todoListItems);
+            localStorageService.setState('todo', this.toDosList);
 
             e.target.reset();
         }
 
         deleteTodoItem(deleteID) {
-            this.todoListItems = this.todoListItems.filter(({id}) => id != deleteID);
-            localStorageService.setState('todo', this.todoListItems);
+            this.toDosList = this.toDosList.filter(({id}) => id != deleteID);
+            localStorageService.setState('todo', this.toDosList);
 
             this.getTodoElementById(deleteID).remove();
 
         }
 
         toggleTodoItem(idToToggle) {
-            const todoItem = this.todoListItems.find(({id}) => id == idToToggle);
+            const todoItem = this.toDosList.find(({id}) => id == idToToggle);
             todoItem.isDone = !todoItem.isDone;
-            localStorageService.setState('todo', this.todoListItems);
-
+            localStorageService.setState('todo', this.toDosList);
             this.toggleTodoElementState(todoItem);
         }
 
@@ -77,12 +79,12 @@ $(function () {
                 newTodoItem[name] = value;
             });
 
-            this.todoListItems.push(newTodoItem);
+            this.toDosList.push(newTodoItem);
             $todoList.append(this.getTodoItemHtml(newTodoItem))
         }
 
         renderTodoList() {
-            const todoListItemsHtml = this.todoListItems.map(el => this.getTodoItemHtml(el));
+            const todoListItemsHtml = this.toDosList.map(el => this.getTodoItemHtml(el));
 
             $todoList.html(todoListItemsHtml.join(''));
         }
@@ -92,19 +94,19 @@ $(function () {
         }
 
         toggleTodoElementState({id, isDone}) {
-            const $todoItem = ToDoList.getTodoElementById(id);
+            const $todoItem = this.getTodoElementById(id);
 
-            $todoItem.removeClass(TODO_ITEM_DONE_CLASS);
+            $todoItem.removeClass(ITEM_DONE_CLASS);
             if (isDone) {
-                $todoItem.addClass(TODO_ITEM_DONE_CLASS);
+                $todoItem.addClass(ITEM_DONE_CLASS);
             }
         }
 
-        getTodoItemHtml({id, title, isDone}) {
+        getTodoItemHtml({id, description, isDone}) {
             return $todoItemTemplate
                 .replace('{{id}}', id)
-                .replace('{{title}}', title)
-                .replace('{{isDoneClass}}', isDone ? TODO_ITEM_DONE_CLASS : '')
+                .replace('{{description}}', description)
+                .replace('{{isDoneClass}}', isDone ? ITEM_DONE_CLASS : '')
         }
     }
 
