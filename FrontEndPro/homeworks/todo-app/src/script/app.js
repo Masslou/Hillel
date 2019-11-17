@@ -18,7 +18,7 @@ $(function () {
     class Todo {
 
         constructor() {
-            this.toDosList = localStorageService.getState();
+            this.todoList = localStorageService.getState('todo');
             this.init();
         }
 
@@ -49,23 +49,23 @@ $(function () {
             e.preventDefault();
             this.submitNewItem();
 
-            localStorageService.setState('todo', this.toDosList);
+            localStorageService.setState('todo', this.todoList);
 
             e.target.reset();
         }
 
         deleteTodoItem(deleteID) {
-            this.toDosList = this.toDosList.filter(({id}) => id != deleteID);
-            localStorageService.setState('todo', this.toDosList);
+            this.todoList = this.todoList.filter(({id}) => id != deleteID);
+            localStorageService.setState('todo', this.todoList);
 
             this.getTodoElementById(deleteID).remove();
 
         }
 
         toggleTodoItem(idToToggle) {
-            const todoItem = this.toDosList.find(({id}) => id == idToToggle);
+            const todoItem = this.todoList.find(({id}) => id == idToToggle);
             todoItem.isDone = !todoItem.isDone;
-            localStorageService.setState('todo', this.toDosList);
+            localStorageService.setState('todo', this.todoList);
             this.toggleTodoElementState(todoItem);
         }
 
@@ -79,12 +79,12 @@ $(function () {
                 newTodoItem[name] = value;
             });
 
-            this.toDosList.push(newTodoItem);
+            this.todoList.push(newTodoItem);
             $todoList.append(this.getTodoItemHtml(newTodoItem))
         }
 
         renderTodoList() {
-            const todoListItemsHtml = this.toDosList.map(el => this.getTodoItemHtml(el));
+            const todoListItemsHtml = this.todoList.map(el => this.getTodoItemHtml(el));
 
             $todoList.html(todoListItemsHtml.join(''));
         }

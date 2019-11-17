@@ -5,8 +5,9 @@ class LocalStorageService {
     }
 
     getState(name) {
+        console.log(name);
         const data = localStorage.getItem(name);
-        return JSON.parse(data)|| [];
+        return JSON.parse(data) || [];
     }
 }
 
