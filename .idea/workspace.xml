@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,8 +55,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="346">
+              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,8 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>noth</find>
-      <find>sources</find>
       <find>Nothing</find>
       <find>getNewContent</find>
       <find>injectedFilesCount</find>
@@ -98,7 +98,6 @@
       <find>$newTodoForm</find>
       <find>getTodoElementById</find>
       <find>getTodoEle</find>
-      <find>toggleTodoElementState</find>
       <find>newToDoForm</find>
       <find>remove</find>
       <find>toDosList</find>
@@ -114,7 +113,10 @@
       <find>REMOVE_BTN_CLASS</find>
       <find>isDone</find>
       <find>todoDes</find>
+      <find>toggle</find>
+      <find>toggleTodoElementState</find>
       <find>ITEM_DONE_CLASS</find>
+      <find>todo-item</find>
     </findStrings>
     <replaceStrings>
       <replace>stickers</replace>
@@ -377,7 +379,7 @@
       <workItem from="1571923957688" duration="2583000" />
       <workItem from="1571926924824" duration="67578000" />
       <workItem from="1572970992139" duration="4720000" />
-      <workItem from="1573057740472" duration="56832000" />
+      <workItem from="1573057740472" duration="57366000" />
     </task>
     <task id="LOCAL-00001" summary="HW20">
       <created>1572073672555</created>
@@ -638,17 +640,23 @@
       <option name="project" value="LOCAL" />
       <updated>1573955269023</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="webpack hw">
+      <created>1573957784162</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1573957784162</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167853000" />
+    <option name="totallyTimeSpent" value="168387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -660,7 +668,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.45918366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43265307" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43265307" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -980,8 +988,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+        <state relative-caret-position="346">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
