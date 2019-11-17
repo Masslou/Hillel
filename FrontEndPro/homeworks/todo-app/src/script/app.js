@@ -18,7 +18,7 @@ $(function () {
     class Todo {
 
         constructor() {
-            this.todoList = localStorageService.getState('todo');
+            this.todoList = this.getTodoDataStorage();
             this.init();
         }
 
@@ -48,16 +48,13 @@ $(function () {
         onNewTodoFormSubmit(e) {
             e.preventDefault();
             this.submitNewItem();
-
-            localStorageService.setState('todo', this.todoList);
-
+            this.updateTodoDataStorage();
             e.target.reset();
         }
 
         deleteTodoItem(deleteID) {
             this.todoList = this.todoList.filter(({id}) => id != deleteID);
-            localStorageService.setState('todo', this.todoList);
-
+            this.updateTodoDataStorage();
             this.getTodoElementById(deleteID).remove();
 
         }
@@ -65,7 +62,7 @@ $(function () {
         toggleTodoItem(idToToggle) {
             const todoItem = this.todoList.find(({id}) => id == idToToggle);
             todoItem.isDone = !todoItem.isDone;
-            localStorageService.setState('todo', this.todoList);
+            this.updateTodoDataStorage();
             this.renderTodoList();
         }
 
@@ -91,6 +88,14 @@ $(function () {
 
         getTodoElementById(id) {
             return $(`[data-todo-index="${id}"]`);
+        }
+
+        updateTodoDataStorage() {
+            localStorageService.setState('todo', this.todoList);
+        }
+
+        getTodoDataStorage() {
+            return localStorageService.getState('todo');
         }
 
 
