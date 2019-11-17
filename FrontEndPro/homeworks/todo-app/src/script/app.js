@@ -66,7 +66,7 @@ $(function () {
             const todoItem = this.todoList.find(({id}) => id == idToToggle);
             todoItem.isDone = !todoItem.isDone;
             localStorageService.setState('todo', this.todoList);
-            this.toggleTodoElementState(todoItem);
+            this.renderTodoList();
         }
 
         submitNewItem() {
@@ -93,14 +93,6 @@ $(function () {
             return $(`[data-todo-index="${id}"]`);
         }
 
-        toggleTodoElementState({id, isDone}) {
-            const $todoItem = this.getTodoElementById(id);
-
-            $todoItem.removeClass(ITEM_DONE_CLASS);
-            if (isDone) {
-                $todoItem.addClass(ITEM_DONE_CLASS);
-            }
-        }
 
         getTodoItemHtml({id, description, isDone}) {
             return $todoItemTemplate
