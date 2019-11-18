@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/classwork/classwork20/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/classwork/classwork20/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework13/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework13/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework14/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework14/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework15/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework15/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework16/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework16/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework17/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework17/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework18/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework18/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework19/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework19/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework20/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework21/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework21/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homeworkNEW/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homeworkNEW/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/assets/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/test/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/test/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,18 +35,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="34" column="126" selection-start-line="34" selection-start-column="111" selection-end-line="34" selection-end-column="126" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-271">
+              <caret line="65" column="34" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="65" selection-end-column="34" />
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -47,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="301">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -56,32 +89,48 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="417">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="32" selection-end-line="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="17" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -98,7 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>willInject</find>
       <find>ToDo</find>
       <find>'</find>
       <find>renderUserInformation</find>
@@ -128,6 +176,7 @@
       <find>C</find>
       <find>renderListItem</find>
       <find>renderList</find>
+      <find>delete</find>
     </findStrings>
     <replaceStrings>
       <replace>stickers</replace>
@@ -148,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/index.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/another.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/.gitignore" />
         <option value="$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/styles.css" />
@@ -190,15 +238,16 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/.gitignore" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/viev/List.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" />
       </list>
     </option>
   </component>
@@ -252,6 +301,15 @@
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,7 +320,7 @@
               <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
@@ -359,7 +417,7 @@
       <workItem from="1571926924824" duration="67578000" />
       <workItem from="1572970992139" duration="4720000" />
       <workItem from="1573057740472" duration="66140000" />
-      <workItem from="1574112965115" duration="3855000" />
+      <workItem from="1574112965115" duration="5105000" />
     </task>
     <task id="LOCAL-00001" summary="HW20">
       <created>1572073672555</created>
@@ -690,11 +748,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574086982811</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="mvc-todo">
+      <created>1574117245426</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1574117245426</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181016000" />
+    <option name="totallyTimeSpent" value="182266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -915,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
@@ -954,29 +1012,6 @@
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="65" column="34" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="65" selection-end-column="34" />
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/js/fileTwo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -987,17 +1022,10 @@
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/assets/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1008,12 +1036,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="465">
+          <caret line="31" column="32" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="34" column="126" selection-start-line="34" selection-start-column="111" selection-end-line="34" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,20 +1087,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="-271">
+          <caret line="65" column="34" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="65" selection-end-column="34" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#15#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

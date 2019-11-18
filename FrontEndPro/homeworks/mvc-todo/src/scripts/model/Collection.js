@@ -15,6 +15,9 @@ export default class Collection {
     }
 
     getModelItemById(id) {
+        console.log('get model item by ID ' + id);
+
+        console.log(this.list.find((item) => item.id == id));
         return this.list.find((item) => item.id == id)
 
     }
@@ -25,8 +28,8 @@ export default class Collection {
 
     delete(id) {
         const model = this.getModelItemById(id);
+        console.log('model for delete' + model);
         this.list = this.list.filter(elem => elem != model);
-        return model.delete();
     }
 
 }
