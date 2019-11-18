@@ -26,11 +26,8 @@ export default class Controller {
     }
 
     onDeleteButtonClick(id) {
-        // const model = this.collection.list.find((item) => item.id == id);
-        console.log('on delete button model '+ id);
-        this.collection.delete(id).then(
-            fetch(config.url + `/${id}`, {
-                method: 'DELETE'
-            }));
+        fetch(config.url + `/${id}`, {
+            method: 'DELETE'
+        }).then(() => this.collection.delete(id)).then(() => this.listView.renderList(this.collection.list));
     }
 }
