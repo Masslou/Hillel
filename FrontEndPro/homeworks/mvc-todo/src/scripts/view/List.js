@@ -1,4 +1,4 @@
-mport $ from 'jquery';
+import $ from 'jquery';
 
 export default class List {
     constructor(config){
@@ -25,8 +25,8 @@ export default class List {
         data.forEach(item => this.renderListItem(item));
     }
 
-    renderListItem({id, name, surname}){
-        this.$el.append(`<li class="list-item" data-id="${id}">${name} ${surname}</li>`)
+    renderListItem({id, title}){
+        this.$el.append(`<li class="list-item" data-id="${id}">${title}</li>`)
     }
 
 

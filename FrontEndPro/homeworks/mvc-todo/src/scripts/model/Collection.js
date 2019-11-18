@@ -9,7 +9,7 @@ export default class Collection{
     }
 
     fetchServerData(){
-        return fetch(config.contactsUrl)
+        return fetch(config.toDosUrl)
             .then(resp => resp.json())
             .then(this.setData)
     }

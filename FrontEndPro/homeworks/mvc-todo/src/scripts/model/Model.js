@@ -12,12 +12,13 @@ export default class Model{
         return this.save()
     }
 
+
     save(){
         return this.id ? this.saveUpdate() : this.saveCreate();
     }
 
     saveUpdate(){
-        return fetch(config.contactsUrl+`/${this.id}`, {
+        return fetch(config.toDosUrl+`/${this.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

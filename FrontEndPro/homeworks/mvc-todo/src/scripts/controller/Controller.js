@@ -5,7 +5,6 @@ import ListView from "../view/List";
 
 export default class Controller{
     constructor(){
-        console.log('controller started')
 
         this.collection = new Collection;
         this.listView = new ListView({
@@ -23,8 +22,11 @@ export default class Controller{
         const model = this.collection.list.find((item) => item.id == id);
 
         model.update({name: 'John', surname: 'Doe'})
-            .then(() => this.listView.renderList(this.collection.list))
+            .then(() => this.listView.renderList(this.collection.list));
+    }
 
-        console.log('model', model)
+    onDeleteButtonClick(id){
+        const model = this.collection.list.find((item) => item.id == id);
+
     }
 }
