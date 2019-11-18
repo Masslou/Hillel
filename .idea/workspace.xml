@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/viev/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/webpack.config.js" beforeDir="false" />
-    </list>
+    <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -354,7 +336,7 @@
       <workItem from="1571923957688" duration="2583000" />
       <workItem from="1571926924824" duration="67578000" />
       <workItem from="1572970992139" duration="4720000" />
-      <workItem from="1573057740472" duration="59855000" />
+      <workItem from="1573057740472" duration="59981000" />
     </task>
     <task id="LOCAL-00001" summary="HW20">
       <created>1572073672555</created>
@@ -650,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574074997420</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="webpack hw">
+      <created>1574080351598</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1574080351598</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170876000" />
+    <option name="totallyTimeSpent" value="171002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
