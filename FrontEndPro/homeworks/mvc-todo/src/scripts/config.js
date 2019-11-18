@@ -1,3 +1,3 @@
 export default {
-    toDosUrl: 'https://jsonplaceholder.typicode.com/todos'
+    url: 'https://jsonplaceholder.typicode.com/todos'
 }

@@ -1,23 +1,32 @@
 import config from "../config";
 import Model from "./Model";
 
-export default class Collection{
-    constructor(){
+export default class Collection {
+    constructor() {
         console.log('Collection started');
         this.list = [];
         this.setData = this.setData.bind(this)
     }
 
-    fetchServerData(){
-        return fetch(config.toDosUrl)
+    fetchServerData() {
+        return fetch(config.url)
             .then(resp => resp.json())
             .then(this.setData)
     }
 
-    setData(data){
-        // console.log('setting Data', data)
+    getModelItemById(id) {
+        return this.list.find((item) => item.id == id)
 
-        this.list = data.map((item) => new Model(item));
-        // console.log(this.list)
     }
+
+    setData(data) {
+        this.list = data.map((item) => new Model(item));
+    }
+
+    delete(id) {
+        const model = this.getModelItemById(id);
+        this.list = this.list.filter(elem => elem != model);
+        return model.delete();
+    }
+
 }
