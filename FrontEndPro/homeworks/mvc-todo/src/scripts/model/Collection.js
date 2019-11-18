@@ -25,8 +25,8 @@ export default class Collection {
 
     delete(id) {
         const model = this.getModelItemById(id);
-        this.list = this.list.filter(elem => elem != model);
-        return this.list;
+        return this.list = this.list.filter(elem => elem != model);
+
     }
 
 }
