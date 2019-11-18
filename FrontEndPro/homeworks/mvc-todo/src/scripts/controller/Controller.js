@@ -21,6 +21,11 @@ export default class Controller{
 
         const model = this.collection.list.find((item) => item.id == id);
 
+
+        todoItem.isDone = !todoItem.isDone;
+        this.updateTodoDataStorage();
+        this.listView.renderTodoList();
+
         model.update({name: 'John', surname: 'Doe'})
             .then(() => this.listView.renderList(this.collection.list));
     }
