@@ -1,5 +1,5 @@
 {
-  "name": "mvclection",
+  "name": "mvc-todo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
-  "author": "",
+  "author": "Masslou",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^2.1.1",

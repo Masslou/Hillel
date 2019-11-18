@@ -1,1 +1,3 @@
-import Controller from './controller/Controller'
+import Controller from './controller/Controller';
+
+new Controller;
