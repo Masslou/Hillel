@@ -4,7 +4,8 @@ import Model from "./Model";
 export default class Collection {
     constructor() {
         this.list = [];
-        this.setData = this.setData.bind(this)
+        this.setData = this.setData.bind(this);
+        this.model = new Model();
     }
 
     fetchServerData() {
@@ -24,9 +25,9 @@ export default class Collection {
     }
 
     delete(id) {
-        const model = this.getModelItemById(id);
-        return this.list = this.list.filter(elem => elem != model);
-
+        const item = this.getModelItemById(id);
+        this.list = this.list.filter(elem => elem != item);
+        return this.model.delete(id);
     }
 
 }

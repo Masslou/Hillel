@@ -30,8 +30,14 @@ export default class Model {
         console.log('Create')
     }
 
-    toggleElement() {
+    toggle() {
         this.isDone = !this.isDone;
         return this.save();
+    }
+
+    delete(id) {
+        return fetch(config.url + `/${id}`, {
+            method: 'DELETE'
+        })
     }
 }

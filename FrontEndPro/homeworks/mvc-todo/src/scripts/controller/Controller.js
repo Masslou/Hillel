@@ -2,7 +2,6 @@ import $ from 'jquery';
 
 import Collection from "../model/Collection";
 import ListView from "../view/List";
-import config from "../config.js";
 
 export default class Controller {
     constructor() {
@@ -21,13 +20,12 @@ export default class Controller {
 
     onElementClickToggle(id) {
         const model = this.collection.getModelItemById(id);
-        model.toggleElement()
+        model.toggle()
             .then(() => this.listView.renderList(this.collection.list));
     }
 
     onDeleteButtonClick(id) {
-        fetch(config.url + `/${id}`, {
-            method: 'DELETE'
-        }).then(() => this.collection.delete(id)).then(() => this.listView.renderList(this.collection.list));
+        this.collection.delete(id)
+            .then(() => this.listView.renderList(this.collection.list));
     }
 }
