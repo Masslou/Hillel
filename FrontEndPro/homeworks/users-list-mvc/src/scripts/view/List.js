@@ -5,13 +5,13 @@ export default class List {
         this.config = config;
         this.$el = this.createElement();
 
-        this.$el.on('click', '.list-item', this.onItemToggleClick.bind(this));
+        this.$el.on('click', '.list-item', this.onItemRequestClick.bind(this));
         this.$el.on('click', '.delete-item-btn', this.onDeleteListItemClick.bind(this));
     }
 
-    onItemToggleClick(e) {
+    onItemRequestClick(e) {
         const id = $(e.target).data('id');
-        this.config.onItemToggleClick(id);
+        this.config.onItemClickGetInfo(id);
     }
 
     onDeleteListItemClick(e) {

@@ -10,27 +10,25 @@ export default class Controller {
         this.container = $(document.body);
         this.collection = new Collection;
         this.listView = new ListView({
-            onItemToggleClick: this.onElementClickToggle.bind(this),
+            onItemClickGetInfo: this.onElementClickRenderInfo.bind(this),
             onDeleteItemClick: this.onDeleteButtonClick.bind(this)
         });
 
         this.formView = new Form({
             onSubmit: this.onFormSubmit.bind(this)
         });
-
-        this.container.append(this.listView.$el);
         this.container.append(this.formView.$el);
+        this.container.append(this.listView.$el);
 
 
         this.collection.fetchServerData()
             .then(() => this.listView.renderList(this.collection.list));
     }
 
-/// тут сделать логику подставления данных вместо toggle
-    onElementClickToggle(id) {
+    onElementClickRenderInfo(id) {
         const model = this.collection.getModelItemById(id);
-        model.toggle()
-            .then(() => this.listView.renderList(this.collection.list));
+        model.getUserInfo()
+            .then((data) => this.formView.renderItemInfo(data));
     }
 
     onDeleteButtonClick(id) {
@@ -39,6 +37,7 @@ export default class Controller {
     }
 
     onFormSubmit(data) {
+        debugger
         this.collection.add(data)
             .then(() => this.listView.renderList(this.collection.list));
     }

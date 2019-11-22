@@ -36,10 +36,10 @@ export default class Model {
         }).then(res => res.json()).then(data => this.update(data));
     }
 
-    toggle() {
-        this.isDone = !this.isDone;
-        return this.save();
+    getUserInfo() {
+        return fetch(config.url + `/${this.id}`).then((resp) => {return resp.json()})
     }
+
 
     delete(id) {
         return fetch(config.url + `/${id}`, {

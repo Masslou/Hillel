@@ -21,17 +21,24 @@ export default class Form {
             obj[name] = value
         });
 
+
         this.config.onSubmit(obj);
         this.$el[0].reset();
 
     }
 
+    renderItemInfo(data) {
+        $('#name').val(data.name);
+        $('#surname').val(data.surname);
+        $('#email').val(data.email);
+    }
+
 
     createElement() {
         return $(`<form>
-<input name="name" />
-<input name="surname" />
-<input name="email" />
+<input id="name" name="name" />
+<input id="surname" name="surname" />
+<input id="email" name="email" />
 <button>Save</button>
 </form>`);
     }
