@@ -10,11 +10,14 @@ export default class List {
     }
 
     onItemRequestClick(e) {
+
         const id = $(e.target).data('id');
         this.config.onItemClickGetInfo(id);
+
     }
 
     onDeleteListItemClick(e) {
+
         e.stopPropagation();
         const id = $(e.target.parentElement).data('id');
         this.config.onDeleteItemClick(id);

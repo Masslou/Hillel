@@ -19,6 +19,7 @@ export default class Form {
         const obj = {};
         this.$el.serializeArray().forEach(({name, value}) => {
             obj[name] = value
+
         });
 
 

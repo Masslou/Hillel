@@ -1,8 +1,10 @@
 import config from "../config";
 
 export default class Model {
+
     constructor(data) {
         Object.assign(this, data);
+
     }
 
     update(data) {

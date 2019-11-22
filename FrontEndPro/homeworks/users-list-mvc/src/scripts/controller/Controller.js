@@ -37,7 +37,6 @@ export default class Controller {
     }
 
     onFormSubmit(data) {
-        debugger
         this.collection.add(data)
             .then(() => this.listView.renderList(this.collection.list));
     }

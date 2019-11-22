@@ -31,8 +31,8 @@ export default class List {
         data.forEach(item => this.renderListItem(item));
     }
 
-    renderListItem({id, title, isDone}) {
-        this.$el.append(`<li class="list-item ${isDone ? 'done' : " "}" data-id="${id}"> ${title} <span class="delete-item-btn">x</span> </li>`)
+    renderListItem({id, title}) {
+        this.$el.append(`<li class="list-item data-id="${id}"> ${title} <span class="delete-item-btn">x</span> </li>`)
 
     }
 
