@@ -15,10 +15,10 @@ export default class Collection {
     }
 
     getModelItemById(id) {
+
         return this.list.find((item) => item.id == id)
+
     }
-
-
 
     setData(data) {
         this.list = data.map((item) => new Model(item));
@@ -30,5 +30,10 @@ export default class Collection {
         return this.model.delete(id);
     }
 
+    add(data) {
+        const model = new Model(data);
+        this.list.push(model);
+       return model.save();
+    }
 
 }

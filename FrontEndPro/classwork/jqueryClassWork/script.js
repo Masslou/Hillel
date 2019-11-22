@@ -10,7 +10,7 @@ $(function(){
     const $stickerHTML = $('#sticker-temp').html();
     const $stickersContainer = $('#stickers-container');
     const $modalWindow = $('#modal-window');
-    const $modalForm = $('#modal-form');
+    const $modalForm = $('#modal-formView');
 
     let dataStickers = getActualData();
 
@@ -30,7 +30,7 @@ $(function(){
             }
         },
         close: function() {
-            $('#modal-form')[0].reset();
+            $('#modal-formView')[0].reset();
             $board.removeClass(DARK_BACKGROUND_CLASS);
         }
     });

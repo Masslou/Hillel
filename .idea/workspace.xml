@@ -2,9 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98664269-3df4-49ac-abfd-1dc66c0a733a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/assets/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/controller/Controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/Form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/homework21/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/homework21/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/assets/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/LocalStorageService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,13 +34,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="630">
+                    <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/index.html">
+                <provider selected="true" editor-type-id="text-editor" />
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state>
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -29,53 +71,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="34" column="126" selection-start-line="34" selection-start-column="111" selection-end-line="34" selection-end-column="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/script/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-              <folding>
-                <element signature="e#15#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/controller/Controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="30" column="108" selection-start-line="30" selection-start-column="108" selection-end-line="30" selection-end-column="108" />
+            <state relative-caret-position="136">
+              <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <marker date="1574388003899" expanded="true" signature="1213:1319" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Collection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="525">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -84,33 +97,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="32">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/List.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="285">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js">
+        <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/Form.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -122,14 +130,13 @@
       <list>
         <option value="SCSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>renderUserInformation</find>
       <find>todoItemTem</find>
       <find>$newTodoForm</find>
       <find>getTodoElementById</find>
@@ -159,6 +166,7 @@
       <find>delete</find>
       <find>console</find>
       <find>console.log</find>
+      <find>form</find>
     </findStrings>
     <replaceStrings>
       <replace>stickers</replace>
@@ -179,16 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/another.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/.gitignore" />
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/webpack-lection/src/styles.css" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/assets/styleTwo.scss" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/node_modules/gulp-inject/src/inject/index.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/classwork/my-app/src/script/app.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/dist/index.html" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/index.html" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/src/assets/style.scss" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/script/app.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/myapp/script/scripti.js" />
@@ -223,13 +221,23 @@
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/styles/styles.css" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/package.json" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/webpack.config.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js" />
-        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" />
         <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/assets/styles.css" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/config.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/List.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/package.json" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/webpack.config.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Model.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/Form.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Collection.js" />
+        <option value="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/controller/Controller.js" />
       </list>
     </option>
   </component>
@@ -266,6 +274,90 @@
               <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework9" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework15" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework16" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework17" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework19" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="homework20" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,15 +367,6 @@
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
               <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
-              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +376,16 @@
               <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="mvc-todo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
@@ -326,7 +419,14 @@
               <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,9 +434,39 @@
               <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
               <item name="homeworks" type="462c0819:PsiDirectoryNode" />
-              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HillelPro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HillelPro" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEndPro" type="462c0819:PsiDirectoryNode" />
+              <item name="homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="users-list-mvc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -354,16 +484,16 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app" />
-      <recent name="$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc" />
       <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo" />
       <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app" />
       <recent name="$PROJECT_DIR$/FrontEndPro/test" />
       <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/homework22" />
-      <recent name="$PROJECT_DIR$/FrontEndPro/classwork/jqueryClassWork" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FrontEndPro/homeworks/todo-app" />
+      <recent name="$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -399,28 +529,7 @@
       <workItem from="1571926924824" duration="67578000" />
       <workItem from="1572970992139" duration="4720000" />
       <workItem from="1573057740472" duration="66140000" />
-      <workItem from="1574112965115" duration="6513000" />
-    </task>
-    <task id="LOCAL-00001" summary="HW20">
-      <created>1572073672555</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572073672555</updated>
-    </task>
-    <task id="LOCAL-00002" summary="hw">
-      <created>1572222557732</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572222557732</updated>
-    </task>
-    <task id="LOCAL-00003" summary="hw">
-      <created>1572222776026</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1572222776026</updated>
+      <workItem from="1574112965115" duration="21581000" />
     </task>
     <task id="LOCAL-00004" summary="hw">
       <created>1572222925351</created>
@@ -744,11 +853,32 @@
       <option name="project" value="LOCAL" />
       <updated>1574118634885</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="mvc-todo">
+      <created>1574119934385</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1574119934386</updated>
+    </task>
+    <task id="LOCAL-00051" summary="mvc-todo">
+      <created>1574120039082</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1574120039082</updated>
+    </task>
+    <task id="LOCAL-00052" summary="mvc-todo">
+      <created>1574278363048</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1574278363049</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183674000" />
+    <option name="totallyTimeSpent" value="198742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -758,7 +888,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49909583" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -766,8 +896,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.45918366" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43265307" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49849308" visible="true" weight="0.43265307" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015069" side_tool="true" weight="0.43265307" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3290993" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -808,146 +938,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="mvc-todo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework21/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/model/Collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/model/Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/controller/Controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/dist/main.js" />
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/dist/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/dist/bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework10/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework11/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework12/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework13/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework15/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/script.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -991,13 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1035,23 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="34" column="126" selection-start-line="34" selection-start-column="111" selection-end-line="34" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1076,32 +1042,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/classwork/mvclection/src/scripts/controller/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/script/LocalStorageService.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/script/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework19/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework20/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework12/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework9/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework13/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework17/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework16/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework15/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework14/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/todo-app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/assets/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/view/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="126" selection-start-line="34" selection-start-column="111" selection-end-line="34" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/dist/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="10772" column="12" selection-start-line="10772" selection-start-column="12" selection-end-line="10772" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="259">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/List.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/view/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/model/Collection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="209">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/mvc-todo/src/scripts/controller/Controller.js">
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Collection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="30" column="108" selection-start-line="30" selection-start-column="108" selection-end-line="30" selection-end-column="108" />
+        <state relative-caret-position="525">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/model/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/users-list-mvc/src/scripts/controller/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1574388003899" expanded="true" signature="1213:1319" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEndPro/homeworks/homework18/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

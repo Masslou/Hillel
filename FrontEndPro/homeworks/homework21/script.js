@@ -24,7 +24,7 @@ $(function () {
     });
 
     let stickersList = [];
-    const form = dialog.find('form').on('submit', onFormSubmit);
+    const form = dialog.find('formView').on('submit', onFormSubmit);
     $stickersContainer.on('click', `.${DELETE_STICKER_CLASS}`, onDeleteBtnClick);
 
 
