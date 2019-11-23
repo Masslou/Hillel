@@ -29,6 +29,8 @@ export default class Form {
     }
 
     renderItemInfo(data) {
+        $('#id').val(data.id);
+        
         $('#name').val(data.name);
         $('#surname').val(data.surname);
         $('#email').val(data.email);
@@ -40,6 +42,7 @@ export default class Form {
 <input id="name" name="name" />
 <input id="surname" name="surname" />
 <input id="email" name="email" />
+<input id="id" name = "id" type="hidden">
 <button>Save</button>
 </form>`);
     }

@@ -37,7 +37,12 @@ export default class Controller {
     }
 
     onFormSubmit(data) {
-        this.collection.add(data)
-            .then(() => this.listView.renderList(this.collection.list));
+        if (data.id) {
+            this.collection.updateUser(data)
+                .then(() => this.listView.renderList(this.collection.list));
+        } else {
+            this.collection.updateUser(data)
+                .then(() => this.listView.renderList(this.collection.list));
+        }
     }
 }

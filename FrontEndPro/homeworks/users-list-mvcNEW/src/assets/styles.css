@@ -1,0 +1,98 @@
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+#container{
+    display: flex;
+}
+.container-users{
+    height: 100vh;
+    width: 30%;
+    background-color:  rgba(57, 139, 91, 0.6) ;
+    border-right: 1px solid rgba(57, 139, 91, 0.7);
+    box-shadow: 0 0 4px 4px rgba(57, 139, 91, 0.5);
+    border-radius: 4px;
+}
+.list-contacts{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    color:  white;
+    overflow: auto;
+}
+.list-contacts__user{
+    border-bottom: 1px solid rgba(57, 139, 91, 0.7);
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.list-contacts__user:hover{
+    background-color: rgba(57, 139, 91, 0.5);
+}
+
+.container-users span.like-h2{
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 15px;
+    color: rgb(52, 131, 85);
+}
+.container-users button{
+    padding: 10px 20px;
+    user-select: none;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100px;
+    align-self: flex-end;
+}
+.container-users button:hover{
+    border: 2px solid  rgb(52, 121, 80);
+}
+form{
+    width: 100%;
+}
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-color:rgba(57, 139, 91, 0.1) ;
+    padding: 25px 30px;
+}
+.user-info input{
+    background-color: ghostwhite;
+    border: 1px solid rgb(52, 121, 80);
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    width: 80%;
+    color: rgb(57, 139, 102);
+}
+.user-info p{
+    color: rgb(57, 139, 91);
+    font: 700 1.5em sans-serif;
+    margin-bottom: 15px;
+}
+
+button#add-user{
+    background-color: antiquewhite;
+    color: rgb(57, 139, 91);
+}
+.form-button{
+    display: flex;
+}
+.form-button button{
+    background-color: rgb(57, 139, 91);
+    color: antiquewhite;
+    margin: 5px;
+    width: 60px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}

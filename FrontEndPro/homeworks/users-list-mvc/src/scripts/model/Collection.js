@@ -30,10 +30,25 @@ export default class Collection {
         return this.model.delete(id);
     }
 
-    add(data) {
+
+    createUser(data) {
         const model = new Model(data);
         this.list.push(model);
-       return model.save();
+        return model.save();
+    }
+
+    updateUser(data) {
+        this.list.forEach(elem => {
+            if (elem.id == data.id) {
+                elem.name = data.name;
+                elem.surname = data.surname;
+                elem.email = data.email;
+            }
+        });
+
+        const model = this.getModelItemById(data.id);
+
+        return model.save();
     }
 
 }
