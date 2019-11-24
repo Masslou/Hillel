@@ -15,7 +15,6 @@ export default class Collection {
     }
 
     getModelItemById(id) {
-
         return this.list.find((item) => item.id == id)
 
     }
@@ -47,7 +46,6 @@ export default class Collection {
         });
 
         const model = this.getModelItemById(data.id);
-
         return model.save();
     }
 

@@ -37,7 +37,7 @@ export default class Controller{
 
     onListContactsClick(id){
         const model = this.collection.getModelById(id);
-        this.formView.showInfoUser(model);
+        this.formView.showUserInfo(model);
     }
     onFormSubmit(data){
         if (data.id){

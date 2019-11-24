@@ -5,36 +5,49 @@ export default class List {
         this.config = config;
         this.$el = this.createElement();
 
-        this.$el.on('click', '.list-item', this.onItemRequestClick.bind(this));
-        this.$el.on('click', '.delete-item-btn', this.onDeleteListItemClick.bind(this));
+        this.$listContainer = this.$el.children('#list-container');
+        this.$addBtnElm = this.$el.children('#add-item__btn');
+
+        this.$el.append(this.$listContainer)
+            .append(this.$addBtnElm);
+
+        this.bindEventListeners();
     }
 
-    onItemRequestClick(e) {
 
+    onItemClick(e) {
         const id = $(e.target).data('id');
         this.config.onItemClickGetInfo(id);
-
     }
 
-    onDeleteListItemClick(e) {
-
-        e.stopPropagation();
-        const id = $(e.target.parentElement).data('id');
-        this.config.onDeleteItemClick(id);
+    bindEventListeners() {
+        this.$listContainer.on('click', '.list-item', this.onItemClick.bind(this));
+        this.$addBtnElm.on('click', this.onAddBtnClick.bind(this));
     }
+
+    onAddBtnClick() {
+        debugger
+        console.log('clicked');
+        this.config.onAddBtnClick();
+    }
+
 
     createElement() {
-        return $('<ul></ul>');
+        return $(`<div>
+          <ul id="list-container" class="list-container"></ul>
+                <button id="add-item__btn" type="button" class="add-item__btn">ADD CONTACT</button>
+        </div>`
+        );
     }
 
     renderList(data) {
-        console.log('rendering list', data);
-        this.$el.empty();
+        this.$listContainer.empty();
         data.forEach(item => this.renderListItem(item));
     }
 
-    renderListItem({id, name, surname, email}) {
-        this.$el.append(`<li class="list-item" data-id="${id}"> ${name} ${surname} ${email} <span class="delete-item-btn">x</span> </li>`)
+
+    renderListItem({id, name, surname}) {
+        this.$listContainer.append(`<li class="list-item" data-id="${id}"> ${name} ${surname}</li>`);
 
     }
 

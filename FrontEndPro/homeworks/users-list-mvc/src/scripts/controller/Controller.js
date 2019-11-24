@@ -11,18 +11,22 @@ export default class Controller {
         this.collection = new Collection;
         this.listView = new ListView({
             onItemClickGetInfo: this.onElementClickRenderInfo.bind(this),
-            onDeleteItemClick: this.onDeleteButtonClick.bind(this)
+            onAddBtnClick: this.onAddItemBtnClick.bind(this)
+
         });
 
         this.formView = new Form({
-            onSubmit: this.onFormSubmit.bind(this)
+            onSubmit: this.onFormSubmit.bind(this),
+            onDelete: this.onDeleteButtonClick.bind(this)
         });
-        this.container.append(this.formView.$el);
-        this.container.append(this.listView.$el);
+
+        this.container.append(this.listView.$el)
+            .append(this.formView.$el);
 
 
         this.collection.fetchServerData()
             .then(() => this.listView.renderList(this.collection.list));
+        this.formView.openFormNewUser();
     }
 
     onElementClickRenderInfo(id) {
@@ -32,8 +36,13 @@ export default class Controller {
     }
 
     onDeleteButtonClick(id) {
+
         this.collection.delete(id)
             .then(() => this.listView.renderList(this.collection.list));
+    }
+
+    onAddItemBtnClick() {
+        this.formView.openFormNewUser();
     }
 
     onFormSubmit(data) {
@@ -41,7 +50,7 @@ export default class Controller {
             this.collection.updateUser(data)
                 .then(() => this.listView.renderList(this.collection.list));
         } else {
-            this.collection.updateUser(data)
+            this.collection.createUser(data)
                 .then(() => this.listView.renderList(this.collection.list));
         }
     }
