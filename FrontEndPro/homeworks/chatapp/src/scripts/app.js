@@ -21,9 +21,11 @@ function addLog(message) {
 }
 
 function sendMessage() {
-    talk.send(name, type, message)
+    const message = $input.val();
+    talk.send(name, message)
 }
 
+talk.onopen(name);
 
 
 

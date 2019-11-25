@@ -8,10 +8,9 @@ export default class Chat {
         this.onopen();
     }
 
-    send(name, type, message) {
+    send(name, message) {
         this.websocket.send(JSON.stringify({
             name,
-            type,
             message
         }))
     }
