@@ -1,40 +1,39 @@
-export default class Chat{
-    constructor(config){
-        this.config = config;
+export default class Chat {
+    constructor(config) {
         this.websocket = new WebSocket('ws://fep-app.herokuapp.com');
 
+        this.onMsg = config.onMessage;
+
         this.onmessage();
-        this.onopen(config.name);
-        this.onclose(config.name);
+        this.onopen();
     }
 
-    send(name,type, message){
-        if(this.websocket.readyState !== this.websocket.OPEN)return;
-        this.websocket.send(
-            JSON.stringify({
-                name,
-                type,
-                message
-            })
-        );
+    send(name, type, message) {
+        this.websocket.send(JSON.stringify({
+            name,
+            type,
+            message
+        }))
     }
+
     message(name, message){
-        this.send(name, 'message', message);
+        this.send(name,'message', message);
     }
-    onopen(name){
+
+    onopen(name) {
         this.websocket.onopen = () => {
-            this.send(name, 'connected', 'Connected')
+            this.send(name, 'connected', 'connected')
         }
     }
-    onclose(name){
-        this.websocket.onclose = () => {
-            this.send(name, 'disconnected', 'Disconnected')
+
+    onmessage() {
+        let data;
+        this.websocket.onmessage = e => {
+            data = JSON.parse(e.data);
+            this.onMsg(data)
         }
+
     }
-    onmessage(){
-        this.websocket.onmessage = (e) => {
-            const data = JSON.parse(e.data);
-            this.config.onMessage(data);
-        }
-    }
+
+
 }
