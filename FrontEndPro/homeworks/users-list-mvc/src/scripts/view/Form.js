@@ -58,7 +58,7 @@ export default class Form {
 
     openFormNewUser() {
         this.resetForm();
-        $('#idInput').val('');
+        $('#id-input').val('');
         this.removeDelBtn()
     }
 
